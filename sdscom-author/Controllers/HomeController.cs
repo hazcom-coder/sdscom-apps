@@ -8,6 +8,9 @@ using sdscom_author.Models;
 
 namespace sdscom_author.Controllers
 {
+    /// <summary>
+    /// basic start page
+    /// </summary>
     public class HomeController : Controller
     {
         public IActionResult Index()
