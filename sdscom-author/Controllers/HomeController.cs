@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using sdscom_author.Models;
+using SDSComApp.Models;
 
-namespace sdscom_author.Controllers
+namespace SDSComApp.Controllers
 {
     /// <summary>
     /// basic start page
@@ -16,6 +16,11 @@ namespace sdscom_author.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult Login()
+        {
+            return View("AppMenu");
         }
 
         public IActionResult About()
