@@ -11,13 +11,13 @@ using Serilog;
 using Serilog.Configuration;
 using Serilog.Events;
 
+
 namespace sdscom_author
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-         
 
             BuildWebHost(args).Run();
         }
