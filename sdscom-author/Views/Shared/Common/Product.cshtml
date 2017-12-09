@@ -1,0 +1,28 @@
+﻿@model SDSComApp.Models.Product
+
+
+@{
+    ViewData["Title"] = "Product";
+}
+
+<h2>Product</h2>
+
+<form asp-action="Save" asp-controller="Product" id="frmProduct">
+
+    <label id="lblName">ID</label>
+    <input type="hidden" id="txtID" size="100" asp-for="ID" />
+
+    <label id="lblName">Name</label>
+    <input type="text" id="txtName" size="2000" asp-for="Name" />
+
+    <label id="lblOtherID">Other Id</label>
+    <input type="text" id="txtOtherID" size="2000" asp-for="OtherId" />
+
+    <label id="lblUserID" asp-for="UserId">Updated By</label>   
+
+    <label id="lblDateStmp" asp-for="DateStamp">Date Stamp</label>   
+    
+    <input type="submit" id="btnSubmit" value="Save"/>
+
+</form> 
+

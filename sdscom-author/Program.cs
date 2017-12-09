@@ -7,6 +7,9 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Configuration;
+using Serilog.Events;
 
 namespace sdscom_author
 {
@@ -14,6 +17,8 @@ namespace sdscom_author
     {
         public static void Main(string[] args)
         {
+         
+
             BuildWebHost(args).Run();
         }
 

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Serilog;
 
 namespace sdscom_author
 {
@@ -14,6 +15,11 @@ namespace sdscom_author
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+            Log.Logger = new LoggerConfiguration()
+                             .MinimumLevel.Debug()
+                             .WriteTo.RollingFile("Logs/log-{Date}.txt")
+                             .CreateLogger();
         }
 
         public IConfiguration Configuration { get; }
@@ -45,6 +51,8 @@ namespace sdscom_author
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            
         }
     }
 }
