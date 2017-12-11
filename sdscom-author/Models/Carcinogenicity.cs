@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class Carcinogenicity
     {
         private CMRData[] carcinogenicityTestResultsField;
@@ -17,7 +17,7 @@ namespace SDSComApp.Models
         private Phrase[] assessmentCarcinogenicityClassificationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CarcinogenicityTestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("CarcinogenicityTestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public CMRData[] CarcinogenicityTestResults
         {
             get
@@ -31,7 +31,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CarcinogenicityOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("CarcinogenicityOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] CarcinogenicityOtherInfo
         {
             get
@@ -45,7 +45,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CarcinogenicityHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("CarcinogenicityHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] CarcinogenicityHumanExperience
         {
             get
@@ -59,7 +59,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AssessmentCarcinogenicityClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AssessmentCarcinogenicityClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AssessmentCarcinogenicityClassification
         {
             get

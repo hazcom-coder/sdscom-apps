@@ -18,7 +18,7 @@ namespace SDSComApp.Models
         private Phrase[] remarkField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue WeightFraction
         {
             get
@@ -32,7 +32,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ClassOrClasses", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ClassOrClasses", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ClassOrClasses
         {
             get
@@ -46,7 +46,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase No
         {
             get
@@ -60,7 +60,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Remark", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Remark", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Remark
         {
             get

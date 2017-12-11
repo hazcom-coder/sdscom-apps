@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class EyeDamageOrIrritation
     {
         private CorrosionIrritationData[] eyeDamageOrIrritationTestResultsField;
@@ -21,7 +21,7 @@ namespace SDSComApp.Models
         private Phrase[] assessmentEyeDamageOrIrritationClassificationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EyeDamageOrIrritationTestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EyeDamageOrIrritationTestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public CorrosionIrritationData[] EyeDamageOrIrritationTestResults
         {
             get
@@ -35,7 +35,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EyeDamageOrIrritationOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EyeDamageOrIrritationOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] EyeDamageOrIrritationOtherInfo
         {
             get
@@ -49,7 +49,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EyeIrritation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EyeIrritation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] EyeIrritation
         {
             get
@@ -63,7 +63,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EyeCorrosivity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EyeCorrosivity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] EyeCorrosivity
         {
             get
@@ -77,7 +77,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EyeDamageOrIrritationHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EyeDamageOrIrritationHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] EyeDamageOrIrritationHumanExperience
         {
             get
@@ -91,7 +91,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AssessmentEyeDamageOrIrritationClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AssessmentEyeDamageOrIrritationClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AssessmentEyeDamageOrIrritationClassification
         {
             get

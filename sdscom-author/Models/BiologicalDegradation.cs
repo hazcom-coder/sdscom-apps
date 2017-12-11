@@ -14,21 +14,18 @@ namespace SDSComApp.Models
         private UnitValue testDurationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue Value
         {
             get
             {
                 return this.valueField;
             }
-            set
-            {
-                this.valueField = value;
-            }
+            set => this.valueField = value;
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase Type
         {
             get
@@ -42,7 +39,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue TestDuration
         {
             get

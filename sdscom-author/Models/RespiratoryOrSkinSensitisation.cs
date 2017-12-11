@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class RespiratoryOrSkinSensitisation
     {
 
@@ -18,7 +18,7 @@ namespace SDSComApp.Models
         private ClassificationAssessment classificationAssessmentField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RespiratoryOrSkinSensitisationTestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RespiratoryOrSkinSensitisationTestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public RespiratoryOrSkinSensitisationTestResults[] RespiratoryOrSkinSensitisationTestResults
         {
             get
@@ -32,7 +32,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public RespiratoryOrSkinSensitisationOtherInformation RespiratoryOrSkinSensitisationOtherInformation
         {
             get
@@ -46,7 +46,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public HumanExperience HumanExperience
         {
             get
@@ -60,7 +60,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ClassificationAssessment ClassificationAssessment
         {
             get

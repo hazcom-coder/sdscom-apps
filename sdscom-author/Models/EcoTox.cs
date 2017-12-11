@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {   
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class EcotoxicologicalInformation
     {
         private EcotoxicityTestResults ecotoxicityTestResultsField;
@@ -23,7 +23,7 @@ namespace SDSComApp.Models
         private Phrase[] ecotoxicologyOverallEvaluationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public EcotoxicityTestResults EcotoxicityTestResults
         {
             get
@@ -37,7 +37,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OtherEcotoxInfoFish", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OtherEcotoxInfoFish", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OtherEcotoxInfoFish
         {
             get
@@ -51,7 +51,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OtherEcotoxInfoAlgaePlant", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OtherEcotoxInfoAlgaePlant", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OtherEcotoxInfoAlgaePlant
         {
             get
@@ -65,7 +65,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OtherEcotoxInfoCrustaceans", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OtherEcotoxInfoCrustaceans", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OtherEcotoxInfoCrustaceans
         {
             get
@@ -79,7 +79,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OtherEcotoxInfoImpactOnSewageTreatment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OtherEcotoxInfoImpactOnSewageTreatment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OtherEcotoxInfoImpactOnSewageTreatment
         {
             get
@@ -93,7 +93,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EcotoxicologyOtherData", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EcotoxicologyOtherData", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] EcotoxicologyOtherData
         {
             get
@@ -107,7 +107,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EcotoxicologyOverallEvaluation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EcotoxicologyOverallEvaluation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] EcotoxicologyOverallEvaluation
         {
             get
@@ -126,7 +126,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class EcotoxicityTestResults
     {
 
@@ -153,7 +153,7 @@ namespace SDSComApp.Models
         private ImpactOnSewageTreatment[] impactOnSewageTreatmentField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("FishToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("FishToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Ecotoxicity[] FishToxicity
         {
             get
@@ -167,7 +167,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CrustaceanToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("CrustaceanToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Ecotoxicity[] CrustaceanToxicity
         {
             get
@@ -181,7 +181,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AlgaeToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AlgaeToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Ecotoxicity[] AlgaeToxicity
         {
             get
@@ -195,7 +195,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BacteriaToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BacteriaToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Ecotoxicity[] BacteriaToxicity
         {
             get
@@ -209,7 +209,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BirdToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BirdToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Ecotoxicity[] BirdToxicity
         {
             get
@@ -223,7 +223,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("InsectToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("InsectToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Ecotoxicity[] InsectToxicity
         {
             get
@@ -237,7 +237,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EarthwormToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EarthwormToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Ecotoxicity[] EarthwormToxicity
         {
             get
@@ -251,7 +251,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SoilMicroorganismsToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SoilMicroorganismsToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Ecotoxicity[] SoilMicroorganismsToxicity
         {
             get
@@ -265,7 +265,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SedimentLivingOrganismsToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SedimentLivingOrganismsToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Ecotoxicity[] SedimentLivingOrganismsToxicity
         {
             get
@@ -279,7 +279,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PlantToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PlantToxicity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Ecotoxicity[] PlantToxicity
         {
             get
@@ -293,7 +293,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ImpactOnSewageTreatment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ImpactOnSewageTreatment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ImpactOnSewageTreatment[] ImpactOnSewageTreatment
         {
             get
@@ -308,7 +308,7 @@ namespace SDSComApp.Models
     }
 
     /// <remarks/>
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ImpactOnSewageTreatment
     {
 
@@ -317,7 +317,7 @@ namespace SDSComApp.Models
         private Phrase inoculumField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Ecotoxicity Value
         {
             get
@@ -331,7 +331,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase Inoculum
         {
             get
@@ -350,7 +350,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PersistenceDegradability
     {
 
@@ -375,7 +375,7 @@ namespace SDSComApp.Models
         private Phrase[] persistenceDegradabilityCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PersistenceDegradabilityDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PersistenceDegradabilityDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] PersistenceDegradabilityDescription
         {
             get
@@ -389,7 +389,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DegradationHalfLife", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DegradationHalfLife", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] DegradationHalfLife
         {
             get
@@ -403,7 +403,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DegradationAndEliminationResults DegradationAndEliminationResults
         {
             get
@@ -417,7 +417,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DegradationInSewagePlantDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DegradationInSewagePlantDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] DegradationInSewagePlantDescription
         {
             get
@@ -431,7 +431,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ChemicalOxygenDemand", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ChemicalOxygenDemand", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public FurtherEcologicalData[] ChemicalOxygenDemand
         {
             get
@@ -445,7 +445,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BiochemicalOxygenDemand", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BiochemicalOxygenDemand", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public FurtherEcologicalData[] BiochemicalOxygenDemand
         {
             get
@@ -459,7 +459,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Bod5CodRatio", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Bod5CodRatio", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Bod5CodRatio[] Bod5CodRatio
         {
             get
@@ -473,7 +473,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TheoreticalOxygenDemand", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("TheoreticalOxygenDemand", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public FurtherEcologicalData[] TheoreticalOxygenDemand
         {
             get
@@ -487,7 +487,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PersistenceDegradabilityAdditionalInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PersistenceDegradabilityAdditionalInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] PersistenceDegradabilityAdditionalInfo
         {
             get
@@ -501,7 +501,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PersistenceDegradabilityComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PersistenceDegradabilityComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] PersistenceDegradabilityComments
         {
             get
@@ -520,7 +520,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class DegradationAndEliminationResults
     {
 
@@ -539,7 +539,7 @@ namespace SDSComApp.Models
         private DegradationElimination[] photolysisField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BiologicalDegradability", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BiologicalDegradability", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public BiologicalDegradation[] BiologicalDegradability
         {
             get
@@ -553,7 +553,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AbioticDegradationInAir", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AbioticDegradationInAir", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DegradationElimination[] AbioticDegradationInAir
         {
             get
@@ -567,7 +567,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HydrolysisInSeaWater", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("HydrolysisInSeaWater", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DegradationElimination[] HydrolysisInSeaWater
         {
             get
@@ -581,7 +581,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HydrolysisInFreshWater", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("HydrolysisInFreshWater", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DegradationElimination[] HydrolysisInFreshWater
         {
             get
@@ -595,7 +595,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HydrolysisInSoil", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("HydrolysisInSoil", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DegradationElimination[] HydrolysisInSoil
         {
             get
@@ -609,7 +609,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PhysicochemicalElimination", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PhysicochemicalElimination", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DegradationElimination[] PhysicochemicalElimination
         {
             get
@@ -623,7 +623,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Photolysis", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Photolysis", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DegradationElimination[] Photolysis
         {
             get
@@ -642,7 +642,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class Bod5CodRatio
     {
 
@@ -651,7 +651,7 @@ namespace SDSComApp.Models
         private Phrase[] commentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue Value
         {
             get
@@ -665,7 +665,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Comments
         {
             get
@@ -684,7 +684,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class Bioaccumulation
     {
 
@@ -697,7 +697,7 @@ namespace SDSComApp.Models
         private Phrase[] bioaccumulationCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BioaccumulationDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BioaccumulationDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] BioaccumulationDescription
         {
             get
@@ -711,7 +711,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BioconcentrationFactor", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BioconcentrationFactor", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public BioconcentrationFactor[] BioconcentrationFactor
         {
             get
@@ -725,7 +725,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BioaccumulationEvaluation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BioaccumulationEvaluation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] BioaccumulationEvaluation
         {
             get
@@ -739,7 +739,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BioaccumulationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BioaccumulationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] BioaccumulationComments
         {
             get
@@ -758,7 +758,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class BioconcentrationFactor
     {
 
@@ -773,7 +773,7 @@ namespace SDSComApp.Models
         private Phrase[] commentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue Value
         {
             get
@@ -787,7 +787,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Species Species
         {
             get
@@ -801,7 +801,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase Method
         {
             get
@@ -815,7 +815,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase TestReference
         {
             get
@@ -829,7 +829,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Comments
         {
             get
@@ -848,7 +848,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class EcologicalInformationMobility
     {
 
@@ -875,7 +875,7 @@ namespace SDSComApp.Models
         private Phrase[] mobilityCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("MobilityDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("MobilityDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] MobilityDescription
         {
             get
@@ -889,7 +889,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("KnownOrPredictedDistributionToEnvironmentalCompartments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("KnownOrPredictedDistributionToEnvironmentalCompartments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] KnownOrPredictedDistributionToEnvironmentalCompartments
         {
             get
@@ -903,7 +903,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SurfaceTension", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SurfaceTension", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SurfaceTension[] SurfaceTension
         {
             get
@@ -917,7 +917,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AdsorptionCoefficient", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AdsorptionCoefficient", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MobilityData[] AdsorptionCoefficient
         {
             get
@@ -931,7 +931,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DesorptionCoefficient", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DesorptionCoefficient", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MobilityData[] DesorptionCoefficient
         {
             get
@@ -945,7 +945,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("WaterAirVolatilityRate", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("WaterAirVolatilityRate", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MobilityData[] WaterAirVolatilityRate
         {
             get
@@ -959,7 +959,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HenryConstant", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("HenryConstant", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MobilityData[] HenryConstant
         {
             get
@@ -973,7 +973,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SoilAirVolatilityRate", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SoilAirVolatilityRate", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MobilityData[] SoilAirVolatilityRate
         {
             get
@@ -987,7 +987,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AbsorptionDesorptionInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AbsorptionDesorptionInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AbsorptionDesorptionInfo
         {
             get
@@ -1001,7 +1001,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("MobilityEvaluation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("MobilityEvaluation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] MobilityEvaluation
         {
             get
@@ -1015,7 +1015,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("MobilityComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("MobilityComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] MobilityComments
         {
             get
@@ -1034,7 +1034,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ResultsOfPbtAndVpvbAssessment
     {
 
@@ -1043,7 +1043,7 @@ namespace SDSComApp.Models
         private Phrase[] vpvbAssessmentResultsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PbtAssessmentResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PbtAssessmentResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] PbtAssessmentResults
         {
             get
@@ -1057,7 +1057,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("VpvbAssessmentResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("VpvbAssessmentResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] VpvbAssessmentResults
         {
             get
@@ -1076,7 +1076,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class OtherAdverseEffects
     {
 
@@ -1109,7 +1109,7 @@ namespace SDSComApp.Models
         private Phrase[] additionalEcologicalInformationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OtherAdverseEffectsDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OtherAdverseEffectsDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OtherAdverseEffectsDescription
         {
             get
@@ -1123,7 +1123,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OzoneDepletionPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OzoneDepletionPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] OzoneDepletionPotential
         {
             get
@@ -1137,7 +1137,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PhotochemicalOzoneCreationPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PhotochemicalOzoneCreationPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] PhotochemicalOzoneCreationPotential
         {
             get
@@ -1151,7 +1151,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("GlobalWarmingPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("GlobalWarmingPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] GlobalWarmingPotential
         {
             get
@@ -1165,7 +1165,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AtmosphericLifetime", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AtmosphericLifetime", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] AtmosphericLifetime
         {
             get
@@ -1179,7 +1179,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EndocrineDisruptingPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EndocrineDisruptingPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] EndocrineDisruptingPotential
         {
             get
@@ -1193,7 +1193,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DissolvedOrganicCarbon", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DissolvedOrganicCarbon", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public FurtherEcologicalData[] DissolvedOrganicCarbon
         {
             get
@@ -1207,7 +1207,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TotalOrganicCarbon", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("TotalOrganicCarbon", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public FurtherEcologicalData[] TotalOrganicCarbon
         {
             get
@@ -1221,7 +1221,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("InorganicCarbon", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("InorganicCarbon", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public FurtherEcologicalData[] InorganicCarbon
         {
             get
@@ -1235,7 +1235,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TheoreticalCarbonDioxideAmount", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("TheoreticalCarbonDioxideAmount", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public FurtherEcologicalData[] TheoreticalCarbonDioxideAmount
         {
             get
@@ -1249,7 +1249,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AOXAdsorbableOrganohalogens", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AOXAdsorbableOrganohalogens", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] AOXAdsorbableOrganohalogens
         {
             get
@@ -1263,7 +1263,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("POXPurgeableOrganohalogens", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("POXPurgeableOrganohalogens", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] POXPurgeableOrganohalogens
         {
             get
@@ -1277,7 +1277,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EOXExtractableOrganohalogens", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EOXExtractableOrganohalogens", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] EOXExtractableOrganohalogens
         {
             get
@@ -1291,7 +1291,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AdditionalEcologicalInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AdditionalEcologicalInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AdditionalEcologicalInformation
         {
             get

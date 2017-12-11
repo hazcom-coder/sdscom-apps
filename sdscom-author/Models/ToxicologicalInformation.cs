@@ -42,7 +42,7 @@ namespace SDSComApp.Models
         private Phrase[] commentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public AcuteToxicity AcuteToxicity
         {
             get
@@ -56,7 +56,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ToxicokineticInfo ToxicokineticInfo
         {
             get
@@ -70,7 +70,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SkinCorrosionIrritation SkinCorrosionIrritation
         {
             get
@@ -84,7 +84,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public EyeDamageOrIrritation EyeDamageOrIrritation
         {
             get
@@ -98,7 +98,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public RespiratoryOrSkinSensitisation RespiratoryOrSkinSensitisation
         {
             get
@@ -112,7 +112,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public GermCellMutagenicity GermCellMutagenicity
         {
             get
@@ -126,7 +126,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Carcinogenicity Carcinogenicity
         {
             get
@@ -140,7 +140,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ReproductiveToxicity ReproductiveToxicity
         {
             get
@@ -154,7 +154,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OverallAssessmentOnCMRProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OverallAssessmentOnCMRProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OverallAssessmentOnCMRProperties
         {
             get
@@ -168,7 +168,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SpecificTargetOrganSE SpecificTargetOrganSE
         {
             get
@@ -182,7 +182,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SpecificTargetOrganRE SpecificTargetOrganRE
         {
             get
@@ -196,7 +196,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public AspirationHazard AspirationHazard
         {
             get
@@ -210,7 +210,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phototoxicity Phototoxicity
         {
             get
@@ -224,7 +224,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OtherAdverseToxicologicalEffects", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OtherAdverseToxicologicalEffects", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OtherAdverseToxicologicalEffects
         {
             get
@@ -238,7 +238,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SymptomsOfExposure SymptomsOfExposure
         {
             get
@@ -252,7 +252,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OtherInformation
         {
             get
@@ -266,7 +266,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Comments
         {
             get
@@ -280,7 +280,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class AcuteToxicity
     {
 
@@ -295,7 +295,7 @@ namespace SDSComApp.Models
         private Phrase[] assessmentAcuteToxicityClassificationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("TestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public TestResults[] TestResults
         {
             get
@@ -309,7 +309,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public AcuteToxicityOtherInformation AcuteToxicityOtherInformation
         {
             get
@@ -323,7 +323,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AcuteToxicityEstimatesMixture", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AcuteToxicityEstimatesMixture", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public AcuteToxicityEstimatesMixture[] AcuteToxicityEstimatesMixture
         {
             get
@@ -337,7 +337,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AcuteToxicityHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AcuteToxicityHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AcuteToxicityHumanExperience
         {
             get
@@ -351,7 +351,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AssessmentAcuteToxicityClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AssessmentAcuteToxicityClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AssessmentAcuteToxicityClassification
         {
             get
@@ -370,7 +370,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class TestResults
     {
 
@@ -393,7 +393,7 @@ namespace SDSComApp.Models
         private Phrase[] commentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ToxicityTypeEnum ToxicityType
         {
             get
@@ -407,7 +407,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DoseEnum EffectTested
         {
             get
@@ -421,7 +421,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureRouteEnum ExposureRoute
         {
             get
@@ -435,7 +435,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase Method
         {
             get
@@ -449,7 +449,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue ExposureTime
         {
             get
@@ -463,7 +463,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue Value
         {
             get
@@ -477,7 +477,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Species Species
         {
             get
@@ -491,7 +491,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase TestReference
         {
             get
@@ -505,7 +505,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Comments
         {
             get
@@ -524,7 +524,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class AcuteToxicityOtherInformation
     {
 
@@ -541,7 +541,7 @@ namespace SDSComApp.Models
         private Phrase[] ingestionField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OtherToxicologicalData", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OtherToxicologicalData", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OtherToxicologicalData
         {
             get
@@ -555,7 +555,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AcuteToxicityDescriptionGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AcuteToxicityDescriptionGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AcuteToxicityDescriptionGeneral
         {
             get
@@ -569,7 +569,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Inhalation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Inhalation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Inhalation
         {
             get
@@ -583,7 +583,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Skin", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Skin", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Skin
         {
             get
@@ -597,7 +597,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Eye", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Eye", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Eye
         {
             get
@@ -611,7 +611,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Ingestion", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Ingestion", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Ingestion
         {
             get
@@ -630,7 +630,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class AcuteToxicityEstimatesMixture
     {
 
@@ -643,7 +643,7 @@ namespace SDSComApp.Models
         private Phrase[] commentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DoseEnum EffectDoseConcentration
         {
             get
@@ -657,7 +657,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureRouteEnum ExposureRoute
         {
             get
@@ -671,7 +671,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue Value
         {
             get
@@ -685,7 +685,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Comments
         {
             get
@@ -702,7 +702,7 @@ namespace SDSComApp.Models
     /// <remarks/>
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ToxicokineticInfo
     {
 
@@ -717,7 +717,7 @@ namespace SDSComApp.Models
         private Phrase[] toxicokineticInfoCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DistributionInBody", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DistributionInBody", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] DistributionInBody
         {
             get
@@ -731,7 +731,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Metabolism", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Metabolism", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Metabolism
         {
             get
@@ -745,7 +745,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Toxicokinetics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Toxicokinetics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Toxicokinetics
         {
             get
@@ -759,7 +759,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HumanToxicologicalData", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("HumanToxicologicalData", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] HumanToxicologicalData
         {
             get
@@ -773,7 +773,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ToxicokineticInfoComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ToxicokineticInfoComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ToxicokineticInfoComments
         {
             get
@@ -790,7 +790,7 @@ namespace SDSComApp.Models
     /// <remarks/>
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class SkinCorrosionIrritation
     {
 
@@ -809,7 +809,7 @@ namespace SDSComApp.Models
         private Phrase[] assessmentCorrosionIrritationClassificationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SkinCorrosionIrritationTestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SkinCorrosionIrritationTestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public CorrosionIrritationData[] SkinCorrosionIrritationTestResults
         {
             get
@@ -823,7 +823,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ToxicologicalInformationSkinCorrosionIrritationSkinCorrosionAcidicOrAlkalineReserve SkinCorrosionAcidicOrAlkalineReserve
         {
             get
@@ -837,7 +837,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SkinCorrosionIrritationOtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SkinCorrosionIrritationOtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SkinCorrosionIrritationOtherInformation
         {
             get
@@ -851,7 +851,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Irritation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Irritation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Irritation
         {
             get
@@ -865,7 +865,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Corrosivity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Corrosivity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Corrosivity
         {
             get
@@ -879,7 +879,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SkinCorrosionIrritationHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SkinCorrosionIrritationHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SkinCorrosionIrritationHumanExperience
         {
             get
@@ -893,7 +893,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AssessmentCorrosionIrritationClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AssessmentCorrosionIrritationClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AssessmentCorrosionIrritationClassification
         {
             get
@@ -909,7 +909,7 @@ namespace SDSComApp.Models
 
     /// <remarks/>
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ToxicologicalInformationSkinCorrosionIrritationSkinCorrosionAcidicOrAlkalineReserve
     {
 
@@ -920,7 +920,7 @@ namespace SDSComApp.Models
         private Phrase[] skinCorrosionAcidicOrAlkalineReserveCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ToxicologicalInformationSkinCorrosionIrritationSkinCorrosionAcidicOrAlkalineReserveSkinCorrosionAcidicReserve SkinCorrosionAcidicReserve
         {
             get
@@ -934,7 +934,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ToxicologicalInformationSkinCorrosionIrritationSkinCorrosionAcidicOrAlkalineReserveSkinCorrosionAlkalineReserve SkinCorrosionAlkalineReserve
         {
             get
@@ -948,7 +948,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SkinCorrosionAcidicOrAlkalineReserveComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SkinCorrosionAcidicOrAlkalineReserveComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SkinCorrosionAcidicOrAlkalineReserveComments
         {
             get
@@ -964,7 +964,7 @@ namespace SDSComApp.Models
 
     /// <remarks/>
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ToxicologicalInformationSkinCorrosionIrritationSkinCorrosionAcidicOrAlkalineReserveSkinCorrosionAcidicReserve
     {
 
@@ -973,7 +973,7 @@ namespace SDSComApp.Models
         private Phrase skinCorrosionAcidicReserveResultField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue SkinCorrosionAcidicReserveValue
         {
             get
@@ -987,7 +987,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase SkinCorrosionAcidicReserveResult
         {
             get
@@ -1002,7 +1002,7 @@ namespace SDSComApp.Models
     }
 
     /// <remarks/>
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ToxicologicalInformationSkinCorrosionIrritationSkinCorrosionAcidicOrAlkalineReserveSkinCorrosionAlkalineReserve
     {
 
@@ -1011,7 +1011,7 @@ namespace SDSComApp.Models
         private Phrase skinCorrosionAlkalineReserveResultField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue SkinCorrosionAlkalineReserveValue
         {
             get
@@ -1025,7 +1025,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase SkinCorrosionAlkalineReserveResult
         {
             get

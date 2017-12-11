@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace SDSComApp.Models
 {
     /// <remarks/>
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class InformationFromExportingSystem
     {
 
@@ -35,7 +35,7 @@ namespace SDSComApp.Models
         private bool xMLStandardSubsetFieldSpecified;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public XmlStandardVersionEnum XmlStandardVersionNo
         {
             get
@@ -49,7 +49,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PhraseCatalogue", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PhraseCatalogue", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhraseCatalogue[] PhraseCatalogue
         {
             get
@@ -63,7 +63,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Language Language
         {
             get
@@ -77,7 +77,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RegulationsRelatedToCountryOrRegion", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RegulationsRelatedToCountryOrRegion", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public RegulationsRelatedToCountryOrRegion[] RegulationsRelatedToCountryOrRegion
         {
             get
@@ -91,7 +91,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public string SystemUsedInPreparation
         {
             get
@@ -105,7 +105,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
         public System.DateTime DateGeneratedExport
         {
             get
@@ -133,7 +133,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public LegalDocument LegalDocument
         {
             get
@@ -162,7 +162,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RelatedDocuments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RelatedDocuments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public RelatedDocuments[] RelatedDocuments
         {
             get
@@ -176,7 +176,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public XMLStandardSubsetEnum XMLStandardSubset
         {
             get

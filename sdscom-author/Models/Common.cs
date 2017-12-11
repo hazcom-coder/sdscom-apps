@@ -1,6 +1,6 @@
 ﻿    namespace SDSComApp.Models
     {
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class RegulationsRelatedToCountryOrRegion
         {
             private CountryCodeEnum regulationsRelatedToCountryOrRegionCodeField;
@@ -8,7 +8,7 @@
             private Phrase regulationsRelatedToCountryOrRegionNameField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public CountryCodeEnum RegulationsRelatedToCountryOrRegionCode
             {
                 get
@@ -22,7 +22,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase RegulationsRelatedToCountryOrRegionName
             {
                 get
@@ -36,7 +36,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class LegalDocument
         {
             private string legalDocumentFileNameField;
@@ -48,7 +48,7 @@
             private string legalDocumentSignatureField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string LegalDocumentFileName
             {
                 get
@@ -62,7 +62,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
             public System.DateTime LegalDocumentPrintDate
             {
                 get
@@ -90,7 +90,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string LegalDocumentSignature
             {
                 get
@@ -104,7 +104,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class Extension
         {
             private string extensionIssuerIdField;
@@ -114,7 +114,7 @@
             private string extensionValueField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string ExtensionIssuerId
             {
                 get
@@ -128,7 +128,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string ExtensionName
             {
                 get
@@ -142,7 +142,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string ExtensionValue
             {
                 get
@@ -156,7 +156,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class RelatedDocuments
         {
             private string fileNameField;
@@ -164,7 +164,7 @@
             private string descriptionField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string FileName
             {
                 get
@@ -178,7 +178,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string Description
             {
                 get
@@ -192,7 +192,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrep
         {
             private System.DateTime issueDateField;
@@ -234,7 +234,7 @@
             private Phrase[] identificationCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
             public System.DateTime IssueDate
             {
                 get
@@ -248,7 +248,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
             public System.DateTime RevisionDate
             {
                 get
@@ -276,7 +276,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string VersionNo
             {
                 get
@@ -290,7 +290,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string SpecificationNo
             {
                 get
@@ -304,7 +304,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ItemNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ItemNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string[] ItemNo
             {
                 get
@@ -318,7 +318,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProductNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProductNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ProductNo[] ProductNo
             {
                 get
@@ -332,7 +332,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProductIdentity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProductIdentity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public IdentificationSubstPrepProductIdentity[] ProductIdentity
             {
                 get
@@ -346,7 +346,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public InformationOnTheSds InformationOnTheSds
             {
                 get
@@ -360,7 +360,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool ProductDiscontinuedFromMarket
             {
                 get
@@ -388,7 +388,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public IdentificationSubstPrepRelevantIdentifiedUse RelevantIdentifiedUse
             {
                 get
@@ -402,7 +402,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public IdentificationSubstPrepUseAdvisedAgainst UseAdvisedAgainst
             {
                 get
@@ -416,7 +416,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ChemicalUsedByTheGeneralPublic ChemicalUsedByTheGeneralPublic
             {
                 get
@@ -430,7 +430,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("UseOfChemicalComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("UseOfChemicalComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] UseOfChemicalComments
             {
                 get
@@ -444,7 +444,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SupplierInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SupplierInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public IdentificationSubstPrepSupplierInformation[] SupplierInformation
             {
                 get
@@ -458,7 +458,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EmergencyPhone", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EmergencyPhone", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public EmergencyPhone[] EmergencyPhone
             {
                 get
@@ -472,7 +472,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string InternalSdsId
             {
                 get
@@ -486,7 +486,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("IdentificationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("IdentificationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] IdentificationComments
             {
                 get
@@ -500,7 +500,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ProductNo
         {
 
@@ -509,7 +509,7 @@
             private string[] productNoUserField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string UserId
             {
                 get
@@ -523,7 +523,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProductNoUser", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProductNoUser", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string[] ProductNoUser
             {
                 get
@@ -537,7 +537,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrepProductIdentity
         {
 
@@ -550,7 +550,7 @@
             private Phrase productDefinitionField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string TradeName
             {
                 get
@@ -564,7 +564,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Synonym", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Synonym", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string[] Synonym
             {
                 get
@@ -578,7 +578,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProductGtin", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProductGtin", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ProductGtin[] ProductGtin
             {
                 get
@@ -592,7 +592,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ProductDefinition
             {
                 get
@@ -606,7 +606,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class InformationOnTheSds
         {
 
@@ -619,7 +619,7 @@
             private bool distributionStoppedDateFieldSpecified;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SdsNotLegallyRequired", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SdsNotLegallyRequired", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] SdsNotLegallyRequired
             {
                 get
@@ -633,7 +633,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public CompleteSdsWithEsIncorporated CompleteSdsWithEsIncorporated
             {
                 get
@@ -647,7 +647,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
             public System.DateTime DistributionStoppedDate
             {
                 get
@@ -675,7 +675,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class CompleteSdsWithEsIncorporated
         {
 
@@ -686,7 +686,7 @@
             private Phrase[] extendedSdsWithEsIncorporatedCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool ExtendedSdsWithEsIncorporated
             {
                 get
@@ -714,7 +714,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ExtendedSdsWithEsIncorporatedComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ExtendedSdsWithEsIncorporatedComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ExtendedSdsWithEsIncorporatedComments
             {
                 get
@@ -728,7 +728,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrepRelevantIdentifiedUse
         {
 
@@ -739,7 +739,7 @@
             private RelevantIdentifiedUseProductFunction[] productFunctionField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("IdentifiedUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("IdentifiedUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public IdentificationSubstPrepRelevantIdentifiedUseIdentifiedUse[] IdentifiedUse
             {
                 get
@@ -753,7 +753,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProductType", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProductType", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ProductType
             {
                 get
@@ -767,7 +767,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProductFunction", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProductFunction", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public RelevantIdentifiedUseProductFunction[] ProductFunction
             {
                 get
@@ -781,7 +781,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrepRelevantIdentifiedUseIdentifiedUse
         {
 
@@ -812,7 +812,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SectorOfUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SectorOfUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SectorOfUse[] SectorOfUse
             {
                 get
@@ -826,7 +826,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProductCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProductCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ProductCategory[] ProductCategory
             {
                 get
@@ -840,7 +840,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProcessCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProcessCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ProcessCategory[] ProcessCategory
             {
                 get
@@ -854,7 +854,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EnvironmentalReleaseCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EnvironmentalReleaseCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public EnvironmentalReleaseCategory[] EnvironmentalReleaseCategory
             {
                 get
@@ -868,7 +868,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SpecificEnvironmentalReleaseCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SpecificEnvironmentalReleaseCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SpecificEnvironmentalReleaseCategory[] SpecificEnvironmentalReleaseCategory
             {
                 get
@@ -882,7 +882,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ArticleCategoryNoIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ArticleCategoryNoIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ArticleCategory[] ArticleCategoryNoIntendedRelease
             {
                 get
@@ -896,7 +896,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ArticleCategoryWithIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ArticleCategoryWithIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ArticleCategory[] ArticleCategoryWithIntendedRelease
             {
                 get
@@ -910,7 +910,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("CorrespondingExposureScenario", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("CorrespondingExposureScenario", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public CorrespondingEs[] CorrespondingExposureScenario
             {
                 get
@@ -954,7 +954,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EnvironmentalReleaseCategory
         {
 
@@ -965,7 +965,7 @@
             private Phrase ercFulltextField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public EnvironmentalReleaseCategoryCodeEnum ErcCode
             {
                 get
@@ -993,7 +993,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ErcFulltext
             {
                 get
@@ -1007,7 +1007,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SpecificEnvironmentalReleaseCategory
         {
 
@@ -1016,7 +1016,7 @@
             private Phrase spercFulltextField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string SpercCode
             {
                 get
@@ -1030,7 +1030,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase SpercFulltext
             {
                 get
@@ -1045,7 +1045,7 @@
         }
 
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class RelevantIdentifiedUseProductFunction
         {
 
@@ -1054,7 +1054,7 @@
             private Phrase[] productFunctionCodeField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProductFunctionDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProductFunctionDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ProductFunctionDescription
             {
                 get
@@ -1068,7 +1068,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProductFunctionCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProductFunctionCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ProductFunctionCode
             {
                 get
@@ -1082,7 +1082,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrepUseAdvisedAgainst
         {
 
@@ -1091,7 +1091,7 @@
             private Phrase[] otherUseAdvisedAgainstField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("NotToBeUsedIn", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("NotToBeUsedIn", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public UseAdvisedAgainstNotToBeUsedIn[] NotToBeUsedIn
             {
                 get
@@ -1105,7 +1105,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("OtherUseAdvisedAgainst", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("OtherUseAdvisedAgainst", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] OtherUseAdvisedAgainst
             {
                 get
@@ -1119,7 +1119,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class UseAdvisedAgainstNotToBeUsedIn
         {
 
@@ -1144,7 +1144,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SectorOfUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SectorOfUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SectorOfUse[] SectorOfUse
             {
                 get
@@ -1158,7 +1158,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProductCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProductCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ProductCategory[] ProductCategory
             {
                 get
@@ -1172,7 +1172,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProcessCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProcessCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ProcessCategory[] ProcessCategory
             {
                 get
@@ -1186,7 +1186,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ArticleCategoryNoIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ArticleCategoryNoIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ArticleCategory[] ArticleCategoryNoIntendedRelease
             {
                 get
@@ -1200,7 +1200,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ArticleCategoryWithIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ArticleCategoryWithIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ArticleCategory[] ArticleCategoryWithIntendedRelease
             {
                 get
@@ -1245,7 +1245,7 @@
         }
 
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ChemicalUsedByTheGeneralPublic
         {
 
@@ -1258,7 +1258,7 @@
             private bool usedByTheGeneralPublicOnlyFieldSpecified;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool CanBeUsedByTheGeneralPublic
             {
                 get
@@ -1286,7 +1286,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool UsedByTheGeneralPublicOnly
             {
                 get
@@ -1314,7 +1314,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrepSupplierInformation
         {
 
@@ -1343,7 +1343,7 @@
             private string dunsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SupplierInformationRole Role
             {
                 get
@@ -1357,7 +1357,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public CountryCodeEnum Country
             {
                 get
@@ -1385,7 +1385,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string Name
             {
                 get
@@ -1399,7 +1399,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SupplierInformationAddress Address
             {
                 get
@@ -1413,7 +1413,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Phone", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Phone", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string[] Phone
             {
                 get
@@ -1427,7 +1427,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Fax", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Fax", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string[] Fax
             {
                 get
@@ -1441,7 +1441,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Email", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Email", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string[] Email
             {
                 get
@@ -1455,7 +1455,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string CompanyUrl
             {
                 get
@@ -1469,7 +1469,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("CompanyContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("CompanyContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SupplierInformationCompanyContact[] CompanyContact
             {
                 get
@@ -1483,7 +1483,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string LegalRegistrationNo
             {
                 get
@@ -1497,7 +1497,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string Duns
             {
                 get
@@ -1511,7 +1511,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SupplierInformationRole
         {
 
@@ -1526,7 +1526,7 @@
             private Phrase roleDescriptionField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public RoleDescriptionEnum RoleCode
             {
                 get
@@ -1554,7 +1554,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ReachRoleDescriptionEnum ReachRole
             {
                 get
@@ -1582,7 +1582,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase RoleDescription
             {
                 get
@@ -1596,7 +1596,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SupplierInformationAddress
         {
 
@@ -1625,7 +1625,7 @@
             private string postCountryField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string VisitingAddressLine1
             {
                 get
@@ -1639,7 +1639,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string VisitingAddressLine2
             {
                 get
@@ -1653,7 +1653,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string VisitingAddressLine3
             {
                 get
@@ -1667,7 +1667,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string VisitingAddressPostCode
             {
                 get
@@ -1681,7 +1681,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string VisitingAddressCity
             {
                 get
@@ -1695,7 +1695,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string VisitingCountry
             {
                 get
@@ -1709,7 +1709,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string PostAddressLine1
             {
                 get
@@ -1723,7 +1723,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string PostAddressLine2
             {
                 get
@@ -1737,7 +1737,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string PostAddressLine3
             {
                 get
@@ -1751,7 +1751,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string PostCode
             {
                 get
@@ -1765,7 +1765,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string PostCity
             {
                 get
@@ -1779,7 +1779,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string PostCountry
             {
                 get
@@ -1793,7 +1793,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SupplierInformationCompanyContact
         {
 
@@ -1812,7 +1812,7 @@
             private string emailCompetentPersonField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string Name
             {
                 get
@@ -1826,7 +1826,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string Phone
             {
                 get
@@ -1840,7 +1840,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string Fax
             {
                 get
@@ -1854,7 +1854,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string Url
             {
                 get
@@ -1868,7 +1868,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string Email
             {
                 get
@@ -1882,7 +1882,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string NationalContact
             {
                 get
@@ -1896,7 +1896,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string EmailCompetentPerson
             {
                 get
@@ -1910,7 +1910,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EmergencyPhone
         {
 
@@ -1919,7 +1919,7 @@
             private Phrase[] emergencyPhoneDescriptionField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string No
             {
                 get
@@ -1933,7 +1933,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EmergencyPhoneDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EmergencyPhoneDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] EmergencyPhoneDescription
             {
                 get
@@ -1947,7 +1947,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardIdentification
         {
 
@@ -1958,7 +1958,7 @@
             private OtherHazardsInfo otherHazardsInfoField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Classification Classification
             {
                 get
@@ -1972,7 +1972,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public HazardIdentificationHazardLabelling HazardLabelling
             {
                 get
@@ -1986,7 +1986,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public OtherHazardsInfo OtherHazardsInfo
             {
                 get
@@ -2000,7 +2000,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardIdentificationHazardLabelling
         {
 
@@ -2025,7 +2025,7 @@
             private LabellingAccordingToOtherEuLegislation labellingAccordingToOtherEuLegislationField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ClpLabellingInfo ClpLabellingInfo
             {
                 get
@@ -2039,7 +2039,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public DpdDsdHazardLabelling DpdDsdHazardLabelling
             {
                 get
@@ -2053,7 +2053,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AdditionalInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AdditionalInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AdditionalInformation
             {
                 get
@@ -2067,7 +2067,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool EcLabel
             {
                 get
@@ -2095,7 +2095,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool TactileWarning
             {
                 get
@@ -2123,7 +2123,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool ChildResistantOpening
             {
                 get
@@ -2151,7 +2151,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public LabellingAccordingToOtherEuLegislation LabellingAccordingToOtherEuLegislation
             {
                 get
@@ -2165,7 +2165,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ClpLabellingInfo
         {
 
@@ -2186,7 +2186,7 @@
             private Phrase[] clpSpecialRulesOnPackagingField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ClpHazardPictogram", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ClpHazardPictogram", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public HazardPictogram[] ClpHazardPictogram
             {
                 get
@@ -2200,7 +2200,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SignalWord ClpSignalWord
             {
                 get
@@ -2214,7 +2214,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ClpHazardStatement", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ClpHazardStatement", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public HazardStatement[] ClpHazardStatement
             {
                 get
@@ -2228,7 +2228,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ClpPrecautionaryStatement", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ClpPrecautionaryStatement", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PrecautionaryStatement[] ClpPrecautionaryStatement
             {
                 get
@@ -2242,7 +2242,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ClpSupplementalHazardInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ClpSupplementalHazardInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SupplementalHazardInformation[] ClpSupplementalHazardInformation
             {
                 get
@@ -2256,7 +2256,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ClpSpecialSupplementalLabelInfoMixtures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ClpSpecialSupplementalLabelInfoMixtures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SpecialSupplementalLabelInfo[] ClpSpecialSupplementalLabelInfoMixtures
             {
                 get
@@ -2270,7 +2270,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ClpAdditionalLabellingInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ClpAdditionalLabellingInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ClpAdditionalLabellingInfo
             {
                 get
@@ -2284,7 +2284,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ClpSpecialRulesOnPackaging", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ClpSpecialRulesOnPackaging", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ClpSpecialRulesOnPackaging
             {
                 get
@@ -2298,7 +2298,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class DpdDsdHazardLabelling
         {
 
@@ -2317,7 +2317,7 @@
             private Phrase[] dpdDsdLabellingCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DpdDsdHazardSymbol", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DpdDsdHazardSymbol", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public HazardSymbolCodeEnum[] DpdDsdHazardSymbol
             {
                 get
@@ -2331,7 +2331,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DpdDsdRiskPhrase", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DpdDsdRiskPhrase", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public RiskPhrase[] DpdDsdRiskPhrase
             {
                 get
@@ -2345,7 +2345,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DpdDsdSafetyPhrase", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DpdDsdSafetyPhrase", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SafetyPhrase[] DpdDsdSafetyPhrase
             {
                 get
@@ -2359,7 +2359,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DpdDsdOtherLabellingInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DpdDsdOtherLabellingInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] DpdDsdOtherLabellingInformation
             {
                 get
@@ -2373,7 +2373,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DpdDsdStandardPhrasesForSpecialRisks", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DpdDsdStandardPhrasesForSpecialRisks", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] DpdDsdStandardPhrasesForSpecialRisks
             {
                 get
@@ -2387,7 +2387,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DpdDsdStandardPhrasesForSafetyPrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DpdDsdStandardPhrasesForSafetyPrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] DpdDsdStandardPhrasesForSafetyPrecautions
             {
                 get
@@ -2401,7 +2401,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DpdDsdLabellingComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DpdDsdLabellingComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] DpdDsdLabellingComments
             {
                 get
@@ -2415,7 +2415,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class LabellingAccordingToOtherEuLegislation
         {
 
@@ -2428,7 +2428,7 @@
             private Phrase[] otherEuLabellingRequirementsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("VocLabelling", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("VocLabelling", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public LabellingAccordingToOtherEuLegislationVocLabelling[] VocLabelling
             {
                 get
@@ -2442,7 +2442,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DetergentLabelling", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DetergentLabelling", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] DetergentLabelling
             {
                 get
@@ -2456,7 +2456,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AerosolLabelling", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AerosolLabelling", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AerosolLabelling
             {
                 get
@@ -2470,7 +2470,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("OtherEuLabellingRequirements", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("OtherEuLabellingRequirements", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] OtherEuLabellingRequirements
             {
                 get
@@ -2484,7 +2484,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class LabellingAccordingToOtherEuLegislationVocLabelling
         {
 
@@ -2495,7 +2495,7 @@
             private UnitValue maxVocConcInMixtureField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ProductSubcategory
             {
                 get
@@ -2509,7 +2509,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public UnitValue VocLimitForSubcategory
             {
                 get
@@ -2523,7 +2523,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public UnitValue MaxVocConcInMixture
             {
                 get
@@ -2537,7 +2537,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class OtherHazardsInfo
         {
 
@@ -2554,7 +2554,7 @@
             private Phrase[] otherHazardsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("HazardDescriptionGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("HazardDescriptionGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] HazardDescriptionGeneral
             {
                 get
@@ -2568,7 +2568,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("PhysicochemicalEffect", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("PhysicochemicalEffect", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] PhysicochemicalEffect
             {
                 get
@@ -2582,7 +2582,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("HealthEffect", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("HealthEffect", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] HealthEffect
             {
                 get
@@ -2596,7 +2596,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EnvironmentalEffect", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EnvironmentalEffect", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] EnvironmentalEffect
             {
                 get
@@ -2610,7 +2610,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EffectsOfMisuse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EffectsOfMisuse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] EffectsOfMisuse
             {
                 get
@@ -2624,7 +2624,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("OtherHazards", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("OtherHazards", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] OtherHazards
             {
                 get
@@ -2638,7 +2638,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class Composition
         {
 
@@ -2647,8 +2647,8 @@
             private Phrase[] compositionCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Mixture", typeof(CompositionMixture), Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
-            [System.Xml.Serialization.XmlElementAttribute("Substance", typeof(Substance), Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Mixture", typeof(CompositionMixture), Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Substance", typeof(Substance), Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public object Item
             {
                 get
@@ -2662,7 +2662,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("CompositionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("CompositionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] CompositionComments
             {
                 get
@@ -2676,7 +2676,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class CompositionMixture
         {
 
@@ -2691,7 +2691,7 @@
             private bool isDetergentFieldSpecified;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Component", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Component", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Component[] Component
             {
                 get
@@ -2705,7 +2705,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DescriptionOfTheMixture", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DescriptionOfTheMixture", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] DescriptionOfTheMixture
             {
                 get
@@ -2719,7 +2719,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("CompositionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("CompositionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] CompositionComments
             {
                 get
@@ -2733,7 +2733,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool IsDetergent
             {
                 get
@@ -2761,7 +2761,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class FirstAidMeasures
         {
 
@@ -2776,7 +2776,7 @@
             private Phrase[] firstAidCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public DescriptionOfFirstAidMeasures DescriptionOfFirstAidMeasures
             {
                 get
@@ -2790,7 +2790,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public InformationToHealthProfessionals InformationToHealthProfessionals
             {
                 get
@@ -2804,7 +2804,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public MedicalAttentionAndSpecialTreatmentNeeded MedicalAttentionAndSpecialTreatmentNeeded
             {
                 get
@@ -2818,7 +2818,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SpecificFirstAidEquipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SpecificFirstAidEquipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] SpecificFirstAidEquipment
             {
                 get
@@ -2832,7 +2832,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FirstAidComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FirstAidComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FirstAidComments
             {
                 get
@@ -2846,7 +2846,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class DescriptionOfFirstAidMeasures
         {
 
@@ -2863,7 +2863,7 @@
             private Phrase[] personalProtectionFirstAiderField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("GeneralInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("GeneralInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] GeneralInformation
             {
                 get
@@ -2877,7 +2877,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FirstAidInhalation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FirstAidInhalation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FirstAidInhalation
             {
                 get
@@ -2891,7 +2891,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FirstAidSkin", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FirstAidSkin", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FirstAidSkin
             {
                 get
@@ -2905,7 +2905,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FirstAidEye", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FirstAidEye", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FirstAidEye
             {
                 get
@@ -2919,7 +2919,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FirstAidIngestion", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FirstAidIngestion", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FirstAidIngestion
             {
                 get
@@ -2933,7 +2933,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("PersonalProtectionFirstAider", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("PersonalProtectionFirstAider", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] PersonalProtectionFirstAider
             {
                 get
@@ -2947,7 +2947,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class InformationToHealthProfessionals
         {
 
@@ -2958,7 +2958,7 @@
             private Phrase[] delayedSymptomsAndEffectsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SymptomsAndEffectsGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SymptomsAndEffectsGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] SymptomsAndEffectsGeneral
             {
                 get
@@ -2972,7 +2972,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AcuteSymptomsAndEffects", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AcuteSymptomsAndEffects", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AcuteSymptomsAndEffects
             {
                 get
@@ -2986,7 +2986,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DelayedSymptomsAndEffects", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DelayedSymptomsAndEffects", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] DelayedSymptomsAndEffects
             {
                 get
@@ -3000,7 +3000,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class MedicalAttentionAndSpecialTreatmentNeeded
         {
 
@@ -3015,7 +3015,7 @@
             private Phrase[] contraindicationsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("MedicalTreatment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("MedicalTreatment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] MedicalTreatment
             {
                 get
@@ -3029,7 +3029,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("RequiredClinicalTesting", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("RequiredClinicalTesting", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] RequiredClinicalTesting
             {
                 get
@@ -3043,7 +3043,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("RequiredMedicalMonitoring", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("RequiredMedicalMonitoring", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] RequiredMedicalMonitoring
             {
                 get
@@ -3057,7 +3057,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SpecificAntidotes", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SpecificAntidotes", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] SpecificAntidotes
             {
                 get
@@ -3071,7 +3071,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Contraindications", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Contraindications", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] Contraindications
             {
                 get
@@ -3085,7 +3085,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class FireFightingMeasures
         {
 
@@ -3104,7 +3104,7 @@
             private Phrase[] fireAndExplosionCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ExtinguishingMedia ExtinguishingMedia
             {
                 get
@@ -3118,7 +3118,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FireAndExplosionHazards", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FireAndExplosionHazards", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FireAndExplosionHazards
             {
                 get
@@ -3132,7 +3132,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("HazardCombustionProd", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("HazardCombustionProd", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] HazardCombustionProd
             {
                 get
@@ -3146,7 +3146,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FireFightingPrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FireFightingPrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FireFightingPrecautions
             {
                 get
@@ -3160,7 +3160,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FireFightingProcedures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FireFightingProcedures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FireFightingProcedures
             {
                 get
@@ -3174,7 +3174,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SpecialProtectiveEquipmentForFirefighters", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SpecialProtectiveEquipmentForFirefighters", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] SpecialProtectiveEquipmentForFirefighters
             {
                 get
@@ -3188,7 +3188,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FireAndExplosionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FireAndExplosionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FireAndExplosionComments
             {
                 get
@@ -3202,7 +3202,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ExtinguishingMedia
         {
 
@@ -3211,7 +3211,7 @@
             private Phrase[] mediaNotBeUsedField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("MediaToBeUsed", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("MediaToBeUsed", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] MediaToBeUsed
             {
                 get
@@ -3225,7 +3225,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("MediaNotBeUsed", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("MediaNotBeUsed", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] MediaNotBeUsed
             {
                 get
@@ -3239,7 +3239,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class AccidentalReleaseMeasures
         {
 
@@ -3258,7 +3258,7 @@
             private Phrase[] additionalInformationField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("GeneralMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("GeneralMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] GeneralMeasures
             {
                 get
@@ -3272,7 +3272,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ForNonEmergencyPersonnel ForNonEmergencyPersonnel
             {
                 get
@@ -3286,7 +3286,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ForEmergencyResponders", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ForEmergencyResponders", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ForEmergencyResponders
             {
                 get
@@ -3300,7 +3300,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EnvironmentalPrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EnvironmentalPrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] EnvironmentalPrecautions
             {
                 get
@@ -3314,7 +3314,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ContainmentAndCleaningUp ContainmentAndCleaningUp
             {
                 get
@@ -3328,7 +3328,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ReferenceToOtherSections", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ReferenceToOtherSections", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ReferenceToOtherSections
             {
                 get
@@ -3342,7 +3342,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AdditionalInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AdditionalInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AdditionalInformation
             {
                 get
@@ -3356,7 +3356,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ForNonEmergencyPersonnel
         {
 
@@ -3367,7 +3367,7 @@
             private Phrase[] emergencyProceduresField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("PersonalPrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("PersonalPrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] PersonalPrecautions
             {
                 get
@@ -3381,7 +3381,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProtectiveEquipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProtectiveEquipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ProtectiveEquipment
             {
                 get
@@ -3395,7 +3395,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EmergencyProcedures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EmergencyProcedures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] EmergencyProcedures
             {
                 get
@@ -3409,7 +3409,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ContainmentAndCleaningUp
         {
 
@@ -3420,7 +3420,7 @@
             private Phrase[] otherInformationField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Containment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Containment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] Containment
             {
                 get
@@ -3434,7 +3434,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("CleaningUp", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("CleaningUp", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] CleaningUp
             {
                 get
@@ -3448,7 +3448,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("OtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("OtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] OtherInformation
             {
                 get
@@ -3462,7 +3462,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HandlingAndStorage
         {
 
@@ -3477,7 +3477,7 @@
             private SpecificEndUses specificEndUsesField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SafeHandling SafeHandling
             {
                 get
@@ -3491,7 +3491,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("StoragePrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("StoragePrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] StoragePrecautions
             {
                 get
@@ -3505,7 +3505,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ConditionsToAvoid", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ConditionsToAvoid", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ConditionsToAvoid
             {
                 get
@@ -3519,7 +3519,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ConditionsForSafeStorage ConditionsForSafeStorage
             {
                 get
@@ -3533,7 +3533,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SpecificEndUses SpecificEndUses
             {
                 get
@@ -3547,7 +3547,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SafeHandling
         {
 
@@ -3564,7 +3564,7 @@
             private Phrase[] generalOccupationalHygieneField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("HandlingPrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("HandlingPrecautions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] HandlingPrecautions
             {
                 get
@@ -3578,7 +3578,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SafeHandlingOfGasContainers", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SafeHandlingOfGasContainers", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] SafeHandlingOfGasContainers
             {
                 get
@@ -3592,7 +3592,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PrecautionaryMeasures PrecautionaryMeasures
             {
                 get
@@ -3606,7 +3606,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FurtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FurtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FurtherInformation
             {
                 get
@@ -3620,7 +3620,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] Comments
             {
                 get
@@ -3634,7 +3634,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("GeneralOccupationalHygiene", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("GeneralOccupationalHygiene", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] GeneralOccupationalHygiene
             {
                 get
@@ -3648,7 +3648,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class PrecautionaryMeasures
         {
 
@@ -3661,7 +3661,7 @@
             private Phrase[] measuresToProtectEnvironmentField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProtectiveMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProtectiveMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ProtectiveMeasures
             {
                 get
@@ -3675,7 +3675,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("MeasuresToPreventFire", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("MeasuresToPreventFire", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] MeasuresToPreventFire
             {
                 get
@@ -3689,7 +3689,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("MeasuresToPreventAerosolAndDust", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("MeasuresToPreventAerosolAndDust", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] MeasuresToPreventAerosolAndDust
             {
                 get
@@ -3703,7 +3703,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("MeasuresToProtectEnvironment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("MeasuresToProtectEnvironment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] MeasuresToProtectEnvironment
             {
                 get
@@ -3717,7 +3717,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ConditionsForSafeStorage
         {
 
@@ -3740,7 +3740,7 @@
             private StorageStability[] storageStabilityField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("TechnicalMeasuresAndStorageConditions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("TechnicalMeasuresAndStorageConditions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] TechnicalMeasuresAndStorageConditions
             {
                 get
@@ -3754,7 +3754,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("PackagingContainer", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("PackagingContainer", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] PackagingContainer
             {
                 get
@@ -3768,7 +3768,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("RequirementsForStorageRoomsAndVessels", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("RequirementsForStorageRoomsAndVessels", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] RequirementsForStorageRoomsAndVessels
             {
                 get
@@ -3782,7 +3782,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("HintsOnStorageAssembly", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("HintsOnStorageAssembly", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] HintsOnStorageAssembly
             {
                 get
@@ -3796,7 +3796,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FurtherInformationOnStorageConditions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FurtherInformationOnStorageConditions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FurtherInformationOnStorageConditions
             {
                 get
@@ -3810,7 +3810,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PhysChemUnitValue StorageTemperature
             {
                 get
@@ -3824,7 +3824,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PhysChemUnitValue StoragePressure
             {
                 get
@@ -3838,7 +3838,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PhysChemUnitValue StorageAirHumidity
             {
                 get
@@ -3852,7 +3852,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("StorageStability", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("StorageStability", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public StorageStability[] StorageStability
             {
                 get
@@ -3866,7 +3866,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SpecificEndUses
         {
 
@@ -3875,7 +3875,7 @@
             private Phrase[] industrialSectorSpecificSolutionsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Recommendations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Recommendations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] Recommendations
             {
                 get
@@ -3889,7 +3889,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("IndustrialSectorSpecificSolutions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("IndustrialSectorSpecificSolutions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] IndustrialSectorSpecificSolutions
             {
                 get
@@ -3903,7 +3903,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class StabilityReactivity
         {
 
@@ -3922,7 +3922,7 @@
             private Phrase[] commentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ReactivityDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ReactivityDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ReactivityDescription
             {
                 get
@@ -3936,7 +3936,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("StabilityDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("StabilityDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] StabilityDescription
             {
                 get
@@ -3950,7 +3950,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("HazardousReactions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("HazardousReactions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] HazardousReactions
             {
                 get
@@ -3964,7 +3964,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ConditionsToAvoid", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ConditionsToAvoid", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ConditionsToAvoid
             {
                 get
@@ -3978,7 +3978,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("MaterialsToAvoid", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("MaterialsToAvoid", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] MaterialsToAvoid
             {
                 get
@@ -3992,7 +3992,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("HazardousDecompositionProducts", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("HazardousDecompositionProducts", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] HazardousDecompositionProducts
             {
                 get
@@ -4006,7 +4006,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] Comments
             {
                 get
@@ -4020,7 +4020,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class DisposalConsiderations
         {
 
@@ -4031,8 +4031,8 @@
             private Phrase[] commentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("WasteTreatment", typeof(WasteTreatment), Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
-            [System.Xml.Serialization.XmlElementAttribute("WasteTreatmentMethods", typeof(Phrase), Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("WasteTreatment", typeof(WasteTreatment), Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("WasteTreatmentMethods", typeof(Phrase), Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public object[] Items
             {
                 get
@@ -4046,7 +4046,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public EuRequirements EuRequirements
             {
                 get
@@ -4060,7 +4060,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] Comments
             {
                 get
@@ -4074,7 +4074,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class WasteTreatment
         {
 
@@ -4083,7 +4083,7 @@
             private Phrase[] packagingWasteField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProductWaste", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProductWaste", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ProductWaste
             {
                 get
@@ -4097,7 +4097,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("PackagingWaste", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("PackagingWaste", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] PackagingWaste
             {
                 get
@@ -4111,7 +4111,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EuRequirements
         {
 
@@ -4120,7 +4120,7 @@
             private Phrase[] euWasteRegulationsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public EuropeanWasteList EuropeanWasteList
             {
                 get
@@ -4134,7 +4134,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EuWasteRegulations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EuWasteRegulations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] EuWasteRegulations
             {
                 get
@@ -4148,7 +4148,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EuropeanWasteList
         {
 
@@ -4157,7 +4157,7 @@
             private WasteListEntry[] eWLPackingField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EWLProduct", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EWLProduct", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public WasteListEntry[] EWLProduct
             {
                 get
@@ -4171,7 +4171,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EWLPacking", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EWLPacking", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public WasteListEntry[] EWLPacking
             {
                 get
@@ -4185,7 +4185,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class TransportInformation
         {
 
@@ -4212,7 +4212,7 @@
             private Phrase[] commentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool DangerousGoodsAdrRidAdnImdgIcaoIata
             {
                 get
@@ -4240,7 +4240,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public UnNo UnNo
             {
                 get
@@ -4254,7 +4254,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ProperShippingName ProperShippingName
             {
                 get
@@ -4268,7 +4268,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public HazardClassification TransportHazardClassification
             {
                 get
@@ -4282,7 +4282,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PackingGroup PackingGroup
             {
                 get
@@ -4296,7 +4296,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public EnvironmentalHazards EnvironmentalHazards
             {
                 get
@@ -4310,7 +4310,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SpecialPrecautionUser", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SpecialPrecautionUser", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] SpecialPrecautionUser
             {
                 get
@@ -4324,7 +4324,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public TransportInBulk TransportInBulk
             {
                 get
@@ -4338,7 +4338,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public OtherTransportInformation OtherTransportInformation
             {
                 get
@@ -4352,7 +4352,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] Comments
             {
                 get
@@ -4366,7 +4366,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class UnNo
         {
 
@@ -4379,7 +4379,7 @@
             private Phrase[] commentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string UnNoAdrRidAdn
             {
                 get
@@ -4393,7 +4393,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string UnNoImdg
             {
                 get
@@ -4407,7 +4407,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string UnNoIcao
             {
                 get
@@ -4421,7 +4421,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] Comments
             {
                 get
@@ -4435,7 +4435,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ProperShippingName
         {
 
@@ -4448,7 +4448,7 @@
             private Phrase[] properShippingNameCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public AdrRidAdn AdrRidAdn
             {
                 get
@@ -4462,7 +4462,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Imdg Imdg
             {
                 get
@@ -4476,7 +4476,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Icao Icao
             {
                 get
@@ -4490,7 +4490,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ProperShippingNameComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ProperShippingNameComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ProperShippingNameComments
             {
                 get
@@ -4504,7 +4504,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class AdrRidAdn
         {
 
@@ -4517,7 +4517,7 @@
             private Phrase[] dangerReleasingSubstanceNationalAdrRidAdnField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ProperShippingNameEnglishAdrRidAdn
             {
                 get
@@ -4531,7 +4531,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ProperShippingNameNationalAdrRidAdn
             {
                 get
@@ -4545,7 +4545,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DangerReleasingSubstanceAdrRidAdn", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DangerReleasingSubstanceAdrRidAdn", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] DangerReleasingSubstanceAdrRidAdn
             {
                 get
@@ -4559,7 +4559,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DangerReleasingSubstanceNationalAdrRidAdn", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DangerReleasingSubstanceNationalAdrRidAdn", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] DangerReleasingSubstanceNationalAdrRidAdn
             {
                 get
@@ -4573,7 +4573,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class Imdg
         {
 
@@ -4582,7 +4582,7 @@
             private Phrase[] dangerReleasingSubstanceImdgField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ProperShippingNameEnglishImdg
             {
                 get
@@ -4596,7 +4596,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DangerReleasingSubstanceImdg", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DangerReleasingSubstanceImdg", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] DangerReleasingSubstanceImdg
             {
                 get
@@ -4610,7 +4610,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class Icao
         {
 
@@ -4619,7 +4619,7 @@
             private Phrase[] dangerReleasingSubstanceIcaoField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ProperShippingNameEnglishIcao
             {
                 get
@@ -4633,7 +4633,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("DangerReleasingSubstanceIcao", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("DangerReleasingSubstanceIcao", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] DangerReleasingSubstanceIcao
             {
                 get
@@ -4647,7 +4647,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardClassification
         {
 
@@ -4660,7 +4660,7 @@
             private Phrase[] transportHazardClassificationCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public HazardClassificationAdrRidAdn AdrRidAdn
             {
                 get
@@ -4674,7 +4674,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public HazardClassificationImdg Imdg
             {
                 get
@@ -4688,7 +4688,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public HazardClassificationIcaoIata IcaoIata
             {
                 get
@@ -4702,7 +4702,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("TransportHazardClassificationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("TransportHazardClassificationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] TransportHazardClassificationComments
             {
                 get
@@ -4716,7 +4716,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardClassificationAdrRidAdn
         {
 
@@ -4727,7 +4727,7 @@
             private Phrase[] subsidiaryRiskAdrRidAdnField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ClassAdrRidAdn
             {
                 get
@@ -4741,7 +4741,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ClassCodeAdrRidAdn
             {
                 get
@@ -4755,7 +4755,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SubsidiaryRiskAdrRidAdn", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SubsidiaryRiskAdrRidAdn", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] SubsidiaryRiskAdrRidAdn
             {
                 get
@@ -4769,7 +4769,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardClassificationImdg
         {
 
@@ -4780,7 +4780,7 @@
             private Phrase[] subsidiaryRiskImdgField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ClassImdg
             {
                 get
@@ -4794,7 +4794,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ClassCodeImdg
             {
                 get
@@ -4808,7 +4808,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SubsidiaryRiskImdg", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SubsidiaryRiskImdg", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] SubsidiaryRiskImdg
             {
                 get
@@ -4822,7 +4822,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardClassificationIcaoIata
         {
 
@@ -4833,7 +4833,7 @@
             private Phrase[] subsidiaryRiskIcaoIataField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ClassIcaoIata
             {
                 get
@@ -4847,7 +4847,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ClassCodeIcaoIata
             {
                 get
@@ -4861,7 +4861,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SubsidiaryRiskIcaoIata", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SubsidiaryRiskIcaoIata", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] SubsidiaryRiskIcaoIata
             {
                 get
@@ -4875,7 +4875,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class PackingGroup
         {
 
@@ -4894,7 +4894,7 @@
             private Phrase[] packingGroupCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PackingGroupEnum PackingGroupAdrRidAdn
             {
                 get
@@ -4922,7 +4922,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PackingGroupEnum PackingGroupImdg
             {
                 get
@@ -4950,7 +4950,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PackingGroupEnum PackingGroupIcaoIata
             {
                 get
@@ -4978,7 +4978,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("PackingGroupComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("PackingGroupComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] PackingGroupComments
             {
                 get
@@ -4992,7 +4992,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EnvironmentalHazards
         {
 
@@ -5009,7 +5009,7 @@
             private Phrase[] environmentalHazardsDescriptionField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool EnvironmHazardAccordAdrRidAdn
             {
                 get
@@ -5037,7 +5037,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public EnvironmentalHazardsImdg Imdg
             {
                 get
@@ -5051,7 +5051,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool EnvironmHazardAccordIcaoIata
             {
                 get
@@ -5079,7 +5079,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EnvironmentalHazardsDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EnvironmentalHazardsDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] EnvironmentalHazardsDescription
             {
                 get
@@ -5093,7 +5093,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EnvironmentalHazardsImdg
         {
 
@@ -5106,7 +5106,7 @@
             private bool marinePollutantFieldSpecified;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool EnvironmHazardAccordImdg
             {
                 get
@@ -5134,7 +5134,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool MarinePollutant
             {
                 get
@@ -5162,7 +5162,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class TransportInBulk
         {
 
@@ -5175,7 +5175,7 @@
             private Phrase[] pollutionCategoryField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool TransportInBulkValue
             {
                 get
@@ -5189,7 +5189,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string ProductName
             {
                 get
@@ -5203,7 +5203,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ShipType", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ShipType", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ShipType
             {
                 get
@@ -5217,7 +5217,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("PollutionCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("PollutionCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] PollutionCategory
             {
                 get
@@ -5231,7 +5231,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class OtherTransportInformation
         {
 
@@ -5250,7 +5250,7 @@
             private Phrase[] icaoIataOtherInfoField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public TransportHazardLabels TransportHazardLabels
             {
                 get
@@ -5264,7 +5264,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("OtherTransportGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("OtherTransportGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] OtherTransportGeneral
             {
                 get
@@ -5278,7 +5278,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public AdrOtherInformation AdrOtherInformation
             {
                 get
@@ -5292,7 +5292,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("RidOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("RidOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] RidOtherInfo
             {
                 get
@@ -5306,7 +5306,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public AdnOtherInformation AdnOtherInformation
             {
                 get
@@ -5320,7 +5320,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ImdgOtherInformation ImdgOtherInformation
             {
                 get
@@ -5334,7 +5334,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("IcaoIataOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("IcaoIataOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] IcaoIataOtherInfo
             {
                 get
@@ -5348,7 +5348,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class TransportHazardLabels
         {
 
@@ -5359,7 +5359,7 @@
             private Phrase[] icaoIataHazardLabelField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AdrRidAdnHazardLabel", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AdrRidAdnHazardLabel", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AdrRidAdnHazardLabel
             {
                 get
@@ -5373,7 +5373,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ImdgHazardLabel", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ImdgHazardLabel", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ImdgHazardLabel
             {
                 get
@@ -5387,7 +5387,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("IcaoIataHazardLabel", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("IcaoIataHazardLabel", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] IcaoIataHazardLabel
             {
                 get
@@ -5401,7 +5401,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class AdrOtherInformation
         {
 
@@ -5416,7 +5416,7 @@
             private Phrase adrHazardIdentificationNoField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AdrOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AdrOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AdrOtherInfo
             {
                 get
@@ -5430,7 +5430,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AdrTunnelRestrictionCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AdrTunnelRestrictionCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AdrTunnelRestrictionCode
             {
                 get
@@ -5444,7 +5444,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AdrLimitedQty", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AdrLimitedQty", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AdrLimitedQty
             {
                 get
@@ -5458,7 +5458,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AdrTransportCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AdrTransportCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AdrTransportCategory
             {
                 get
@@ -5472,7 +5472,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase AdrHazardIdentificationNo
             {
                 get
@@ -5486,7 +5486,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class AdnOtherInformation
         {
 
@@ -5495,7 +5495,7 @@
             private Phrase[] adnSpecialProvisionsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AdnOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AdnOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AdnOtherInfo
             {
                 get
@@ -5509,7 +5509,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AdnSpecialProvisions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AdnSpecialProvisions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AdnSpecialProvisions
             {
                 get
@@ -5523,7 +5523,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ImdgOtherInformation
         {
 
@@ -5534,7 +5534,7 @@
             private Phrase[] imdgLimitedQtyField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ImdgOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ImdgOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ImdgOtherInfo
             {
                 get
@@ -5548,7 +5548,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ImdgEmsCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ImdgEmsCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string[] ImdgEmsCode
             {
                 get
@@ -5562,7 +5562,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ImdgLimitedQty", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ImdgLimitedQty", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ImdgLimitedQty
             {
                 get
@@ -5576,7 +5576,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class RegulatoryInfo
         {
 
@@ -5595,7 +5595,7 @@
             private Phrase[] regulatoryInfoAdditionalInfoField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SpecificProvisionsRelatedToProduct SpecificProvisionsRelatedToProduct
             {
                 get
@@ -5609,7 +5609,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalLegislation NationalLegislation
             {
                 get
@@ -5623,7 +5623,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("RegulatoryInformationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("RegulatoryInformationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] RegulatoryInformationComments
             {
                 get
@@ -5637,7 +5637,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public DatasheetFeedDatasheetRegulatoryInfoChemicalSafetyAssessmentInfo ChemicalSafetyAssessmentInfo
             {
                 get
@@ -5651,7 +5651,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ChemicalSafetyReport ChemicalSafetyReport
             {
                 get
@@ -5665,7 +5665,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ExposureScenario ExposureScenario
             {
                 get
@@ -5679,7 +5679,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("RegulatoryInfoAdditionalInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("RegulatoryInfoAdditionalInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] RegulatoryInfoAdditionalInfo
             {
                 get
@@ -5693,14 +5693,14 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SpecificProvisionsRelatedToProduct
         {
 
             private SpecificProvisionsRelatedToProductEuLegislation euLegislationField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SpecificProvisionsRelatedToProductEuLegislation EuLegislation
             {
                 get
@@ -5714,7 +5714,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SpecificProvisionsRelatedToProductEuLegislation
         {
 
@@ -5741,7 +5741,7 @@
             private Phrase[] euRestrictionsOfOccupationField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public AssessmentEnum AssessedLegislation
             {
                 get
@@ -5769,7 +5769,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EuAuthorisation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EuAuthorisation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] EuAuthorisation
             {
                 get
@@ -5783,7 +5783,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EuRestrictionsOnUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EuRestrictionsOnUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] EuRestrictionsOnUse
             {
                 get
@@ -5797,7 +5797,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("RestrictionsAccordingReach", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("RestrictionsAccordingReach", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] RestrictionsAccordingReach
             {
                 get
@@ -5811,7 +5811,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Detergents", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Detergents", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] Detergents
             {
                 get
@@ -5825,7 +5825,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public SpecificProvisionsRelatedToProductEuLegislationVoc Voc
             {
                 get
@@ -5839,7 +5839,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public EuLegislationIndustrialEmissions IndustrialEmissions
             {
                 get
@@ -5853,7 +5853,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public EuLegislationCertainFluorinatedGreenhouseGases CertainFluorinatedGreenhouseGases
             {
                 get
@@ -5867,7 +5867,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("OtherEuLegislation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("OtherEuLegislation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] OtherEuLegislation
             {
                 get
@@ -5881,7 +5881,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EuRestrictionsOfOccupation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EuRestrictionsOfOccupation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] EuRestrictionsOfOccupation
             {
                 get
@@ -5895,7 +5895,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SpecificProvisionsRelatedToProductEuLegislationVoc
         {
 
@@ -5906,7 +5906,7 @@
             private Phrase[] vocRestrictionCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PercentageValue VocInPercentByWeight
             {
                 get
@@ -5920,7 +5920,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public UnitValue VocValue
             {
                 get
@@ -5934,7 +5934,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("VocRestrictionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("VocRestrictionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] VocRestrictionComments
             {
                 get
@@ -5948,7 +5948,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EuLegislationIndustrialEmissions
         {
 
@@ -5959,7 +5959,7 @@
             private Phrase otherInformationField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PercentageValue VocInPercentByWeight
             {
                 get
@@ -5973,7 +5973,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public UnitValue VocValue
             {
                 get
@@ -5987,7 +5987,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase OtherInformation
             {
                 get
@@ -6001,7 +6001,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EuLegislationCertainFluorinatedGreenhouseGases
         {
 
@@ -6010,7 +6010,7 @@
             private Phrase[] fluorinatedGreenhouseGasesCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase FluorinatedGreenhouseGasesMethod
             {
                 get
@@ -6024,7 +6024,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FluorinatedGreenhouseGasesComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FluorinatedGreenhouseGasesComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FluorinatedGreenhouseGasesComments
             {
                 get
@@ -6038,7 +6038,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class NationalLegislation
         {
 
@@ -6141,7 +6141,7 @@
             private NationalExtensionVA nationalLegislationVaticanCityStateField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionAD NationalLegislationAndorra
             {
                 get
@@ -6155,7 +6155,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionAL NationalLegislationAlbania
             {
                 get
@@ -6169,7 +6169,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionAM NationalLegislationArmenia
             {
                 get
@@ -6183,7 +6183,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionAT NationalLegislationAustria
             {
                 get
@@ -6197,7 +6197,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionBA NationalLegislationBosniaAndHerzegovina
             {
                 get
@@ -6211,7 +6211,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionBE NationalLegislationBelgium
             {
                 get
@@ -6225,7 +6225,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionBG NationalLegislationBulgaria
             {
                 get
@@ -6239,7 +6239,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionBY NationalLegislationBelarus
             {
                 get
@@ -6253,7 +6253,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionCH NationalLegislationSwitzerland
             {
                 get
@@ -6267,7 +6267,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionCZ NationalLegislationCzechRepublic
             {
                 get
@@ -6281,7 +6281,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionDE NationalLegislationGermany
             {
                 get
@@ -6295,7 +6295,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionDK NationalLegislationDemnark
             {
                 get
@@ -6309,7 +6309,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionEE NationalLegislationEstonia
             {
                 get
@@ -6323,7 +6323,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionES NationalLegislationSpain
             {
                 get
@@ -6337,7 +6337,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionFI NationalLegislationFinland
             {
                 get
@@ -6351,7 +6351,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionFR NationalLegislationFrance
             {
                 get
@@ -6365,7 +6365,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionGB NationalLegislationUnitedKingdom
             {
                 get
@@ -6379,7 +6379,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionGE NationalLegislationGeorgia
             {
                 get
@@ -6393,7 +6393,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionGR NationalLegislationGreece
             {
                 get
@@ -6407,7 +6407,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionHR NationalLegislationCroatia
             {
                 get
@@ -6421,7 +6421,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionHU NationalLegislationHungary
             {
                 get
@@ -6435,7 +6435,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionIE NationalLegislationIreland
             {
                 get
@@ -6449,7 +6449,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionIS NationalLegislationIceland
             {
                 get
@@ -6463,7 +6463,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionIT NationalLegislationItaly
             {
                 get
@@ -6477,7 +6477,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionKZ NationalLegislationKazakhstan
             {
                 get
@@ -6491,7 +6491,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionLI NationalLegislationLiechtenstein
             {
                 get
@@ -6505,7 +6505,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionLT NationalLegislationLithuania
             {
                 get
@@ -6519,7 +6519,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionLU NationalLegislationLuxembourg
             {
                 get
@@ -6533,7 +6533,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionLV NationalLegislationLatvia
             {
                 get
@@ -6547,7 +6547,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionMC NationalLegislationMonaco
             {
                 get
@@ -6561,7 +6561,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionMD NationalLegislationRepublicOfMoldova
             {
                 get
@@ -6575,7 +6575,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionME NationalLegislationMontenegro
             {
                 get
@@ -6589,7 +6589,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionMK NationalLegislationTheFormerYugoslavRepublicOfMacedonia
             {
                 get
@@ -6603,7 +6603,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionMT NationalLegislationMalta
             {
                 get
@@ -6617,7 +6617,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionNL NationalLegislationNetherlands
             {
                 get
@@ -6631,7 +6631,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionNO NationalLegislationNorway
             {
                 get
@@ -6645,7 +6645,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionPL NationalLegislationPoland
             {
                 get
@@ -6659,7 +6659,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionPT NationalLegislationPortugal
             {
                 get
@@ -6673,7 +6673,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionRO NationalLegislationRomania
             {
                 get
@@ -6687,7 +6687,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionRS NationalLegislationSerbia
             {
                 get
@@ -6701,7 +6701,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionRU NationalLegislationRussianFederation
             {
                 get
@@ -6715,7 +6715,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionSE NationalLegislationSweden
             {
                 get
@@ -6729,7 +6729,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionSI NationalLegislationSlovenia
             {
                 get
@@ -6743,7 +6743,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionSK NationalLegislationSlovakia
             {
                 get
@@ -6757,7 +6757,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionSM NationalLegislationSanMarino
             {
                 get
@@ -6771,7 +6771,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionTR NationalLegislationTurkey
             {
                 get
@@ -6785,7 +6785,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionUA NationalLegislationUkraine
             {
                 get
@@ -6799,7 +6799,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionUZ NationalLegislationUzbekistan
             {
                 get
@@ -6813,7 +6813,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public NationalExtensionVA NationalLegislationVaticanCityState
             {
                 get
@@ -6827,7 +6827,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class DatasheetFeedDatasheetRegulatoryInfoChemicalSafetyAssessmentInfo
         {
 
@@ -6838,7 +6838,7 @@
             private Phrase[] chemicalSafetyAssessmentField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool ChemicalSafetyAssessmentCarriedOut
             {
                 get
@@ -6866,7 +6866,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ChemicalSafetyAssessment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ChemicalSafetyAssessment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ChemicalSafetyAssessment
             {
                 get
@@ -6880,7 +6880,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ChemicalSafetyReport
         {
 
@@ -6891,7 +6891,7 @@
             private Phrase[] csrLocationField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool CsrRequired
             {
                 get
@@ -6919,7 +6919,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("CsrLocation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("CsrLocation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] CsrLocation
             {
                 get
@@ -6933,7 +6933,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ExposureScenario
         {
 
@@ -6944,7 +6944,7 @@
             private Phrase[] exposureScenarioCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public bool MixtureExposureScenarioInAnnex
             {
                 get
@@ -6972,7 +6972,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ExposureScenarioComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ExposureScenarioComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ExposureScenarioComments
             {
                 get
@@ -6986,7 +6986,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class OtherInformation
         {
 
@@ -7025,7 +7025,7 @@
             private Phrase[] contentsOrIndexOfAnnexedEsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ManufacturersNotes", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ManufacturersNotes", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ManufacturersNotes
             {
                 get
@@ -7039,7 +7039,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("RelevantRiskPhrases", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("RelevantRiskPhrases", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public RiskPhrase[] RelevantRiskPhrases
             {
                 get
@@ -7053,7 +7053,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("RelevantHazardStatements", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("RelevantHazardStatements", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public HazardStatement[] RelevantHazardStatements
             {
                 get
@@ -7067,7 +7067,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ClassificationAccordingClp ClassificationAccordingClp
             {
                 get
@@ -7081,7 +7081,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("EducationalRecommendations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("EducationalRecommendations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] EducationalRecommendations
             {
                 get
@@ -7095,7 +7095,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("RecommendedRestriction", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("RecommendedRestriction", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] RecommendedRestriction
             {
                 get
@@ -7109,7 +7109,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FurtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FurtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FurtherInformation
             {
                 get
@@ -7123,7 +7123,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("MainInformationSource", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("MainInformationSource", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] MainInformationSource
             {
                 get
@@ -7137,7 +7137,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("AbbreviationsAndAcronymsUsed", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("AbbreviationsAndAcronymsUsed", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] AbbreviationsAndAcronymsUsed
             {
                 get
@@ -7151,7 +7151,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public RevisionInformation RevisionInformation
             {
                 get
@@ -7165,7 +7165,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("QualityAssuranceStatement", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("QualityAssuranceStatement", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] QualityAssuranceStatement
             {
                 get
@@ -7179,7 +7179,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("SdsStatus", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("SdsStatus", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] SdsStatus
             {
                 get
@@ -7193,7 +7193,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ResponsibleOwnerSds", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ResponsibleOwnerSds", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ResponsibleOwnerSds
             {
                 get
@@ -7207,7 +7207,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PreparedBy SdsPreparedBy
             {
                 get
@@ -7221,7 +7221,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] Comments
             {
                 get
@@ -7235,7 +7235,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("PositiveEcolabelling", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("PositiveEcolabelling", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public PositiveEcolabelling[] PositiveEcolabelling
             {
                 get
@@ -7249,7 +7249,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ContentsOrIndexOfAnnexedEs", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ContentsOrIndexOfAnnexedEs", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ContentsOrIndexOfAnnexedEs
             {
                 get
@@ -7263,7 +7263,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ClassificationAccordingClp
         {
 
@@ -7274,7 +7274,7 @@
             private Phrase[] clpClassificationNotesField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ClpHazardClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ClpHazardClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ClassificationAccordingClpClpHazardClassification[] ClpHazardClassification
             {
                 get
@@ -7288,7 +7288,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ClpClassificationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ClpClassificationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ClpClassificationComments
             {
                 get
@@ -7302,7 +7302,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("ClpClassificationNotes", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("ClpClassificationNotes", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] ClpClassificationNotes
             {
                 get
@@ -7316,7 +7316,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ClassificationAccordingClpClpHazardClassification
         {
 
@@ -7329,7 +7329,7 @@
             private ClpHazardClassificationMultiplyingFactor multiplyingFactorField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public HazardClassCategoryEnum ClpHazardClassCategory
             {
                 get
@@ -7343,7 +7343,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public HazardStatement ClpHazardStatement
             {
                 get
@@ -7357,7 +7357,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase ClpClassificationProcedure
             {
                 get
@@ -7371,7 +7371,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public ClpHazardClassificationMultiplyingFactor MultiplyingFactor
             {
                 get
@@ -7385,7 +7385,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ClpHazardClassificationMultiplyingFactor
         {
 
@@ -7394,7 +7394,7 @@
             private Phrase[] factorCommentsField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string FactorValue
             {
                 get
@@ -7408,7 +7408,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("FactorComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("FactorComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] FactorComments
             {
                 get
@@ -7422,7 +7422,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class RevisionInformation
         {
 
@@ -7437,7 +7437,7 @@
             private bool lastUpdateDateFieldSpecified;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string RevisionNo
             {
                 get
@@ -7451,7 +7451,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase RevisionComments
             {
                 get
@@ -7465,7 +7465,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("RevisionResponsible", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("RevisionResponsible", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public Phrase[] RevisionResponsible
             {
                 get
@@ -7479,7 +7479,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
             public System.DateTime LastUpdateDate
             {
                 get
@@ -7507,7 +7507,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class PreparedBy
         {
 
@@ -7518,7 +7518,7 @@
             private string[] emailField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string Name
             {
                 get
@@ -7532,7 +7532,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string Phone
             {
                 get
@@ -7546,7 +7546,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute("Email", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement("Email", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string[] Email
             {
                 get
@@ -7560,7 +7560,7 @@
             }
         }
 
-        [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+        [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class PositiveEcolabelling
         {
 
@@ -7573,7 +7573,7 @@
             private string licenceNoField;
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string EcoLabelName
             {
                 get
@@ -7587,7 +7587,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified, DataType = "date")]
             public System.DateTime ExpirationDate
             {
                 get
@@ -7615,7 +7615,7 @@
             }
 
             /// <remarks/>
-            [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+            [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
             public string LicenceNo
             {
                 get

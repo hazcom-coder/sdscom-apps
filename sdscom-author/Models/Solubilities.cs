@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class SolubilitiesSolubility
     {
 
@@ -16,7 +16,7 @@ namespace SDSComApp.Models
         private PhysChemUnitValueWithTemperature[] valueField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SolubilityMediumEnum Medium
         {
             get
@@ -30,7 +30,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase OtherMediumDescription
         {
             get
@@ -44,7 +44,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Value", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Value", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] Value
         {
             get
@@ -67,7 +67,7 @@ namespace SDSComApp.Models
         private SolubilitiesSolubility[] solubilityField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SolubilityDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SolubilityDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SolubilityDescription
         {
             get
@@ -81,7 +81,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Solubility", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Solubility", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SolubilitiesSolubility[] Solubility
         {
             get

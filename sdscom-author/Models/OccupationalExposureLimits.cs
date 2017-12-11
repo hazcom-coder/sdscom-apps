@@ -27,7 +27,7 @@ namespace SDSComApp.Models
         private Phrase[] commentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureLimitValueTypeEnum LimitValueTypeWithCountryOrOrganisation
         {
             get
@@ -55,7 +55,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Limit8H", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Limit8H", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue[] Limit8H
         {
             get
@@ -69,7 +69,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("LimitShortTerm", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("LimitShortTerm", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public STEL[] LimitShortTerm
         {
             get
@@ -83,7 +83,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PeakLimitation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PeakLimitation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public OccupationalExposureLimitPeakLimitation[] PeakLimitation
         {
             get
@@ -97,7 +97,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase RecommendedMonitoringProcedure
         {
             get
@@ -111,7 +111,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ExposureLimitLetter", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ExposureLimitLetter", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public OccupationalExposureLimitExposureLimitLetter[] ExposureLimitLetter
         {
             get
@@ -125,7 +125,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase Reference
         {
             get
@@ -139,7 +139,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Comments
         {
             get
@@ -154,7 +154,7 @@ namespace SDSComApp.Models
     }
 
     /// <remarks/>
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class OccupationalExposureLimitPeakLimitation
     {
 
@@ -163,7 +163,7 @@ namespace SDSComApp.Models
         private Value peakLimitationOverflowFactorField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue Value
         {
             get
@@ -177,7 +177,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Value PeakLimitationOverflowFactor
         {
             get
@@ -191,7 +191,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class OccupationalExposureLimitExposureLimitLetter
     {
 
@@ -200,7 +200,7 @@ namespace SDSComApp.Models
         private Phrase letterDescriptionField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase LetterCode
         {
             get
@@ -214,7 +214,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase LetterDescription
         {
             get
@@ -251,7 +251,7 @@ namespace SDSComApp.Models
         private Phrase[] exposureControlCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PreventiveIndustrialMedicalExaminationRequired", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PreventiveIndustrialMedicalExaminationRequired", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] PreventiveIndustrialMedicalExaminationRequired
         {
             get
@@ -265,7 +265,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionControlParameters ControlParameters
         {
             get
@@ -279,7 +279,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionSummaryRMMeasures SummaryRMMeasures
         {
             get
@@ -293,7 +293,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionExposureControlAppropriateMeasures ExposureControlAppropriateMeasures
         {
             get
@@ -307,7 +307,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionPersonalProtectionEquipment PersonalProtectionEquipment
         {
             get
@@ -321,7 +321,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionEnvironmentalExposureControls EnvironmentalExposureControls
         {
             get
@@ -335,7 +335,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionConsumerExposureControl ConsumerExposureControl
         {
             get
@@ -349,7 +349,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ExposureControlsPersonalProtectionAdditionalInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ExposureControlsPersonalProtectionAdditionalInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ExposureControlsPersonalProtectionAdditionalInfo
         {
             get
@@ -363,7 +363,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ExposureControlComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ExposureControlComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ExposureControlComments
         {
             get
@@ -377,7 +377,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionControlParameters
     {
 
@@ -394,7 +394,7 @@ namespace SDSComApp.Models
         private Phrase[] controlParametersCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionControlParametersExposureGuidelines ExposureGuidelines
         {
             get
@@ -408,7 +408,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionControlParametersBiologicalLimitValues BiologicalLimitValues
         {
             get
@@ -422,7 +422,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DerivedNoEffectLevel", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DerivedNoEffectLevel", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DNEL[] DerivedNoEffectLevel
         {
             get
@@ -436,7 +436,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DerivedMinimalEffectLevel", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DerivedMinimalEffectLevel", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DMEL[] DerivedMinimalEffectLevel
         {
             get
@@ -450,7 +450,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PredictedNoEffectConcentration", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PredictedNoEffectConcentration", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PNEC[] PredictedNoEffectConcentration
         {
             get
@@ -464,7 +464,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ControlParametersComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ControlParametersComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ControlParametersComments
         {
             get
@@ -478,7 +478,7 @@ namespace SDSComApp.Models
         }
     }
 
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+[System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionControlParametersExposureGuidelines
     {
 
@@ -487,7 +487,7 @@ namespace SDSComApp.Models
         private OccupationalExposureLimit[] intendedUseOccupationalExposureLimitField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OccupationalExposureLimit", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OccupationalExposureLimit", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public OccupationalExposureLimit[] OccupationalExposureLimit
         {
             get
@@ -501,7 +501,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IntendedUseOccupationalExposureLimit", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("IntendedUseOccupationalExposureLimit", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public OccupationalExposureLimit[] IntendedUseOccupationalExposureLimit
         {
             get
@@ -515,7 +515,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionControlParametersBiologicalLimitValues
     {
 
@@ -526,7 +526,7 @@ namespace SDSComApp.Models
         private Phrase[] biologicalLimitValuesOtherInformationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BiologicalLimitValue", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BiologicalLimitValue", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public BiologicalLimitValue[] BiologicalLimitValue
         {
             get
@@ -540,7 +540,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IntendedUseBiologicalLimitValue", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("IntendedUseBiologicalLimitValue", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public BiologicalLimitValue[] IntendedUseBiologicalLimitValue
         {
             get
@@ -554,7 +554,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BiologicalLimitValuesOtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BiologicalLimitValuesOtherInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] BiologicalLimitValuesOtherInformation
         {
             get
@@ -568,7 +568,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionSummaryRMMeasures
     {
 
@@ -579,7 +579,7 @@ namespace SDSComApp.Models
         private ExposureControlPersonalProtectionSummaryRMMeasuresRMMControlBandingApproach[] rMMControlBandingApproachField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SummaryRMMeasuresMan", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SummaryRMMeasuresMan", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SummaryRMMeasuresMan
         {
             get
@@ -593,7 +593,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SummaryRMMeasuresEnvironm", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SummaryRMMeasuresEnvironm", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SummaryRMMeasuresEnvironm
         {
             get
@@ -607,7 +607,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RMMControlBandingApproach", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RMMControlBandingApproach", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionSummaryRMMeasuresRMMControlBandingApproach[] RMMControlBandingApproach
         {
             get
@@ -621,7 +621,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionSummaryRMMeasuresRMMControlBandingApproach
     {
 
@@ -638,7 +638,7 @@ namespace SDSComApp.Models
         private Phrase[] commentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase Task
         {
             get
@@ -652,7 +652,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase HazardBand
         {
             get
@@ -666,7 +666,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase ScaleOfUse
         {
             get
@@ -680,7 +680,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase AbilityToBecomeAirborne
         {
             get
@@ -694,7 +694,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase ControlApproach
         {
             get
@@ -708,7 +708,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Comments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Comments
         {
             get
@@ -722,7 +722,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionExposureControlAppropriateMeasures
     {
 
@@ -737,7 +737,7 @@ namespace SDSComApp.Models
         private Phrase[] technicalMeasuresField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AppropriateEngineeringControls", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AppropriateEngineeringControls", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AppropriateEngineeringControls
         {
             get
@@ -751,7 +751,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ProductRelatedMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ProductRelatedMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ProductRelatedMeasures
         {
             get
@@ -765,7 +765,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("InstructionalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("InstructionalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] InstructionalMeasures
         {
             get
@@ -779,7 +779,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OrganisationalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OrganisationalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OrganisationalMeasures
         {
             get
@@ -793,7 +793,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TechnicalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("TechnicalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] TechnicalMeasures
         {
             get
@@ -807,7 +807,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipment
     {
 
@@ -828,7 +828,7 @@ namespace SDSComApp.Models
         private SafetySign[] safetySignsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionPersonalProtectionEquipmentRespiratoryProtection RespiratoryProtection
         {
             get
@@ -842,7 +842,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionPersonalProtectionEquipmentEyeProtection EyeProtection
         {
             get
@@ -856,7 +856,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionPersonalProtectionEquipmentHandProtection HandProtection
         {
             get
@@ -870,7 +870,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionPersonalProtectionEquipmentSkinProtection SkinProtection
         {
             get
@@ -884,7 +884,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ThermalHazardsProtection", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ThermalHazardsProtection", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ThermalHazardsProtection
         {
             get
@@ -898,7 +898,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PersonalProtectionEquipmentComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PersonalProtectionEquipmentComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] PersonalProtectionEquipmentComments
         {
             get
@@ -912,7 +912,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SpecificHygieneMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SpecificHygieneMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SpecificHygieneMeasures
         {
             get
@@ -926,7 +926,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetySigns", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetySigns", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SafetySign[] SafetySigns
         {
             get
@@ -940,7 +940,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipmentRespiratoryProtection
     {
 
@@ -961,7 +961,7 @@ namespace SDSComApp.Models
         private Phrase[] respiratoryProtectionCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RespiratoryProtectionGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RespiratoryProtectionGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] RespiratoryProtectionGeneral
         {
             get
@@ -975,7 +975,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RespiratoryProtectionNecessaryAt", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RespiratoryProtectionNecessaryAt", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] RespiratoryProtectionNecessaryAt
         {
             get
@@ -989,7 +989,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TasksNeedingRespiratoryProtection", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("TasksNeedingRespiratoryProtection", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] TasksNeedingRespiratoryProtection
         {
             get
@@ -1003,7 +1003,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SuitableRespiratoryProtectionEquipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SuitableRespiratoryProtectionEquipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SuitableRespiratoryProtectionEquipment
         {
             get
@@ -1017,7 +1017,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RecommendedRespiratoryProtectionArticles", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RecommendedRespiratoryProtectionArticles", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public RespiratoryProtectionArticle[] RecommendedRespiratoryProtectionArticles
         {
             get
@@ -1031,7 +1031,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AdditionalRespiratoryProtectionMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AdditionalRespiratoryProtectionMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AdditionalRespiratoryProtectionMeasures
         {
             get
@@ -1045,7 +1045,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ReferenceRelevantStandard", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ReferenceRelevantStandard", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ReferenceRelevantStandard
         {
             get
@@ -1059,7 +1059,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RespiratoryProtectionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RespiratoryProtectionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] RespiratoryProtectionComments
         {
             get
@@ -1073,7 +1073,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipmentEyeProtection
     {
 
@@ -1092,7 +1092,7 @@ namespace SDSComApp.Models
         private Phrase[] eyeProtectionCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RequiredProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RequiredProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] RequiredProperties
         {
             get
@@ -1106,7 +1106,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SuitableEyeProtection", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SuitableEyeProtection", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SuitableEyeProtection
         {
             get
@@ -1120,7 +1120,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("UnsuitableEyeProtection", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("UnsuitableEyeProtection", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] UnsuitableEyeProtection
         {
             get
@@ -1134,7 +1134,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EyeProtectionEquipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EyeProtectionEquipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ProtectionArticle[] EyeProtectionEquipment
         {
             get
@@ -1148,7 +1148,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AdditionalEyeProtectionMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AdditionalEyeProtectionMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AdditionalEyeProtectionMeasures
         {
             get
@@ -1162,7 +1162,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ReferenceRelevantStandard", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ReferenceRelevantStandard", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ReferenceRelevantStandard
         {
             get
@@ -1176,7 +1176,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EyeProtectionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EyeProtectionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] EyeProtectionComments
         {
             get
@@ -1190,7 +1190,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipmentHandProtection
     {
 
@@ -1225,7 +1225,7 @@ namespace SDSComApp.Models
         private Phrase[] handProtectionCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SkinHandProtectionShortTermContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SkinHandProtectionShortTermContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SkinHandProtectionShortTermContact
         {
             get
@@ -1239,7 +1239,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SkinHandProtectionLongTermContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SkinHandProtectionLongTermContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SkinHandProtectionLongTermContact
         {
             get
@@ -1253,7 +1253,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SuitableGlovesType", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SuitableGlovesType", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SuitableGlovesType
         {
             get
@@ -1267,7 +1267,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SuitableMaterials", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SuitableMaterials", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SuitableMaterials
         {
             get
@@ -1281,7 +1281,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("UnsuitableMaterials", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("UnsuitableMaterials", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] UnsuitableMaterials
         {
             get
@@ -1295,7 +1295,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HandProtectionNecessaryProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("HandProtectionNecessaryProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] HandProtectionNecessaryProperties
         {
             get
@@ -1309,7 +1309,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("GloveBreakthroughTime", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("GloveBreakthroughTime", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue[] GloveBreakthroughTime
         {
             get
@@ -1323,7 +1323,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ThicknessOfGloveMaterial", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ThicknessOfGloveMaterial", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue[] ThicknessOfGloveMaterial
         {
             get
@@ -1337,7 +1337,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("WearDurationAtOccationalContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("WearDurationAtOccationalContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] WearDurationAtOccationalContact
         {
             get
@@ -1351,7 +1351,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("WearDurationAtPermanentContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("WearDurationAtPermanentContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] WearDurationAtPermanentContact
         {
             get
@@ -1365,7 +1365,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HandProtectionEquipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("HandProtectionEquipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ProtectionArticle[] HandProtectionEquipment
         {
             get
@@ -1379,7 +1379,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Equipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Equipment", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionPersonalProtectionEquipmentHandProtectionEquipment[] Equipment
         {
             get
@@ -1393,7 +1393,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AdditionalHandProtectionMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AdditionalHandProtectionMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AdditionalHandProtectionMeasures
         {
             get
@@ -1407,7 +1407,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ReferenceRelevantStandard", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ReferenceRelevantStandard", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ReferenceRelevantStandard
         {
             get
@@ -1421,7 +1421,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HandProtectionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("HandProtectionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] HandProtectionComments
         {
             get
@@ -1435,7 +1435,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipmentHandProtectionEquipment
     {
 
@@ -1454,7 +1454,7 @@ namespace SDSComApp.Models
         private ProtectionArticle[] articleField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase SuitableGlovesType
         {
             get
@@ -1468,7 +1468,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase SuitableMaterial
         {
             get
@@ -1482,7 +1482,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue GloveBreakthroughTime
         {
             get
@@ -1496,7 +1496,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue ThicknessOfGloveMaterial
         {
             get
@@ -1510,7 +1510,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue MaxWearDurationOccasionalContact
         {
             get
@@ -1524,7 +1524,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue MaxWearDurationPermanentContact
         {
             get
@@ -1538,7 +1538,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Article", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Article", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ProtectionArticle[] Article
         {
             get
@@ -1552,7 +1552,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipmentSkinProtection
     {
 
@@ -1575,7 +1575,7 @@ namespace SDSComApp.Models
         private Phrase[] skinProtectionCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SuitableProtectiveClothing", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SuitableProtectiveClothing", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SuitableProtectiveClothing
         {
             get
@@ -1589,7 +1589,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("UnsuitableProtectiveClothing", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("UnsuitableProtectiveClothing", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] UnsuitableProtectiveClothing
         {
             get
@@ -1603,7 +1603,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ProtectiveClothingNecessaryProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ProtectiveClothingNecessaryProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ProtectiveClothingNecessaryProperties
         {
             get
@@ -1617,7 +1617,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ProtectiveClothingRecommendedMaterial", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ProtectiveClothingRecommendedMaterial", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ProtectiveClothingRecommendedMaterial
         {
             get
@@ -1631,7 +1631,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RecommendedProtectiveClothingArticles", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RecommendedProtectiveClothingArticles", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ProtectionArticle[] RecommendedProtectiveClothingArticles
         {
             get
@@ -1645,7 +1645,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AdditionalSkinProtectionMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AdditionalSkinProtectionMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AdditionalSkinProtectionMeasures
         {
             get
@@ -1659,7 +1659,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SkinBodyOtherProtection", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SkinBodyOtherProtection", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SkinBodyOtherProtection
         {
             get
@@ -1673,7 +1673,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ReferenceRelevantStandard", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ReferenceRelevantStandard", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ReferenceRelevantStandard
         {
             get
@@ -1687,7 +1687,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SkinProtectionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SkinProtectionComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SkinProtectionComments
         {
             get
@@ -1701,7 +1701,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionEnvironmentalExposureControls
     {
 
@@ -1712,7 +1712,7 @@ namespace SDSComApp.Models
         private Phrase[] environmentalExposureControlCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EnvironmentalExposureControls", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EnvironmentalExposureControls", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] EnvironmentalExposureControls
         {
             get
@@ -1726,7 +1726,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ExposureControlPersonalProtectionEnvironmentalExposureControlsAppropriateEnvionmentalExposureControl AppropriateEnvionmentalExposureControl
         {
             get
@@ -1740,7 +1740,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EnvironmentalExposureControlComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EnvironmentalExposureControlComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] EnvironmentalExposureControlComments
         {
             get
@@ -1754,7 +1754,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionEnvironmentalExposureControlsAppropriateEnvionmentalExposureControl
     {
 
@@ -1767,7 +1767,7 @@ namespace SDSComApp.Models
         private Phrase[] technicalMeasuresField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ProductRelatedMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ProductRelatedMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ProductRelatedMeasures
         {
             get
@@ -1781,7 +1781,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("InstructionalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("InstructionalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] InstructionalMeasures
         {
             get
@@ -1795,7 +1795,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OrganisationalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OrganisationalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OrganisationalMeasures
         {
             get
@@ -1809,7 +1809,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TechnicalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("TechnicalMeasures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] TechnicalMeasures
         {
             get
@@ -1823,7 +1823,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionConsumerExposureControl
     {
 
@@ -1832,7 +1832,7 @@ namespace SDSComApp.Models
         private Phrase[] measuresOnServiceLifeInArticlesField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("MeasuresOnConsumerUseOfTheChemical", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("MeasuresOnConsumerUseOfTheChemical", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] MeasuresOnConsumerUseOfTheChemical
         {
             get
@@ -1846,7 +1846,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("MeasuresOnServiceLifeInArticles", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("MeasuresOnServiceLifeInArticles", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] MeasuresOnServiceLifeInArticles
         {
             get

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace SDSComApp.Models
 {
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class SymptomsOfExposure
     {
         private Phrase[] inCaseOfIngestionField;
@@ -18,7 +18,7 @@ namespace SDSComApp.Models
         private Phrase[] inCaseOfEyeContactField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("InCaseOfIngestion", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("InCaseOfIngestion", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] InCaseOfIngestion
         {
             get
@@ -32,7 +32,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("InCaseOfSkinContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("InCaseOfSkinContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] InCaseOfSkinContact
         {
             get
@@ -46,7 +46,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("InCaseOfInhalation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("InCaseOfInhalation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] InCaseOfInhalation
         {
             get
@@ -60,7 +60,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("InCaseOfEyeContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("InCaseOfEyeContact", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] InCaseOfEyeContact
         {
             get

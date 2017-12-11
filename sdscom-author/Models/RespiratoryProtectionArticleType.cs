@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class RespiratoryProtectionArticleType
     {
         private Phrase[] equipmentForSelfRescueField;
@@ -15,7 +15,7 @@ namespace SDSComApp.Models
         private Phrase[] filterApparatusTypeField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EquipmentForSelfRescue", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EquipmentForSelfRescue", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] EquipmentForSelfRescue
         {
             get
@@ -29,7 +29,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("MaskType", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("MaskType", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] MaskType
         {
             get
@@ -43,7 +43,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("FilterApparatusType", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("FilterApparatusType", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] FilterApparatusType
         {
             get

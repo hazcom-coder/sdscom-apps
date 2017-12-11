@@ -22,7 +22,7 @@ namespace SDSComApp.Models
         private Phrase[] norwegianPrFunctionCodeField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PrProductNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PrProductNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public string[] PrProductNo
         {
             get
@@ -36,7 +36,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NotApplicableReason", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("NotApplicableReason", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] NotApplicableReason
         {
             get
@@ -50,7 +50,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PrProductCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PrProductCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public string[] PrProductCode
         {
             get
@@ -64,7 +64,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("UcnCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("UcnCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public string[] UcnCode
         {
             get
@@ -78,7 +78,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SicCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SicCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public string[] SicCode
         {
             get
@@ -92,7 +92,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NorwegianPrFunctionCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("NorwegianPrFunctionCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] NorwegianPrFunctionCode
         {
             get

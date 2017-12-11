@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ComponentCompRestrictions
     {
 
@@ -14,7 +14,7 @@ namespace SDSComApp.Models
         private ComponentCompRestrictionsNationalRestrictions nationalRestrictionsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ComponentCompRestrictionsEuRestrictions EuRestrictions
         {
             get
@@ -28,7 +28,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ComponentCompRestrictionsNationalRestrictions NationalRestrictions
         {
             get
@@ -43,7 +43,7 @@ namespace SDSComApp.Models
     }
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ComponentCompRestrictionsEuRestrictions
     {
 
@@ -56,7 +56,7 @@ namespace SDSComApp.Models
         private Phrase[] otherEuRestrictionsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public AssessmentEnum AssessedEuRestrictions
         {
             get
@@ -84,7 +84,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RestrictionAccordingReach", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RestrictionAccordingReach", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] RestrictionAccordingReach
         {
             get
@@ -98,7 +98,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OtherEuRestrictions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OtherEuRestrictions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OtherEuRestrictions
         {
             get
@@ -114,7 +114,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ComponentCompRestrictionsNationalRestrictions
     {
 
@@ -125,7 +125,7 @@ namespace SDSComApp.Models
         private Phrase[] nationalRestrictionsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public AssessmentEnum AssessedNationalRestrictions
         {
             get
@@ -153,7 +153,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NationalRestrictions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("NationalRestrictions", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] NationalRestrictions
         {
             get
@@ -168,7 +168,7 @@ namespace SDSComApp.Models
     }
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ComponentTransportInformation
     {
         private bool isDangerReleasingSubstanceAdrRidAdnField;
@@ -184,7 +184,7 @@ namespace SDSComApp.Models
         private bool isDangerReleasingSubstanceIcaoFieldSpecified;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool IsDangerReleasingSubstanceAdrRidAdn
         {
             get
@@ -212,7 +212,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool IsDangerReleasingSubstanceImdg
         {
             get
@@ -240,7 +240,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool IsDangerReleasingSubstanceIcao
         {
             get

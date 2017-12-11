@@ -16,7 +16,7 @@ namespace SDSComApp.Models
         private Phrase[] classificationAdditionalInformationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ClpClassification ClpClassification
         {
             get
@@ -30,7 +30,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ClassificationDpdDsdClassification DpdDsdClassification
         {
             get
@@ -44,7 +44,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SimpleClassificationDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SimpleClassificationDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SimpleClassificationDescription
         {
             get
@@ -58,7 +58,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ClassificationAdditionalInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ClassificationAdditionalInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ClassificationAdditionalInformation
         {
             get

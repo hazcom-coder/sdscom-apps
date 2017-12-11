@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class HumanExperience
     {
 
@@ -14,7 +14,7 @@ namespace SDSComApp.Models
         private Phrase[] skinSensitisationHumanExperienceField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RespiratorySensitisationHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RespiratorySensitisationHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] RespiratorySensitisationHumanExperience
         {
             get
@@ -28,7 +28,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SkinSensitisationHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SkinSensitisationHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SkinSensitisationHumanExperience
         {
             get
@@ -47,7 +47,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ClassificationAssessment
     {
 
@@ -56,7 +56,7 @@ namespace SDSComApp.Models
         private Phrase[] assessmentSkinSensitisationClassificationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AssessmentRespiratorySensitisationClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AssessmentRespiratorySensitisationClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AssessmentRespiratorySensitisationClassification
         {
             get
@@ -70,7 +70,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AssessmentSkinSensitisationClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AssessmentSkinSensitisationClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AssessmentSkinSensitisationClassification
         {
             get
@@ -84,7 +84,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class RespiratoryOrSkinSensitisationOtherInformation
     {
         private Phrase[] respiratoryOrSkinSensitisationGeneralField;
@@ -94,7 +94,7 @@ namespace SDSComApp.Models
         private Phrase[] skinSensitisationOtherInfoField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RespiratoryOrSkinSensitisationGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RespiratoryOrSkinSensitisationGeneral", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] RespiratoryOrSkinSensitisationGeneral
         {
             get
@@ -108,7 +108,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RespiratorySensitisationOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RespiratorySensitisationOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] RespiratorySensitisationOtherInfo
         {
             get
@@ -122,7 +122,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SkinSensitisationOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SkinSensitisationOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SkinSensitisationOtherInfo
         {
             get

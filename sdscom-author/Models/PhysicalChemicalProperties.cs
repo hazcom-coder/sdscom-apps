@@ -22,7 +22,7 @@ namespace SDSComApp.Models
         private Phrase[] chemicalPhysicalPropertiesCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesAppearance Appearance
         {
             get
@@ -36,7 +36,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesSafetyRelevantInformation SafetyRelevantInformation
         {
             get
@@ -50,7 +50,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazards PhysicalHazards
         {
             get
@@ -64,7 +64,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesOtherSafetyInformation OtherSafetyInformation
         {
             get
@@ -78,7 +78,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OtherPhysicalChemicalProperty", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OtherPhysicalChemicalProperty", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OtherPhysicalChemicalProperty
         {
             get
@@ -92,7 +92,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ChemicalPhysicalPropertiesComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ChemicalPhysicalPropertiesComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ChemicalPhysicalPropertiesComments
         {
             get
@@ -111,7 +111,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesAppearance
     {
 
@@ -128,7 +128,7 @@ namespace SDSComApp.Models
         private PhysChemUnitValueWithTemperature[] odourThresholdField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PhysicalState", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PhysicalState", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] PhysicalState
         {
             get
@@ -142,7 +142,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public StateUnderStandardConditionsEnum StateUnderStandardConditions
         {
             get
@@ -170,7 +170,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Colour", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Colour", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Colour
         {
             get
@@ -184,7 +184,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Odour", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Odour", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Odour
         {
             get
@@ -198,7 +198,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OdourThreshold", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OdourThreshold", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] OdourThreshold
         {
             get
@@ -233,7 +233,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesSafetyRelevantInformation
     {
 
@@ -272,7 +272,7 @@ namespace SDSComApp.Models
         private Phrase[] oxidisingPropertiesField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PhValue", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PhValue", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhValue[] PhValue
         {
             get
@@ -286,7 +286,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesSafetyRelevantInformationMeltingPointRelated MeltingPointRelated
         {
             get
@@ -300,7 +300,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesSafetyRelevantInformationBoilingPointRelated BoilingPointRelated
         {
             get
@@ -314,7 +314,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("FlashPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("FlashPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public FlashPoint[] FlashPoint
         {
             get
@@ -328,7 +328,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EvaporationRate", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EvaporationRate", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemValueWithTemperature[] EvaporationRate
         {
             get
@@ -342,7 +342,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Flammability", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Flammability", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Flammability
         {
             get
@@ -356,7 +356,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesSafetyRelevantInformationExplosionLimit ExplosionLimit
         {
             get
@@ -370,7 +370,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("VapourPressure", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("VapourPressure", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] VapourPressure
         {
             get
@@ -384,7 +384,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RelativeVapourDensity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RelativeVapourDensity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public RelativeVapourDensity[] RelativeVapourDensity
         {
             get
@@ -398,7 +398,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesSafetyRelevantInformationDensities Densities
         {
             get
@@ -412,7 +412,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Solubilities", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Solubilities", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Solubilities[] Solubilities
         {
             get
@@ -426,7 +426,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PartitionCoefficient", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PartitionCoefficient", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PartitionCoefficient[] PartitionCoefficient
         {
             get
@@ -440,7 +440,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AutoignitionTemperature", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AutoignitionTemperature", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] AutoignitionTemperature
         {
             get
@@ -454,7 +454,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DecompositionTemperature", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DecompositionTemperature", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] DecompositionTemperature
         {
             get
@@ -468,7 +468,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Viscosity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Viscosity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Viscosity[] Viscosity
         {
             get
@@ -482,7 +482,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ExplosiveProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ExplosiveProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ExplosiveProperties
         {
             get
@@ -496,7 +496,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OxidisingProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OxidisingProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OxidisingProperties
         {
             get
@@ -515,7 +515,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesSafetyRelevantInformationMeltingPointRelated
     {
 
@@ -536,7 +536,7 @@ namespace SDSComApp.Models
         private PhysChemUnitValue[] pourPointField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("MeltingPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("MeltingPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] MeltingPoint
         {
             get
@@ -550,7 +550,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("FreezingPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("FreezingPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] FreezingPoint
         {
             get
@@ -564,7 +564,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SofteningPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SofteningPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] SofteningPoint
         {
             get
@@ -578,7 +578,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SolidificationPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SolidificationPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] SolidificationPoint
         {
             get
@@ -592,7 +592,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CloudPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("CloudPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] CloudPoint
         {
             get
@@ -606,7 +606,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CrystallisationPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("CrystallisationPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] CrystallisationPoint
         {
             get
@@ -620,7 +620,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DroppingPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DroppingPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] DroppingPoint
         {
             get
@@ -634,7 +634,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PourPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PourPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] PourPoint
         {
             get
@@ -653,7 +653,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesSafetyRelevantInformationBoilingPointRelated
     {
 
@@ -662,7 +662,7 @@ namespace SDSComApp.Models
         private PhysChemUnitValue[] sublimationPointField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BoilingPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BoilingPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] BoilingPoint
         {
             get
@@ -676,7 +676,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SublimationPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SublimationPoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] SublimationPoint
         {
             get
@@ -695,7 +695,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesSafetyRelevantInformationExplosionLimit
     {
 
@@ -704,7 +704,7 @@ namespace SDSComApp.Models
         private PhysChemUnitValue[] upperExplosionLimitField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("LowerExplosionLimit", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("LowerExplosionLimit", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] LowerExplosionLimit
         {
             get
@@ -718,7 +718,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("UpperExplosionLimit", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("UpperExplosionLimit", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] UpperExplosionLimit
         {
             get
@@ -737,7 +737,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesSafetyRelevantInformationDensities
     {
 
@@ -748,7 +748,7 @@ namespace SDSComApp.Models
         private PhysChemUnitValueWithTemperature[] bulkDensityField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RelativeDensity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RelativeDensity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemValueWithTemperature[] RelativeDensity
         {
             get
@@ -762,7 +762,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Density", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Density", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] Density
         {
             get
@@ -776,7 +776,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BulkDensity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("BulkDensity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] BulkDensity
         {
             get
@@ -795,7 +795,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazards
     {
 
@@ -832,7 +832,7 @@ namespace SDSComApp.Models
         private PhysicalChemicalPropertiesPhysicalHazardsCorrosiveToMetals corrosiveToMetalsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsExplosives Explosives
         {
             get
@@ -846,7 +846,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsFlammableGases FlammableGases
         {
             get
@@ -860,7 +860,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsFlammableAerosols FlammableAerosols
         {
             get
@@ -874,7 +874,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsOxidisingGases OxidisingGases
         {
             get
@@ -888,7 +888,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsGasesUnderPressure GasesUnderPressure
         {
             get
@@ -902,7 +902,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsFlammableLiquids FlammableLiquids
         {
             get
@@ -916,7 +916,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsFlammableSolids FlammableSolids
         {
             get
@@ -930,7 +930,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsSelfreactiveSubstancesAndMixtures SelfreactiveSubstancesAndMixtures
         {
             get
@@ -944,7 +944,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsPyrophoricLiquids PyrophoricLiquids
         {
             get
@@ -958,7 +958,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsPyrophoricSolids PyrophoricSolids
         {
             get
@@ -972,7 +972,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsSelfheatingSubstancesAndMixtures SelfheatingSubstancesAndMixtures
         {
             get
@@ -986,7 +986,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsSubstancesWhichInContactWithWaterEmitFlammableGases SubstancesWhichInContactWithWaterEmitFlammableGases
         {
             get
@@ -1000,7 +1000,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsOxidisingLiquids OxidisingLiquids
         {
             get
@@ -1014,7 +1014,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsOxidisingSolids OxidisingSolids
         {
             get
@@ -1028,7 +1028,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsOrganicPeroxides OrganicPeroxides
         {
             get
@@ -1042,7 +1042,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsCorrosiveToMetals CorrosiveToMetals
         {
             get
@@ -1061,7 +1061,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsExplosives
     {
 
@@ -1072,7 +1072,7 @@ namespace SDSComApp.Models
         private PhysicalChemicalPropertiesPhysicalHazardsExplosivesTestPerformed[] testPerformedField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1086,7 +1086,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ScreeningProcedures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ScreeningProcedures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsScreeningProcedures[] ScreeningProcedures
         {
             get
@@ -1100,7 +1100,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TestPerformed", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("TestPerformed", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalChemicalPropertiesPhysicalHazardsExplosivesTestPerformed[] TestPerformed
         {
             get
@@ -1119,7 +1119,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsExplosivesTestPerformed
     {
 
@@ -1128,7 +1128,7 @@ namespace SDSComApp.Models
         private PhysChemUnitValue testResultField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase ParameterTested
         {
             get
@@ -1142,7 +1142,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue TestResult
         {
             get
@@ -1161,7 +1161,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsFlammableGases
     {
 
@@ -1170,7 +1170,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1184,7 +1184,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1203,7 +1203,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsFlammableAerosols
     {
 
@@ -1212,7 +1212,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1226,7 +1226,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1245,7 +1245,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsOxidisingGases
     {
 
@@ -1254,7 +1254,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1268,7 +1268,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1287,7 +1287,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsGasesUnderPressure
     {
 
@@ -1296,7 +1296,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1310,7 +1310,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1329,7 +1329,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsFlammableLiquids
     {
 
@@ -1338,7 +1338,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1352,7 +1352,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1371,7 +1371,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsFlammableSolids
     {
 
@@ -1380,7 +1380,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1394,7 +1394,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1413,7 +1413,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsSelfreactiveSubstancesAndMixtures
     {
 
@@ -1424,7 +1424,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1438,7 +1438,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ScreeningProcedures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ScreeningProcedures", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsScreeningProcedures[] ScreeningProcedures
         {
             get
@@ -1452,7 +1452,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1471,7 +1471,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsPyrophoricLiquids
     {
 
@@ -1480,7 +1480,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1494,7 +1494,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1513,7 +1513,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsPyrophoricSolids
     {
 
@@ -1522,7 +1522,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1536,7 +1536,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1555,7 +1555,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsSelfheatingSubstancesAndMixtures
     {
 
@@ -1568,7 +1568,7 @@ namespace SDSComApp.Models
         private UnitValue inductionTimeField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1582,7 +1582,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1596,7 +1596,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue MaxTemperatureReached
         {
             get
@@ -1610,7 +1610,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue InductionTime
         {
             get
@@ -1629,7 +1629,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsSubstancesWhichInContactWithWaterEmitFlammableGases
     {
 
@@ -1638,7 +1638,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1652,7 +1652,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1671,7 +1671,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsOxidisingLiquids
     {
 
@@ -1680,7 +1680,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1694,7 +1694,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1713,7 +1713,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsOxidisingSolids
     {
 
@@ -1722,7 +1722,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1736,7 +1736,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1755,7 +1755,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsOrganicPeroxides
     {
 
@@ -1764,7 +1764,7 @@ namespace SDSComApp.Models
         private PhysicalHazardsSafetyCharacteristics[] safetyCharacteristicsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1778,7 +1778,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1797,7 +1797,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesPhysicalHazardsCorrosiveToMetals
     {
 
@@ -1812,7 +1812,7 @@ namespace SDSComApp.Models
         private Phrase materialTypeField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsGeneralInformation GeneralInformation
         {
             get
@@ -1826,7 +1826,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SafetyCharacteristics", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysicalHazardsSafetyCharacteristics[] SafetyCharacteristics
         {
             get
@@ -1840,7 +1840,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue ExposureTime
         {
             get
@@ -1854,7 +1854,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue IntrusionDepth
         {
             get
@@ -1868,7 +1868,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase MaterialType
         {
             get
@@ -1887,7 +1887,7 @@ namespace SDSComApp.Models
 
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhysicalChemicalPropertiesOtherSafetyInformation
     {
 
@@ -1946,7 +1946,7 @@ namespace SDSComApp.Models
         private PhysChemValueWithTemperature[] refractionIndexField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Miscibility", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Miscibility", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Miscibility
         {
             get
@@ -1960,7 +1960,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AnilinePoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AnilinePoint", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] AnilinePoint
         {
             get
@@ -1974,7 +1974,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ElectricConductivity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ElectricConductivity", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] ElectricConductivity
         {
             get
@@ -1988,7 +1988,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("GasGroup", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("GasGroup", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public GasGroup[] GasGroup
         {
             get
@@ -2002,7 +2002,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SolventSeparationTest", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SolventSeparationTest", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] SolventSeparationTest
         {
             get
@@ -2016,7 +2016,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ContentOfVoc", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ContentOfVoc", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemValue[] ContentOfVoc
         {
             get
@@ -2030,7 +2030,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SolidContent", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SolidContent", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] SolidContent
         {
             get
@@ -2044,7 +2044,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PropellantContent", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PropellantContent", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] PropellantContent
         {
             get
@@ -2058,7 +2058,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SinterTemperature", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SinterTemperature", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] SinterTemperature
         {
             get
@@ -2072,7 +2072,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AcidNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AcidNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] AcidNo
         {
             get
@@ -2086,7 +2086,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DissociationConstant", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DissociationConstant", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DissociationConstant[] DissociationConstant
         {
             get
@@ -2100,7 +2100,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HydrolysisRate", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("HydrolysisRate", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public HydrolysisRate[] HydrolysisRate
         {
             get
@@ -2114,7 +2114,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("WaterReactive", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("WaterReactive", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] WaterReactive
         {
             get
@@ -2128,7 +2128,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AirReactive", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AirReactive", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AirReactive
         {
             get
@@ -2142,7 +2142,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PenetrationNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PenetrationNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] PenetrationNo
         {
             get
@@ -2156,7 +2156,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ParticleSize", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ParticleSize", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] ParticleSize
         {
             get
@@ -2170,7 +2170,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CriticalPressure", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("CriticalPressure", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] CriticalPressure
         {
             get
@@ -2184,7 +2184,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ExpansionCoefficient", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ExpansionCoefficient", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] ExpansionCoefficient
         {
             get
@@ -2198,7 +2198,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RedoxPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RedoxPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] RedoxPotential
         {
             get
@@ -2212,7 +2212,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RadicalFormationPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RadicalFormationPotential", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemValueWithTemperature[] RadicalFormationPotential
         {
             get
@@ -2226,7 +2226,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PhotocatalyticProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PhotocatalyticProperties", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValueWithTemperature[] PhotocatalyticProperties
         {
             get
@@ -2240,7 +2240,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NumberAverageMolecularWeight", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("NumberAverageMolecularWeight", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] NumberAverageMolecularWeight
         {
             get
@@ -2254,7 +2254,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("WeightAverageMolecularWeight", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("WeightAverageMolecularWeight", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] WeightAverageMolecularWeight
         {
             get
@@ -2268,7 +2268,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("MolecularWeightDistribution", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("MolecularWeightDistribution", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] MolecularWeightDistribution
         {
             get
@@ -2282,7 +2282,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("LowMolecularWeightContentOfPolymers", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("LowMolecularWeightContentOfPolymers", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemUnitValue[] LowMolecularWeightContentOfPolymers
         {
             get
@@ -2296,7 +2296,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SolutionExtractionBehaviourOfPolymersInWater", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SolutionExtractionBehaviourOfPolymersInWater", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SolutionExtractionBehaviourOfPolymersInWater[] SolutionExtractionBehaviourOfPolymersInWater
         {
             get
@@ -2310,7 +2310,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RefractionIndex", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RefractionIndex", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhysChemValueWithTemperature[] RefractionIndex
         {
             get

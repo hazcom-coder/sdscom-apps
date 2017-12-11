@@ -3629,7 +3629,7 @@ namespace SDSComApp.Models
         IIC,
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(IncludeInSchema = false)]
+    [System.Xml.Serialization.XmlType(IncludeInSchema = false)]
     public enum ItemsChoiceType2
     {
 
@@ -5214,7 +5214,7 @@ namespace SDSComApp.Models
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(IncludeInSchema = false)]
+    [System.Xml.Serialization.XmlType(IncludeInSchema = false)]
     public enum ItemsChoiceType
     {
 
@@ -6414,7 +6414,7 @@ namespace SDSComApp.Models
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.6.1055.0")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(IncludeInSchema = false)]
+    [System.Xml.Serialization.XmlType(IncludeInSchema = false)]
     public enum ItemsChoiceType1
     {
 

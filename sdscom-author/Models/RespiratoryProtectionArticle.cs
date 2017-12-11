@@ -18,7 +18,7 @@ namespace SDSComApp.Models
         private Phrase[] referenceRelevantStandardField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Type", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Type", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public RespiratoryProtectionArticleType[] Type
         {
             get
@@ -32,7 +32,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Description", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Description", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Description
         {
             get
@@ -46,7 +46,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase Manufacturer
         {
             get
@@ -60,7 +60,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SourcesOfSupply", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SourcesOfSupply", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] SourcesOfSupply
         {
             get
@@ -74,7 +74,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ReferenceRelevantStandard", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ReferenceRelevantStandard", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ReferenceRelevantStandard
         {
             get

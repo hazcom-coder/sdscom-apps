@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ComponentInformation
     {
 
@@ -48,7 +48,7 @@ namespace SDSComApp.Models
         private ComponentInformationIdentifiedUse[] identifiedUseField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool OnLabel
         {
             get
@@ -62,7 +62,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool IsHazardousComponent
         {
             get
@@ -90,7 +90,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool IncludeOccupationalExposureLimits
         {
             get
@@ -118,7 +118,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool IncludeBiologicalLimitValues
         {
             get
@@ -146,7 +146,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool IsImpurity
         {
             get
@@ -174,7 +174,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool IsStabilizer
         {
             get
@@ -202,7 +202,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool IncludePhysicalValues
         {
             get
@@ -230,7 +230,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool IncludeToxicologicalValues
         {
             get
@@ -258,7 +258,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public bool IncludeEcoToxicologicalValues
         {
             get
@@ -286,7 +286,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CompReasonForListed", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("CompReasonForListed", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] CompReasonForListed
         {
             get
@@ -300,7 +300,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("IdentifiedUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("IdentifiedUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ComponentInformationIdentifiedUse[] IdentifiedUse
         {
             get
@@ -314,7 +314,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ComponentInformationIdentifiedUse
     {
 
@@ -345,7 +345,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SectorOfUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SectorOfUse", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SectorOfUse[] SectorOfUse
         {
             get
@@ -359,7 +359,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ProductCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ProductCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ProductCategory[] ProductCategory
         {
             get
@@ -373,7 +373,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ProcessCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ProcessCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ProcessCategory[] ProcessCategory
         {
             get
@@ -387,7 +387,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EnvironmentalReleaseCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("EnvironmentalReleaseCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public IdentifiedUseEnvironmentalReleaseCategory[] EnvironmentalReleaseCategory
         {
             get
@@ -401,7 +401,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SpecificEnvironmentalReleaseCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SpecificEnvironmentalReleaseCategory", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public IdentifiedUseSpecificEnvironmentalReleaseCategory[] SpecificEnvironmentalReleaseCategory
         {
             get
@@ -415,7 +415,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ArticleCategoryNoIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ArticleCategoryNoIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ArticleCategory[] ArticleCategoryNoIntendedRelease
         {
             get
@@ -429,7 +429,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ArticleCategoryWithIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ArticleCategoryWithIntendedRelease", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ArticleCategory[] ArticleCategoryWithIntendedRelease
         {
             get
@@ -443,7 +443,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CorrespondingExposureScenario", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("CorrespondingExposureScenario", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public CorrespondingEs[] CorrespondingExposureScenario
         {
             get

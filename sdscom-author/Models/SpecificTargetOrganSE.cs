@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class SpecificTargetOrganSE
     {
         private STOTData[] specificTargetOrganSETestResultsField;
@@ -17,7 +17,7 @@ namespace SDSComApp.Models
         private Phrase[] assessmentSpecificTargetOrganSEClassificationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SpecificTargetOrganSETestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SpecificTargetOrganSETestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public STOTData[] SpecificTargetOrganSETestResults
         {
             get
@@ -31,7 +31,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SpecificTargetOrganSEOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SpecificTargetOrganSEOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SpecificTargetOrganSEOtherInfo[] SpecificTargetOrganSEOtherInfo
         {
             get
@@ -45,7 +45,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase SpecificTargetOrganSEHumanExperience
         {
             get
@@ -59,7 +59,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AssessmentSpecificTargetOrganSEClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AssessmentSpecificTargetOrganSEClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AssessmentSpecificTargetOrganSEClassification
         {
             get
@@ -73,7 +73,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class SpecificTargetOrganSEOtherInfo
     {
 
@@ -88,7 +88,7 @@ namespace SDSComApp.Models
         private Phrase[] ingestionField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("General", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("General", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] General
         {
             get
@@ -102,7 +102,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Inhalation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Inhalation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Inhalation
         {
             get
@@ -116,7 +116,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Skin", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Skin", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Skin
         {
             get
@@ -130,7 +130,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Eye", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Eye", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Eye
         {
             get
@@ -144,7 +144,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Ingestion", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("Ingestion", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] Ingestion
         {
             get
@@ -158,7 +158,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class SpecificTargetOrganRE
     {
 
@@ -171,7 +171,7 @@ namespace SDSComApp.Models
         private Phrase[] assessmentSpecificTargetOrganREClassificationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SpecificTargetOrganRETestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SpecificTargetOrganRETestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public STOTData[] SpecificTargetOrganRETestResults
         {
             get
@@ -185,7 +185,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("SpecificTargetOrganREOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("SpecificTargetOrganREOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public SpecificTargetOrganREOtherInfo[] SpecificTargetOrganREOtherInfo
         {
             get
@@ -199,7 +199,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase SpecificTargetOrganREHumanExperience
         {
             get
@@ -213,7 +213,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AssessmentSpecificTargetOrganREClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AssessmentSpecificTargetOrganREClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AssessmentSpecificTargetOrganREClassification
         {
             get

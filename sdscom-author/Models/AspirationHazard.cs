@@ -5,11 +5,9 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {
-
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class AspirationHazard
     {
-
         private AspirationHazardTestResults aspirationHazardTestResultsField;
 
         private UnitValue aspirationHazardHydrocarbonContentField;
@@ -23,7 +21,7 @@ namespace SDSComApp.Models
         private Phrase[] aspirationHazardCommentsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public AspirationHazardTestResults AspirationHazardTestResults
         {
             get
@@ -37,7 +35,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public UnitValue AspirationHazardHydrocarbonContent
         {
             get
@@ -51,7 +49,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AspirationHazardOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AspirationHazardOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AspirationHazardOtherInfo
         {
             get
@@ -65,7 +63,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AspirationHazardHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AspirationHazardHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AspirationHazardHumanExperience
         {
             get
@@ -79,7 +77,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AssessmentAspirationHazardClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AssessmentAspirationHazardClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AssessmentAspirationHazardClassification
         {
             get
@@ -93,7 +91,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AspirationHazardComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AspirationHazardComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AspirationHazardComments
         {
             get
@@ -105,6 +103,13 @@ namespace SDSComApp.Models
                 this.aspirationHazardCommentsField = value;
             }
         }
+
+        public AspirationHazardTestResults AspirationHazardTestResultsField { get => aspirationHazardTestResultsField; set => aspirationHazardTestResultsField = value; }
+        public UnitValue AspirationHazardHydrocarbonContentField { get => aspirationHazardHydrocarbonContentField; set => aspirationHazardHydrocarbonContentField = value; }
+        public Phrase[] AspirationHazardOtherInfoField { get => aspirationHazardOtherInfoField; set => aspirationHazardOtherInfoField = value; }
+        public Phrase[] AspirationHazardHumanExperienceField { get => aspirationHazardHumanExperienceField; set => aspirationHazardHumanExperienceField = value; }
+        public Phrase[] AssessmentAspirationHazardClassificationField { get => assessmentAspirationHazardClassificationField; set => assessmentAspirationHazardClassificationField = value; }
+        public Phrase[] AspirationHazardCommentsField { get => aspirationHazardCommentsField; set => aspirationHazardCommentsField = value; }
     }
 
 }

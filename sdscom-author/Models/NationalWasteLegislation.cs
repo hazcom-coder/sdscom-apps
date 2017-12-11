@@ -12,7 +12,7 @@ namespace SDSComApp.Models
         private Phrase[] nationalRegulationsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NationalWasteCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("NationalWasteCode", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] NationalWasteCode
         {
             get
@@ -26,7 +26,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NationalRegulations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("NationalRegulations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] NationalRegulations
         {
             get

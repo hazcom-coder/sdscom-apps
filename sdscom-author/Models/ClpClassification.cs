@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace SDSComApp.Models
 {
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ClpClassification
     {
 
@@ -17,7 +17,7 @@ namespace SDSComApp.Models
         private Phrase[] clpClassificationNotesField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ClpHazardClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ClpHazardClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ClpHazardClassification[] ClpHazardClassification
         {
             get
@@ -31,7 +31,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ClpClassificationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ClpClassificationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ClpClassificationComments
         {
             get
@@ -45,7 +45,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ClpClassificationNotes", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ClpClassificationNotes", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ClpClassificationNotes
         {
             get
@@ -59,7 +59,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ClpHazardClassification
     {
 
@@ -72,7 +72,7 @@ namespace SDSComApp.Models
         private MultiplyingFactor multiplyingFactorField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public HazardClassCategoryEnum ClpHazardClassCategory
         {
             get
@@ -86,7 +86,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ClpHazardStatement", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ClpHazardStatement", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public HazardStatement[] ClpHazardStatement
         {
             get
@@ -100,7 +100,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase ClpClassificationProcedure
         {
             get
@@ -114,7 +114,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MultiplyingFactor MultiplyingFactor
         {
             get
@@ -147,7 +147,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public HazardStatementEnum PhraseCode
         {
             get
@@ -161,7 +161,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public string FullText
         {
             get
@@ -175,7 +175,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("MergePhrase", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("MergePhrase", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MergePhrase[] MergePhrase
         {
             get
@@ -218,7 +218,7 @@ namespace SDSComApp.Models
         }
     }
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ClassificationDpdDsdClassification
     {
 
@@ -229,7 +229,7 @@ namespace SDSComApp.Models
         private Phrase[] dpdDsdClassificationNotesField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DpdDsdHazardClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DpdDsdHazardClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ClassificationDpdDsdClassificationDpdDsdHazardClassification[] DpdDsdHazardClassification
         {
             get
@@ -243,7 +243,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DpdDsdClassificationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DpdDsdClassificationComments", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] DpdDsdClassificationComments
         {
             get
@@ -257,7 +257,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DpdDsdClassificationNotes", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DpdDsdClassificationNotes", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] DpdDsdClassificationNotes
         {
             get
@@ -272,7 +272,7 @@ namespace SDSComApp.Models
     }
 
 
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ClassificationDpdDsdClassificationDpdDsdHazardClassification
     {
 
@@ -285,7 +285,7 @@ namespace SDSComApp.Models
         private DpdDsdHazardClassificationMultiplyingFactor multiplyingFactorField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ClassificationCategoryEnum DpdDsdClassificationCategory
         {
             get
@@ -313,7 +313,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DpdDsdRiskPhrase", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("DpdDsdRiskPhrase", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public RiskPhrase[] DpdDsdRiskPhrase
         {
             get
@@ -327,7 +327,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public DpdDsdHazardClassificationMultiplyingFactor MultiplyingFactor
         {
             get

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApp.Models
 {
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ReproductiveToxicity
     {
         private CMRData[] reproductiveToxicityTestResultsField;
@@ -17,7 +17,7 @@ namespace SDSComApp.Models
         private Phrase[] assessmentReproductiveToxicityClassificationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ReproductiveToxicityTestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ReproductiveToxicityTestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public CMRData[] ReproductiveToxicityTestResults
         {
             get
@@ -31,7 +31,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ReproductiveToxicityOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ReproductiveToxicityOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ReproductiveToxicityOtherInfo
         {
             get
@@ -45,7 +45,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ReproductiveToxicityHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("ReproductiveToxicityHumanExperience", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] ReproductiveToxicityHumanExperience
         {
             get
@@ -59,7 +59,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AssessmentReproductiveToxicityClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AssessmentReproductiveToxicityClassification", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AssessmentReproductiveToxicityClassification
         {
             get

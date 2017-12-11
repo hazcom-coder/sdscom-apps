@@ -36,7 +36,7 @@ namespace SDSComApp.Models
         private bool gisCodeFieldSpecified;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("RestrictionsOfOccupation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("RestrictionsOfOccupation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] RestrictionsOfOccupation
         {
             get
@@ -50,7 +50,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Stoerfallverordnung Stoerfallverordnung
         {
             get
@@ -64,7 +64,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("TaLuft", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("TaLuft", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public TaLuft[] TaLuft
         {
             get
@@ -78,7 +78,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public WaterHazardClass WaterHazardClass
         {
             get
@@ -92,7 +92,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OtherRestrictionsAndProhibitionRegulations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("OtherRestrictionsAndProhibitionRegulations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] OtherRestrictionsAndProhibitionRegulations
         {
             get
@@ -106,7 +106,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase RegistrationNoAccordingToBiozidMeldeverordnung
         {
             get
@@ -120,7 +120,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AdditionalInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("AdditionalInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] AdditionalInformation
         {
             get
@@ -134,7 +134,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NationalWasteLegislationDE", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("NationalWasteLegislationDE", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public NationalWasteLegislationDE[] NationalWasteLegislationDE
         {
             get
@@ -148,7 +148,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("StorageClass", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("StorageClass", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public StorageClassEnum[] StorageClass
         {
             get
@@ -162,7 +162,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public GisCodeEnum GisCode
         {
             get
@@ -250,7 +250,7 @@ namespace SDSComApp.Models
         private Phrase[] wasteRegulationsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase WasteCode
         {
             get
@@ -264,7 +264,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("WasteRegulations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("WasteRegulations", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] WasteRegulations
         {
             get
@@ -293,7 +293,7 @@ namespace SDSComApp.Models
         private NationalWasteLegislation[] nationalWasteLegislationField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase AssessedRegulations
         {
             get
@@ -307,7 +307,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NationalLegislationsDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("NationalLegislationsDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] NationalLegislationsDescription
         {
             get
@@ -321,7 +321,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PrProductRegistrationNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("PrProductRegistrationNo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PrProductRegistrationNo[] PrProductRegistrationNo
         {
             get
@@ -335,7 +335,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public OccupationalAirRequirement OccupationalAirRequirement
         {
             get
@@ -349,7 +349,7 @@ namespace SDSComApp.Models
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("NationalWasteLegislation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        [System.Xml.Serialization.XmlElement("NationalWasteLegislation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public NationalWasteLegislation[] NationalWasteLegislation
         {
             get
