@@ -1,0 +1,74 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace SDSComApp.Models
+{
+    public class ProtectionArticle
+    {
+        private Phrase[] descriptionField;
+
+        private Phrase manufacturerField;
+
+        private Phrase[] sourcesOfSupplyField;
+
+        private Phrase[] referenceRelevantStandardField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("Description", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Phrase[] Description
+        {
+            get
+            {
+                return this.descriptionField;
+            }
+            set
+            {
+                this.descriptionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Phrase Manufacturer
+        {
+            get
+            {
+                return this.manufacturerField;
+            }
+            set
+            {
+                this.manufacturerField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("SourcesOfSupply", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Phrase[] SourcesOfSupply
+        {
+            get
+            {
+                return this.sourcesOfSupplyField;
+            }
+            set
+            {
+                this.sourcesOfSupplyField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ReferenceRelevantStandard", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Phrase[] ReferenceRelevantStandard
+        {
+            get
+            {
+                return this.referenceRelevantStandardField;
+            }
+            set
+            {
+                this.referenceRelevantStandardField = value;
+            }
+        }
+    }
+}

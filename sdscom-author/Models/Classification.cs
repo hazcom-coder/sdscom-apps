@@ -1,0 +1,74 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace SDSComApp.Models
+{
+    public class Classification
+    {
+        private ClpClassification clpClassificationField;
+
+        private ClassificationDpdDsdClassification dpdDsdClassificationField;
+
+        private Phrase[] simpleClassificationDescriptionField;
+
+        private Phrase[] classificationAdditionalInformationField;
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public ClpClassification ClpClassification
+        {
+            get
+            {
+                return this.clpClassificationField;
+            }
+            set
+            {
+                this.clpClassificationField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public ClassificationDpdDsdClassification DpdDsdClassification
+        {
+            get
+            {
+                return this.dpdDsdClassificationField;
+            }
+            set
+            {
+                this.dpdDsdClassificationField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("SimpleClassificationDescription", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Phrase[] SimpleClassificationDescription
+        {
+            get
+            {
+                return this.simpleClassificationDescriptionField;
+            }
+            set
+            {
+                this.simpleClassificationDescriptionField = value;
+            }
+        }
+
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("ClassificationAdditionalInformation", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public Phrase[] ClassificationAdditionalInformation
+        {
+            get
+            {
+                return this.classificationAdditionalInformationField;
+            }
+            set
+            {
+                this.classificationAdditionalInformationField = value;
+            }
+        }
+    }
+}
