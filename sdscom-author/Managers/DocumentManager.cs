@@ -9,18 +9,45 @@ using System.IO;
 using System.Text;
 using System.Collections;
 using System.Data;
-
+using Microsoft.Extensions.Configuration;
 
 namespace SDSComApp.Managers
 {
 	public class DocumentManager
 	{
-		public DocumentManager() { }
+        private readonly IConfiguration config;
+        private string appdatafolder;
 
-	
+        public DocumentManager(IConfiguration _config)
+        {
+            this.config = _config;
 
-		
-		public Document LoadDocumentSchema()
+            appdatafolder = config["Folders:Schemas"];
+        }
+
+        public XmlSchemaSet GetSchemas()
+        {
+            XmlSchemaSet schemaSet = new XmlSchemaSet();
+            schemaSet.ValidationEventHandler += new ValidationEventHandler(ValidationCallback);
+            //schemaSet.Add("http://www.tempuri.org", appdatafolder + @"\SDSComXML.xsd");
+            //schemaSet.Add("http://www.tempuri.org", appdatafolder + @"\SDSComXMLCT.xsd");
+            //schemaSet.Add("http://www.tempuri.org", appdatafolder + @"\SDSComXMLDT.xsd");
+            //schemaSet.Add("http://www.tempuri.org", appdatafolder + @"\SDSComXMLNE_AD.xsd");
+            
+
+            DirectoryInfo d = new DirectoryInfo(appdatafolder);
+
+            foreach (var file in d.GetFiles("*.xsd"))
+            {
+                schemaSet.Add("http://www.tempuri.org", appdatafolder + @"\" + file.Name);
+            }
+
+            schemaSet.Compile();
+
+            return schemaSet;
+        }
+
+        public Document LoadDocumentSchema()
 		{	
 			Document doc = new Document();
 			int chapterSequence = 1;
@@ -28,9 +55,7 @@ namespace SDSComApp.Managers
 			try
 			{
 				doc.Chapters = new List<Chapter>();
-
-                string appdatafolder = ""; // Path.Combine(HttpContext.Current.Request.PhysicalApplicationPath, "App_Data");
-
+         
 				XmlSchemaSet schemaSet = new XmlSchemaSet();
 				schemaSet.ValidationEventHandler += new ValidationEventHandler(ValidationCallback);
 				schemaSet.Add("http://www.tempuri.org", appdatafolder + @"\SDSComXML.xsd");

@@ -5,6 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SDSComApp.Models;
+using SDSComApp.Managers;
+using Microsoft.Extensions.Configuration;
 
 namespace SDSComApp.Controllers
 {
@@ -13,6 +15,13 @@ namespace SDSComApp.Controllers
     /// </summary>
     public class HomeController : Controller
     {
+        private readonly IConfiguration config;
+
+        public HomeController(IConfiguration _config)
+        {
+            this.config = _config;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -30,9 +39,11 @@ namespace SDSComApp.Controllers
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult Administrator()
         {
-            ViewData["Message"] = "Your contact page.";
+            AdminManager adminMgr = new AdminManager(config);
+
+            adminMgr.MapElements();
 
             return View();
         }
