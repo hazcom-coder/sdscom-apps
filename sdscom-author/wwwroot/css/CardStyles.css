@@ -1,0 +1,33 @@
+﻿
+.modcard {
+    background: #FFF;
+    border: 1px solid #AAA;
+    border-bottom: 3px solid #BBB;
+    margin: 10px;
+    overflow: hidden;
+    height: 120px;
+    width: 320px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+}
+
+    /*.modcard:hover {
+        margin: 0px;
+        padding: 10px;
+        padding-bottom: 0px;
+        box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }*/
+
+
+.float-left .modcard {
+    float: left;
+    width: 300px;
+    height: 270px;
+}
+
+.multi-column {
+    -webkit-columns: 300px 3;
+    columns: 300px 3;
+}

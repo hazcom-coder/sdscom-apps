@@ -1,23 +1,28 @@
 ﻿
 @{
-    ViewData["Title"] = "SDSComApp Menu";
+    ViewData["Title"] = "SDSComApps Menu";
 }
 
-<h2>SDSComApp Menu</h2>
+<h2>Application Menu</h2>
 
-<div class="row">
+<div id="divMain">
 
-    <div>
-        <label class="label">Select a module</label>
-        <br />
-        <a class="btn-link" asp-action="Index" asp-controller="Author" id="hlAuthor">Author </a>
-        <br />
-        <br />
-        <label class="label">Administrator</label>
-        <br />
-        <a class="btn-link" asp-action="Administrator" asp-controller="Home" id="hlAdmin">Administrator </a>
+    <div id="divAuthor" class="modcard">
+        <div class="card-body">
+            <h4 class="card-title">Administration Application</h4>
+            <p class="card-text">This is the module you have always wanted for Administration.</p>
+            <a class="btn-link" asp-action="Administrator" asp-controller="Home" id="hlAdmin">Administrator </a>
+        </div>
+    </div>
 
+    <div id="divAuthor" class="modcard">
+        <div class="card-body">
+            <h4 class="card-title">SDS Authoring Application</h4>
+            <p class="card-text">This is the module you have always wanted for products.</p>
+            <a class="btn-link" asp-action="Index" asp-controller="Author" id="hlAuthor">Author</a>
+        </div>
     </div>
 
 </div>
+
 

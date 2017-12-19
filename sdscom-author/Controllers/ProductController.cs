@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
-using SDSComApp.Managers;
+using SDSComApps.Managers;
 using Microsoft.Extensions.Configuration;
 
 namespace SDSComApps.Controllers
@@ -23,6 +23,11 @@ namespace SDSComApps.Controllers
             DataManager dMgr = new DataManager(config);
 
             return View("Common/Product");
+        }
+
+        public IActionResult Phrase()
+        {  
+            return View("Common/Phrase");
         }
 
         public IActionResult Save()

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace SDSComApp.Controllers
+namespace SDSComApps.Controllers
 {
     public class AuthorController : Controller
     {

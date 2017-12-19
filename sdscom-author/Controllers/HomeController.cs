@@ -4,11 +4,11 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SDSComApp.Models;
-using SDSComApp.Managers;
+using SDSComApps.Models;
+using SDSComApps.Managers;
 using Microsoft.Extensions.Configuration;
 
-namespace SDSComApp.Controllers
+namespace SDSComApps.Controllers
 {
     /// <summary>
     /// basic start page
@@ -40,6 +40,15 @@ namespace SDSComApp.Controllers
         }
 
         public IActionResult Administrator()
+        {
+            AdminManager adminMgr = new AdminManager(config);
+
+            adminMgr.MapElements();
+
+            return View();
+        }
+
+        public IActionResult PhraseManager()
         {
             AdminManager adminMgr = new AdminManager(config);
 

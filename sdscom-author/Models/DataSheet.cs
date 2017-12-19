@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SDSComApp.Models
+namespace SDSComApps.Models
 {
     /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]

@@ -1,6 +1,6 @@
 using System;
 
-namespace SDSComApp.Models
+namespace SDSComApps.Models
 {
     public class ErrorViewModel
     {

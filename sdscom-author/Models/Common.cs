@@ -1,4 +1,4 @@
-﻿    namespace SDSComApp.Models
+﻿    namespace SDSComApps.Models
     {
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class RegulationsRelatedToCountryOrRegion

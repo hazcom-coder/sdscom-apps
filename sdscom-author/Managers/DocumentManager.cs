@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using SDSComApp.Models;
+using SDSComApps.Models;
 using System.Xml.Schema;
 using System.Xml;
 using System.IO;
@@ -11,7 +11,7 @@ using System.Collections;
 using System.Data;
 using Microsoft.Extensions.Configuration;
 
-namespace SDSComApp.Managers
+namespace SDSComApps.Managers
 {
 	public class DocumentManager
 	{

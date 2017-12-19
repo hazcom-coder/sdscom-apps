@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using SDSComApp.Models;
+using SDSComApps.Models;
 
-namespace SDSComApp.Managers
+namespace SDSComApps.Managers
 {
     public class DataSheetManager
     {

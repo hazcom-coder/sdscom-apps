@@ -9,7 +9,7 @@ using NpgsqlTypes;
 using Npgsql.NameTranslation;
 using Microsoft.Extensions.Configuration;
 
-namespace SDSComApp.Managers
+namespace SDSComApps.Managers
 {
     public class DataManager
     {
@@ -33,9 +33,9 @@ namespace SDSComApp.Managers
 
         }
 
-        public int Execute(NpgsqlCommand cmd, bool ReturnId = false , string ReturnField = "")
+        public Int64 Execute(NpgsqlCommand cmd, bool ReturnId = false , string ReturnField = "")
         {
-            int ret = 0;
+            Int64 ret = 0;
 
             if(ReturnId)
             {
@@ -53,7 +53,7 @@ namespace SDSComApp.Managers
 
                 try
                 {
-                    ret = cmd.ExecuteNonQuery();
+                    ret = (Int64)cmd.ExecuteScalar();
                 }
                 catch (NpgsqlException ex)
                 {
@@ -73,20 +73,20 @@ namespace SDSComApp.Managers
         {
             NpgsqlDataReader rdr = null;
 
-            using (NpgsqlConnection conn = new NpgsqlConnection(connString))
-            {
+            NpgsqlConnection conn = new NpgsqlConnection(connString);
+            try
+            { 
                 conn.Open();
-
-                rdr = cmd.ExecuteReader();
-                
-                conn.Close();
+                cmd.Connection = conn;
+                rdr = cmd.ExecuteReader(System.Data.CommandBehavior.CloseConnection);
             }
-
+            catch (NpgsqlException ex)
+            {
+                Console.Write(ex.Message);
+            }
+           
             return rdr;
         }
-
-
-
 
     }
 }

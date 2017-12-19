@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SDSComApp.Models
+namespace SDSComApps.Models
 {
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class HumanExperience

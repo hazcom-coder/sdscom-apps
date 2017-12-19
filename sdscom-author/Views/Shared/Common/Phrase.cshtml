@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewData["Title"] = "Phrase";
+
+    Layout = "~/Views/Shared/_Layout.cshtml"; 
+}
+
+
+<table style="width: 67%; margin: 0 auto 2em auto;" border="0" cellspacing="0" cellpadding="3">
+    <thead>
+        <tr>
+            <th>Target</th>
+            <th>Search text</th>
+            <th>Treat as regex</th>
+            <th>Use smart search</th>
+        </tr>
+    </thead>
+        <tbody>
+            <tr id="filter_global">
+                <td>Global search</td>
+                <td align="center"><input class="global_filter" id="global_filter" type="text"></td>
+                <td align="center"><input class="global_filter" id="global_regex" type="checkbox"></td>
+                <td align="center"><input class="global_filter" id="global_smart" type="checkbox" checked="checked"></td>
+            </tr>
+            <tr id="filter_col1" data-column="0">
+                <td>Column - Code</td>
+                <td align="center"><input class="column_filter" id="col0_filter" type="text"></td>
+                <td align="center"><input class="column_filter" id="col0_regex" type="checkbox"></td>
+                <td align="center"><input class="column_filter" id="col0_smart" type="checkbox" checked="checked"></td>
+            </tr>
+            <tr id="filter_col2" data-column="1">
+                <td>Column - English</td>
+                <td align="center"><input class="column_filter" id="col1_filter" type="text"></td>
+                <td align="center"><input class="column_filter" id="col1_regex" type="checkbox"></td>
+                <td align="center"><input class="column_filter" id="col1_smart" type="checkbox" checked="checked"></td>
+            </tr>
+            <tr id="filter_col3" data-column="2">
+                <td>Column - German</td>
+                <td align="center"><input class="column_filter" id="col2_filter" type="text"></td>
+                <td align="center"><input class="column_filter" id="col2_regex" type="checkbox"></td>
+                <td align="center"><input class="column_filter" id="col2_smart" type="checkbox" checked="checked"></td>
+            </tr>       
+        </tbody>
+    </table>
+    <table id="phraseTable" class="display" cellspacing="0" style="width:100%">
+        <thead>
+            <tr>
+                <th>EUPhrac Structure Code</th>
+                <th>English</th>
+                <th>German</th>
+            </tr>
+        </thead>
+    </table>
+
+    @section scripts
+        {
+        <script>
+            $(document).ready(function () {
+                $('#phraseTable').DataTable({
+                    "processing": true,
+                    "pagingType": "full_numbers",
+                    "serverSide": true,
+                    "ajax": {
+                        "url": "/phrase/get",
+                        "type": "GET",
+                        "datatype": "json",
+                        "dataSrc": ""
+                    },
+                    "columns":
+                    [
+                        { "data": "euPhraCStructureCode", "name": "Code", "autoWidth": true },
+                        { "data": "english" },
+                        { "data": "german" }
+                    ]
+                });
+
+                $('input.global_filter').on('keyup click', function (e)
+                {
+                    if (e.which == 13) {
+                        filterGlobal();
+                    }
+                });
+
+                $('input.column_filter').on('keyup click', function (e) {
+                    if (e.which == 13) {
+                        filterColumn($(this).parents('tr').attr('data-column'));
+                    }
+                });
+
+                function filterGlobal() {
+                    $('#phraseTable').DataTable().search(
+                        $('#global_filter').val(),
+                        $('#global_regex').prop('checked'),
+                        $('#global_smart').prop('checked')
+                    ).draw();
+                }
+
+                function filterColumn(i) {
+                    $('#phraseTable').DataTable().column(i).search(
+                        $('#col' + i + '_filter').val(),
+                        $('#col' + i + '_regex').prop('checked'),
+                        $('#col' + i + '_smart').prop('checked')
+                    ).draw();
+                }
+
+            });
+
+
+
+        </script>
+    }
