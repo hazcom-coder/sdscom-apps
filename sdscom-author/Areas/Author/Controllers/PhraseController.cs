@@ -8,30 +8,48 @@ using Newtonsoft;
 using SDSComApps.Managers;
 using SDSComApps.Models;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace SDSComApps.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class PhraseController : Controller
-    {
-
-       
+    {       
         private readonly IConfiguration config;
+        private IMemoryCache cache;
 
-        public PhraseController(IConfiguration _config)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="_config"></param>
+        /// <param name="_cache"></param>
+        public PhraseController(IConfiguration _config, IMemoryCache _cache)
         {
             this.config = _config;
-
+            this.cache = _cache;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             return View();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="start"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Get(string start, string length)
         {
-            PhraseManager pMgr = new PhraseManager(config);
+            PhraseManager pMgr = new PhraseManager(config, cache);
 
             List<EuphracPhrase> phrases = pMgr.Get();
             

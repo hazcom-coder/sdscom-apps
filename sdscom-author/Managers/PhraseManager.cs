@@ -7,6 +7,7 @@ using System.Reflection;
 using Npgsql.PostgresTypes;
 using Npgsql;
 using System.Collections;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace SDSComApps.Managers
 {
@@ -22,14 +23,15 @@ namespace SDSComApps.Managers
     public class PhraseManager
     {
         private readonly IConfiguration config;
-
+        private IMemoryCache cache;
         private DataManager dataMgr;
 
-        public PhraseManager(IConfiguration _config)
+        public PhraseManager(IConfiguration _config, IMemoryCache _cache)
         {
             this.config = _config;
+            this.cache = _cache;
 
-            dataMgr = new DataManager(config);
+            dataMgr = new DataManager(config, cache);
         }
 
         public List<EuphracPhrase> Get()

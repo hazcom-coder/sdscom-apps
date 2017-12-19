@@ -7,21 +7,23 @@ using System.Reflection;
 using Npgsql.PostgresTypes;
 using Npgsql;
 using System.Collections;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace SDSComApps.Managers
 {
     public class AdminManager
     {
         private readonly IConfiguration config;
-
+        private IMemoryCache cache;
         private DataManager dataMgr;
         private DocumentManager docMgr;
 
-        public AdminManager(IConfiguration _config)
+        public AdminManager(IConfiguration _config, IMemoryCache _cache)
         {
             this.config = _config;
+            this.cache = _cache;
 
-            dataMgr = new DataManager(config);
+            dataMgr = new DataManager(config, cache);
             docMgr = new DocumentManager(config);
         }
 
