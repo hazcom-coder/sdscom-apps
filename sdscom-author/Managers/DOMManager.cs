@@ -13,8 +13,14 @@ using System.Data;
 
 namespace SDSComApps.Managers
 {
+    /// <summary>
+    /// 
+    /// </summary>
 	public class DOMManager
 	{
+        /// <summary>
+        /// 
+        /// </summary>
 		public DOMManager() { }
 
 		private DOMItem GetDOMItems(DOMItem doc, XmlSchemaSequence theSequence)

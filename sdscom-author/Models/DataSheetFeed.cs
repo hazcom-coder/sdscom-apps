@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
     public class DatasheetFeed

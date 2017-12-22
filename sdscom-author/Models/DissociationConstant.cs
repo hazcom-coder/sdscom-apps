@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class DissociationConstant
     {
         private PhysChemValueWithTemperature valueField;

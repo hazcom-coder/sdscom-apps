@@ -20,12 +20,20 @@ namespace SDSComApps.Managers
 //      + REPLACE(german,'''','''''')  + ''', ''' + ISNULL(CAST(revision_date AS VARCHAR),'') + ''');'
 //      FROM PHRASES
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class PhraseManager
     {
         private readonly IConfiguration config;
         private IMemoryCache cache;
         private DataManager dataMgr;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="_config"></param>
+        /// <param name="_cache"></param>
         public PhraseManager(IConfiguration _config, IMemoryCache _cache)
         {
             this.config = _config;
@@ -34,6 +42,10 @@ namespace SDSComApps.Managers
             dataMgr = new DataManager(config, cache);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public List<EuphracPhrase> Get()
         {  
             NpgsqlCommand cmd = new NpgsqlCommand();
@@ -43,6 +55,10 @@ namespace SDSComApps.Managers
             return GetEuPhracPhraseFromReader(rdr);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public long GetCount()
         {
             long x = 0;

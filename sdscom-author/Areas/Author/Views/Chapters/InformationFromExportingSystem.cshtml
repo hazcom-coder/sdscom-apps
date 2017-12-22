@@ -1,0 +1,54 @@
+﻿@model SDSComApps.Models.InformationFromExportingSystem
+
+@{
+    ViewData["Title"] = "Information From Exporting System";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Information From Exporting System</h2>
+
+Product ID: @ViewData["productid"].ToString()
+<br />
+User Name: @ViewData["username"].ToString()
+
+
+<form asp-action="SaveInformationFromExportingSystem" asp-controller="DataSheet" id="frmInformationFromExportingSystem">
+
+    <label id="lblName" for="txtID">Xml Standard Version No</label>
+    <input type="text" class="form-control" id="txtID" size="100" asp-for="XmlStandardVersionNo" required />
+
+    <label id="lblName" for="txtPC">Phrase Catalogue</label>
+    <input type="text" class="form-control" id="txtPC" size="100" asp-for="PhraseCatalogue" />
+
+    <label id="lblName" for="txtFTLC">Free Text Language Code</label>
+    <input type="text" class="form-control" id="txtFTLC" size="100" asp-for="Language.FreetextLanguageCode" />
+
+    <label id="lblName" for="txtFTLN">Free Text Language Name</label>
+    <input type="text" class="form-control" id="txtFTLN" size="100" asp-for="Language.FreetextLanguageName" />
+
+    <label id="lblName" for="txtRRCR">Regulations Related To Country Or Region</label>
+    <input type="text" class="form-control" id="txtRRCR" size="100" asp-for="RegulationsRelatedToCountryOrRegion" />
+
+    <label id="lblName" for="txtRRCR">System Used In Preparation</label>
+    <input type="text" class="form-control" id="txtSUIP" size="100" asp-for="SystemUsedInPreparation" />
+
+    <label id="lblName" for="txtDGE">Date Generated Export</label>
+    <input type="date" class="form-control" id="txtDGE" size="100" asp-for="DateGeneratedExport" />
+
+    <label id="lblName" for="txtDGE">Legal Document</label>
+
+    <label id="lblName" for="txtLDLDF">Legal Document File Name</label>
+    <input type="text" class="form-control" id="txtLDLDF" size="100" asp-for="LegalDocument.LegalDocumentFileName" />
+
+    <label id="lblName" for="txtLDPD">Legal Document Print Date</label>
+    <input type="date" class="form-control" id="txtLDPD" size="100" asp-for="LegalDocument.LegalDocumentPrintDate" />
+
+    <label id="lblName" for="txtLDS">Legal Document Signature</label>
+    <input type="text" class="form-control" id="txtLDS" size="100" asp-for="LegalDocument.LegalDocumentSignature" />
+
+
+    <input type="submit" id="btnSubmit" value="Save" />
+    <input type="button" id="btnCacel" value="Cacel" onclick="javascript:history.back();" />
+
+</form>
+

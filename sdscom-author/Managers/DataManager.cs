@@ -14,6 +14,9 @@ using Microsoft.Extensions.Primitives;
 
 namespace SDSComApps.Managers
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class DataManager
     {
         private readonly IConfiguration config;
@@ -21,6 +24,11 @@ namespace SDSComApps.Managers
 
         private string connString;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="_config"></param>
+        /// <param name="_cache"></param>
         public DataManager(IConfiguration _config, IMemoryCache _cache)
         {
             this.config = _config;
@@ -30,6 +38,13 @@ namespace SDSComApps.Managers
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cmd"></param>
+        /// <param name="ReturnId"></param>
+        /// <param name="ReturnField"></param>
+        /// <returns></returns>
         public Int64 Execute(NpgsqlCommand cmd, bool ReturnId = false , string ReturnField = "")
         {
             Int64 ret = 0;
@@ -90,23 +105,41 @@ namespace SDSComApps.Managers
 
         private static CancellationTokenSource cts = new CancellationTokenSource();
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cacheKey"></param>
+        /// <returns></returns>
         public string GetCachedItem(string cacheKey)
         {            
             cache.TryGetValue<string>(cacheKey, out string obj);            
             return obj;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cacheKey"></param>
+        /// <param name="itemContent"></param>
+        /// <returns></returns>
         public bool SetCachedItem(string cacheKey, string itemContent)
         {
             cache.Set(cacheKey, itemContent, new CancellationChangeToken(cts.Token));
             return true;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="cacheKey"></param>
         public void RemoveCachedItem(string cacheKey)
         {
             cache.Remove(cacheKey);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void ClearCache()
         {
             if (cts != null && !cts.IsCancellationRequested && cts.Token.CanBeCanceled)

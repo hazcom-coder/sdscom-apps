@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class AspirationHazard
     {
@@ -104,11 +107,36 @@ namespace SDSComApps.Models
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public AspirationHazardTestResults AspirationHazardTestResultsField { get => aspirationHazardTestResultsField; set => aspirationHazardTestResultsField = value; }
+
+        /// <summary>
+        /// 
+        /// 
+        /// </summary>
         public UnitValue AspirationHazardHydrocarbonContentField { get => aspirationHazardHydrocarbonContentField; set => aspirationHazardHydrocarbonContentField = value; }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Phrase[] AspirationHazardOtherInfoField { get => aspirationHazardOtherInfoField; set => aspirationHazardOtherInfoField = value; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Phrase[] AspirationHazardHumanExperienceField { get => aspirationHazardHumanExperienceField; set => aspirationHazardHumanExperienceField = value; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Phrase[] AssessmentAspirationHazardClassificationField { get => assessmentAspirationHazardClassificationField; set => assessmentAspirationHazardClassificationField = value; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         public Phrase[] AspirationHazardCommentsField { get => aspirationHazardCommentsField; set => aspirationHazardCommentsField = value; }
     }
 

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
-
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ClpClassification
     {
@@ -59,6 +59,9 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ClpHazardClassification
     {
@@ -128,6 +131,9 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
     public class HazardStatement
     {
 
@@ -141,6 +147,7 @@ namespace SDSComApps.Models
 
         private string phraseCatalogueIdField;
 
+        /// <remarks/>
         public HazardStatement()
         {
             this.phraseCatalogueIdField = "0";
@@ -218,6 +225,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ClassificationDpdDsdClassification
     {
@@ -271,7 +279,7 @@ namespace SDSComApps.Models
         }
     }
 
-
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ClassificationDpdDsdClassificationDpdDsdHazardClassification
     {

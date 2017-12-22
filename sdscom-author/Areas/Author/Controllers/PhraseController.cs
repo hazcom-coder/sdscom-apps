@@ -9,26 +9,33 @@ using SDSComApps.Managers;
 using SDSComApps.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.AspNetCore.Http;
 
 namespace SDSComApps.Controllers
 {
     /// <summary>
     /// 
     /// </summary>
-    public class PhraseController : Controller
-    {       
+    [Area("Author")]
+    public class PhraseController : BaseController
+    {
+        private readonly IHttpContextAccessor httpContextAccessor;
+        private ISession Session => httpContextAccessor.HttpContext.Session;
         private readonly IConfiguration config;
         private IMemoryCache cache;
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="_config"></param>
-        /// <param name="_cache"></param>
-        public PhraseController(IConfiguration _config, IMemoryCache _cache)
+       /// <summary>
+       /// 
+       /// </summary>
+       /// <param name="_config"></param>
+       /// <param name="_cache"></param>
+       /// <param name="_httpContextAccessor"></param>
+        public PhraseController(IConfiguration _config, IMemoryCache _cache, IHttpContextAccessor _httpContextAccessor)
+            : base(_config, _cache, _httpContextAccessor)
         {
             this.config = _config;
             this.cache = _cache;
+            this.httpContextAccessor = _httpContextAccessor;
         }
 
         /// <summary>

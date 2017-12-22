@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "SDSCom Application Administrator";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form id="frmAdminIndex" name="frmAdminIndex">
+
+    <h2>SDSCom Application Administrator</h2>
+    <br />
+    <br />
+    <input id="btnCache" type="button" value="Clear Cache" class="btn-danger" onclick="clearCache()" />
+    <br />
+    <br />
+    <input id="btnAPI" type="button" value="View API Documentation" class="btn-link" onclick="showSwagger()" />
+    <br />
+    <br />
+    <a class="btn-link" asp-action="ApplicationSettings" asp-controller="Administrator/Administrator" id="hlAdmin">Application Settings </a>
+    <br />
+    <br />
+    <a class="btn-link" asp-action="CreateDBObjects" asp-controller="Administrator/Administrator" id="hlCreateDBObjects">Recreate DB objects</a>
+
+</form>
+
+@section scripts
+{
+    <script>
+
+        $(document).ready(function ()
+        {
+            $('#frmAdminIndex *').each(function () {
+                var attr = $(this).attr('transkey');
+               
+                if (typeof attr !== typeof undefined && attr !== false)
+                {                    
+                    var baseValue = $(this).val();
+                    var title = $(this).attr('transkey'); 
+                    if (baseValue.trim().length === 0)
+                    {
+                        baseValue = $(this).text();
+                        $(this).text('EN:' + baseValue);
+                    }
+                    else
+                    {
+                        $(this).val('EN:' + baseValue);
+                    }                    
+                }
+            });
+        });
+
+        function clearCache() {
+            $.ajax({
+                url: "Administrator/Administrator/ClearCache",
+                success: function (data) {
+                    if (data.success === true) {
+                        alert("Success");
+                    }
+                }
+            });
+        }
+
+        function showSwagger() {
+            window.open("swagger");
+        }
+
+
+    </script>
+}

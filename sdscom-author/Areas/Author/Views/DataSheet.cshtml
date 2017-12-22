@@ -1,0 +1,28 @@
+﻿@model SDSComApps.Models.Datasheet
+
+@{
+    ViewData["Title"] = "Data Sheet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Data Sheet</h2>
+
+<div id="divMain">
+
+    <div id="divChapter0" class="modcard">
+        <div class="card-body">
+            <h4 class="card-title" transkey="0">Chapter 0</h4>
+            <p class="card-text" transkey="0">Information From Exporting System.</p>
+            <a asp-action="InformationFromExportingSystem" asp-controller="Author/DataSheet" id="hlInformationFromExportingSystem" transkey="0">Edit</a>
+        </div>
+    </div>
+
+    <div id="divChapter1" class="modcard">
+        <div class="card-body">
+            <h4 class="card-title" transkey="0">Chapter 1</h4>
+            <p class="card-text" transkey="0">Identification of the Substance or Preparation.</p>
+            <a asp-action="IdentificationSubstPrep" asp-controller="Author/DataSheet" id="hlIdentificationSubstPrep" transkey="0">Edit</a>
+        </div>
+    </div>
+
+</div>

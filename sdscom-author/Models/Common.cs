@@ -1,5 +1,8 @@
 ﻿    namespace SDSComApps.Models
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class RegulationsRelatedToCountryOrRegion
         {
@@ -36,6 +39,9 @@
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class LegalDocument
         {
@@ -104,6 +110,9 @@
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class Extension
         {
@@ -156,6 +165,9 @@
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class RelatedDocuments
         {
@@ -192,6 +204,9 @@
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrep
         {
@@ -500,6 +515,9 @@
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ProductNo
         {
@@ -537,6 +555,9 @@
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrepProductIdentity
         {
@@ -606,6 +627,9 @@
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class InformationOnTheSds
         {
@@ -675,6 +699,9 @@
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class CompleteSdsWithEsIncorporated
         {
@@ -728,6 +755,9 @@
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrepRelevantIdentifiedUse
         {
@@ -781,6 +811,9 @@
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrepRelevantIdentifiedUseIdentifiedUse
         {
@@ -1007,6 +1040,9 @@
             }
         }
 
+    /// <summary>
+    /// 
+    /// </summary>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SpecificEnvironmentalReleaseCategory
         {
@@ -1045,6 +1081,7 @@
         }
 
 
+        /// <remarks/>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class RelevantIdentifiedUseProductFunction
         {
@@ -1137,7 +1174,8 @@
 
             private bool printAsAttachmentField;
 
-            public UseAdvisedAgainstNotToBeUsedIn()
+        /// <remarks/>
+        public UseAdvisedAgainstNotToBeUsedIn()
             {
                 this.identifiedUseIdField = "0";
                 this.printAsAttachmentField = true;
@@ -1793,7 +1831,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SupplierInformationCompanyContact
         {
 
@@ -2000,7 +2039,9 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardIdentificationHazardLabelling
         {
 
@@ -2165,7 +2206,9 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ClpLabellingInfo
         {
 
@@ -3000,7 +3043,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class MedicalAttentionAndSpecialTreatmentNeeded
         {
 
@@ -3239,7 +3283,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class AccidentalReleaseMeasures
         {
 

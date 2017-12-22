@@ -34,6 +34,9 @@ namespace SDSComApps.Models
 
         private string componentInternalSdsIdField;
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Component()
         {
             this.componentIdField = "0";

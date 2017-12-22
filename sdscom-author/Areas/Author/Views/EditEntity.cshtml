@@ -1,0 +1,26 @@
+﻿@model SDSComApps.Models.Entity
+@{
+    ViewData["Title"] = "Create Entity";
+}
+
+<h2>Product</h2>
+
+<form asp-action="Save" asp-controller="Entity" id="frmEntity">
+
+    <label id="lblName" for="txtID">System ID</label>
+    <input type="text" class="form-control" id="txtID" size="100" asp-for="ID" />
+
+    <label id="lblName" for="txtName">Name</label>
+    <input type="text" class="form-control" id="txtName" size="2000" asp-for="Name" />
+
+    <label id="lblOtherID" for="txtOtherID" >Other Id</label>
+    <input type="text"class="form-control"  id="txtOtherID" size="2000" asp-for="OtherId" />
+
+    <label id="lblUserID" asp-for="UserId">Updated By</label>   
+
+    <label id="lblDateStmp" asp-for="DateStamp">Date Stamp</label>   
+    
+    <input type="submit" id="btnSubmit" value="Save"/>
+
+</form> 
+

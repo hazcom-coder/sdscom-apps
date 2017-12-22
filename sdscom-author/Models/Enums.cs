@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace SDSComApps.Models
 {
 
-
+    /// <remarks/>
     public enum SolubilityMediumEnum
     {
 
@@ -23,6 +23,7 @@ namespace SDSComApps.Models
         Other,
     }
 
+    /// <remarks/>
     public enum SafetySignEnum
     {
 
@@ -75,6 +76,7 @@ namespace SDSComApps.Models
         Item32,
     }
 
+    /// <remarks/>
     public enum PhValueStateEnum
     {
 
@@ -87,7 +89,7 @@ namespace SDSComApps.Models
         Inaqueoussolution,
     }
 
-
+    /// <remarks/>
     public enum EffectLevelGroupEnum
     {
 
@@ -107,6 +109,7 @@ namespace SDSComApps.Models
     /// <remarks/>
 
 
+    /// <remarks/>
     public enum PNECTypeEnum
     {
 
@@ -190,7 +193,7 @@ namespace SDSComApps.Models
     //}
 
 
-
+    /// <remarks/>
     public enum EffectLevelTypeEnum
     {
 
@@ -237,7 +240,7 @@ namespace SDSComApps.Models
 
 
 
-
+    /// <remarks/>
     public enum ExposureLimitValueTypeEnum
     {
 
@@ -311,7 +314,7 @@ namespace SDSComApps.Models
         HTP,
     }
 
-
+    /// <remarks/>
     public enum HazardStatementEnum
     {
 
@@ -664,7 +667,7 @@ namespace SDSComApps.Models
         Item302312332,
     }
 
-
+    /// <remarks/>
     public enum ClassificationCategoryEnum
     {
 
@@ -737,7 +740,7 @@ namespace SDSComApps.Models
         ReprCat3,
     }
 
-
+    /// <remarks/>
     public enum RiskPhraseEnum
     {
 
@@ -1234,6 +1237,7 @@ namespace SDSComApps.Models
         Item6822,
     }
 
+    /// <remarks/>
     public enum SectorOfUseCodeEnum
     {
 
@@ -1319,7 +1323,7 @@ namespace SDSComApps.Models
         SU0,
     }
 
-
+    /// <remarks/>
     public enum ProductCategoryCodeEnum
     {
 
@@ -1444,6 +1448,7 @@ namespace SDSComApps.Models
         PC0,
     }
 
+    /// <remarks/>
     public enum ProcessCategoryCodeEnum
     {
 
@@ -1536,7 +1541,7 @@ namespace SDSComApps.Models
     }
 
 
-
+    /// <remarks/>
     public enum EnvironmentalReleaseCategoryCodeEnum
     {
 
@@ -1615,7 +1620,7 @@ namespace SDSComApps.Models
 
 
 
-
+    /// <remarks/>
     public enum ArticleCategoryCodeEnum
     {
 
@@ -1684,7 +1689,7 @@ namespace SDSComApps.Models
 
 
 
-
+    /// <remarks/>
     public enum SafetyPhraseEnum
     {
 
@@ -1982,7 +1987,7 @@ namespace SDSComApps.Models
     }
 
 
-
+    /// <remarks/>
     public enum SpecialSupplementalLabelInfoEnum
     {
 
@@ -2039,7 +2044,7 @@ namespace SDSComApps.Models
         Item401,
     }
 
-
+    /// <remarks/>
     public enum SupplementalHazardInformationEnum
     {
 
@@ -2096,7 +2101,7 @@ namespace SDSComApps.Models
         Item059,
     }
 
-
+    /// <remarks/>
     public enum SignalWordEnum
     {
 
@@ -2107,7 +2112,7 @@ namespace SDSComApps.Models
         WNG,
     }
 
-
+    /// <remarks/>
     public enum PictogramCodeEnum
     {
 
@@ -2139,7 +2144,7 @@ namespace SDSComApps.Models
         GHS09,
     }
 
-
+    /// <remarks/>
     public enum LanguageCodeEnum
     {
 
@@ -2696,7 +2701,7 @@ namespace SDSComApps.Models
         zu,
     }
 
-
+    /// <remarks/>
     public enum CountryCodeEnum
     {
 
@@ -3448,7 +3453,7 @@ namespace SDSComApps.Models
         ZW,
     }
 
-
+    /// <remarks/>
     public enum RoleDescriptionEnum
     {
 
@@ -3508,7 +3513,7 @@ namespace SDSComApps.Models
         Distributor,
     }
 
-
+    /// <remarks/>
     public enum HazardSymbolCodeEnum
     {
 
@@ -3562,7 +3567,7 @@ namespace SDSComApps.Models
         III,
     }
 
-
+    /// <remarks/>
     public enum XMLStandardSubsetEnum
     {
 
@@ -3580,6 +3585,7 @@ namespace SDSComApps.Models
         undefined,
     }
 
+    /// <remarks/>
     public enum AssessmentEnum
     {
 
@@ -3594,7 +3600,7 @@ namespace SDSComApps.Models
         Notassessed,
     }
 
-
+    /// <remarks/>
     public enum ViscosityTypeEnum
     {
 
@@ -3615,7 +3621,7 @@ namespace SDSComApps.Models
         Other,
     }
 
-
+    /// <remarks/>
     public enum GasGroupEnum
     {
 
@@ -3629,6 +3635,7 @@ namespace SDSComApps.Models
         IIC,
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(IncludeInSchema = false)]
     public enum ItemsChoiceType2
     {
@@ -3646,7 +3653,7 @@ namespace SDSComApps.Models
         Value,
     }
 
-
+    /// <remarks/>
     public enum ExposureRouteEnum
     {
 
@@ -3695,7 +3702,7 @@ namespace SDSComApps.Models
         Unreported,
     }
 
-
+    /// <remarks/>
     public enum HazardClassCategoryEnum
     {
         /// <remarks/>

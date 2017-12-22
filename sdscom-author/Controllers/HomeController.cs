@@ -8,34 +8,51 @@ using SDSComApps.Models;
 using SDSComApps.Managers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.AspNetCore.Http;
+using ServiceStack;
+
 
 namespace SDSComApps.Controllers
 {
     /// <summary>
     /// basic start page
     /// </summary>
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
+        private readonly IHttpContextAccessor httpContextAccessor;
+        private ISession Session => httpContextAccessor.HttpContext.Session;
         private readonly IConfiguration config;
         private IMemoryCache cache;
+
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="_config"></param>
         /// <param name="_cache"></param>
-        public HomeController(IConfiguration _config, IMemoryCache _cache)
+        /// <param name="_httpContextAccessor"></param>
+        public HomeController(IConfiguration _config, IMemoryCache _cache, IHttpContextAccessor _httpContextAccessor)
+            : base(_config, _cache, _httpContextAccessor)
         {
             this.config = _config;
             this.cache = _cache;
+            this.httpContextAccessor = _httpContextAccessor;
+
+            this.SessionEntityID = "1";
+            this.SessionUserName = "tester";
+
         }
 
+       
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
         public IActionResult Index()
         {
+          //  DocumentManager dMgr = new DocumentManager(config);
+           // dMgr.LoadSchemaStructure();
+
             return View();
         }
 
@@ -59,27 +76,6 @@ namespace SDSComApps.Controllers
             return View();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        //public IActionResult Administrator()
-        //{
-        //    AdminManager adminMgr = new AdminManager(config, cache);
-
-        //    adminMgr.MapElements();
-
-        //    return View("~/Areas/Administrator/Views/Administrator.cshtml");
-        //}
-
-        //public IActionResult PhraseManager()
-        //{
-        //    AdminManager adminMgr = new AdminManager(config, cache);
-
-        //    adminMgr.MapElements();
-
-        //    return View("~/Areas/Author/Views/Phrase.cshtml");
-        //}
 
         /// <summary>
         /// 

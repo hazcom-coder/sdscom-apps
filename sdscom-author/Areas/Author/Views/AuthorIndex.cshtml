@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Authoring Start Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+
+<h2>Authoring Start Page</h2>
+
+<div id="divMain">
+
+    <div id="divProductModule" class="modcard">
+        <div class="card-body">
+            <h4 class="card-title" transkey="0">Create a new Product </h4>
+            <p class="card-text" transkey="0">This is the module you have always wanted for adding products.</p>
+            <a class="btn-link" asp-action="Index" asp-controller="Author/Product" id="hlPhrase" transkey="0">Create Product</a>
+        </div>
+    </div>
+
+    <div id="divCreateDataSheet" class="modcard">
+        <div class="card-body">
+            <h4 class="card-title" transkey="0">Create a DataSheet for an existing Product </h4>
+            <p class="card-text" transkey="0">Creating datasheets for products.</p>
+            <a class="btn-link" asp-action="CreateDataSheet" asp-controller="Author/Product" id="hlPhrase">Create DataSheet</a>
+        </div>
+    </div>
+
+    <div id="divSubstanceModule" class="modcard">
+        <div class="card-title">
+            Substance Module
+        </div>
+        <div class="card-body" transkey="0">
+            <p class="card-text" transkey="0">This is the module you have always wanted for Substances.</p>
+            <a class="btn-link" asp-action="Index" asp-controller="Substance" id="hlSubstances" transkey="0">View Substances</a>
+        </div>
+    </div>
+
+    <div id="divPhraseModule" class="modcard">
+        <div class="card-title">
+            Phrase Module
+        </div>
+        <div class="card-body">
+            <p class="card-text">This is the module you have always wanted for phrases.</p>
+            <a class="btn-link" asp-action="Phrase" asp-controller="Product" id="hlPhrase">View Phrases</a>
+        </div>
+    </div>
+
+    <div id="divDocumentModule" class="modcard">
+        <div class="card-title">
+            Document Module
+        </div>
+        <div class="card-body">
+            <p class="card-text">This is the module you have always wanted for Document.</p>
+            <a class="btn-link" asp-action="Index" asp-controller="Document" id="hlDocument">View Documents</a>
+        </div>
+    </div>
+
+</div>

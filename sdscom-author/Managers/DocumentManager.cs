@@ -13,11 +13,18 @@ using Microsoft.Extensions.Configuration;
 
 namespace SDSComApps.Managers
 {
+    /// <summary>
+    /// 
+    /// </summary>
 	public class DocumentManager
 	{
         private readonly IConfiguration config;
         private string appdatafolder;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="_config"></param>
         public DocumentManager(IConfiguration _config)
         {
             this.config = _config;
@@ -25,6 +32,10 @@ namespace SDSComApps.Managers
             appdatafolder = config["Folders:Schemas"];
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public XmlSchemaSet GetSchemas()
         {
             XmlSchemaSet schemaSet = new XmlSchemaSet();
@@ -39,14 +50,94 @@ namespace SDSComApps.Managers
 
             foreach (var file in d.GetFiles("*.xsd"))
             {
-                schemaSet.Add("http://www.tempuri.org", appdatafolder + @"\" + file.Name);
+                XmlTextReader textReader = new XmlTextReader(appdatafolder + @"\" + file.Name);
+
+                XmlDocument xdcc = new XmlDocument();
+
+                xdcc.Load(textReader);
+
+                XmlNode root = xdcc.DocumentElement;
+                List<string> nodeNames = new List<string>();
+
+                XmlNode datasheetNode;
+                XmlNode chapter0Node;
+
+
+                foreach (XmlNode node in root.ChildNodes)
+                {
+                    nodeNames.Add(node.Name);
+
+                    if (node.Name == "xs:element")
+                    {
+                        string t = node.InnerText;
+                        datasheetNode = node.ChildNodes[1].ChildNodes[0].ChildNodes[1];
+                        chapter0Node = datasheetNode.ChildNodes[1].ChildNodes[0].ChildNodes[1];
+
+
+                        break;
+                    }
+                }
+
+                // schemaSet.Add("http://www.tempuri.org", appdatafolder + @"\" + file.Name);
             }
 
             schemaSet.Compile();
 
+          //  BuildInformationFromExportingSystemPage(chapter0Node);
+
             return schemaSet;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public bool LoadSchemaStructure()
+        {
+            DirectoryInfo d = new DirectoryInfo(appdatafolder);
+            XmlTextReader textReader = new XmlTextReader(appdatafolder + @"\SDSComXML.xsd");
+
+            XmlDocument xdcc = new XmlDocument();
+
+            xdcc.Load(textReader);
+
+            XmlNode root = xdcc.DocumentElement;
+
+            XmlNode datasheetNode = null;
+            XmlNode chapter0Node = null;
+
+            foreach (XmlNode node in root.ChildNodes)
+            {     
+                if (node.Name == "xs:element")
+                {
+                    string t = node.InnerText;
+                    datasheetNode = node.ChildNodes[1].ChildNodes[0].ChildNodes[1];
+                    chapter0Node = datasheetNode.ChildNodes[1].ChildNodes[0].ChildNodes[1];
+
+
+                    break;
+                }
+            }
+
+            BuildInformationFromExportingSystemPage(chapter0Node);
+
+            Datasheet sds = new Datasheet();
+            InformationFromExportingSystem chapter0 = new InformationFromExportingSystem();
+
+            return true;
+
+        }
+
+        private void BuildInformationFromExportingSystemPage(XmlNode chapter0Node)
+        {
+
+        }
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public Document LoadDocumentSchema()
 		{	
 			Document doc = new Document();

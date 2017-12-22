@@ -5,13 +5,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
 using Serilog;
 using Swashbuckle.AspNetCore.Swagger;
+using SDSComApps.Controllers;
 
-namespace sdscom_author
+namespace SDSComApps
 {
     /// <summary>
     /// 
@@ -44,7 +47,21 @@ namespace sdscom_author
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton(_ => Configuration);
+
+            services.AddSingleton<IAppInitializeController, AppInitializeController>();
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             services.AddMemoryCache();
+
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromSeconds(3600);
+                options.Cookie.HttpOnly = true;
+            });
+
             services.AddMvc();
 
             services.AddSwaggerGen(c =>
@@ -72,11 +89,8 @@ namespace sdscom_author
         /// <param name="env"></param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-            // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
-            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "SDSComXML API v1");
@@ -94,6 +108,8 @@ namespace sdscom_author
 
             app.UseStaticFiles();
 
+            app.UseSession();
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
@@ -107,10 +123,7 @@ namespace sdscom_author
                 routes.MapRoute(
                     name: "Administrator",
                     template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-            });
-
-          
-
+            });  
         }
     }
 }
