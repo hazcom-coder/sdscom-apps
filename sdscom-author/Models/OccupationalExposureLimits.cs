@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
+    /// <remarks/>
     public class OccupationalExposureLimit
     {
 
@@ -191,6 +192,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class OccupationalExposureLimitExposureLimitLetter
     {
@@ -228,7 +230,7 @@ namespace SDSComApps.Models
         }
     }
 
-
+    /// <remarks/>
     public class ExposureControlPersonalProtection
     {
 
@@ -377,6 +379,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionControlParameters
     {
@@ -478,7 +481,8 @@ namespace SDSComApps.Models
         }
     }
 
-[System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionControlParametersExposureGuidelines
     {
 
@@ -515,6 +519,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionControlParametersBiologicalLimitValues
     {
@@ -568,6 +573,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionSummaryRMMeasures
     {
@@ -621,6 +627,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionSummaryRMMeasuresRMMControlBandingApproach
     {
@@ -722,6 +729,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionExposureControlAppropriateMeasures
     {
@@ -807,6 +815,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipment
     {
@@ -940,6 +949,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipmentRespiratoryProtection
     {
@@ -1073,6 +1083,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipmentEyeProtection
     {
@@ -1190,6 +1201,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipmentHandProtection
     {
@@ -1435,6 +1447,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipmentHandProtectionEquipment
     {
@@ -1552,6 +1565,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionPersonalProtectionEquipmentSkinProtection
     {
@@ -1701,6 +1715,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionEnvironmentalExposureControls
     {
@@ -1754,6 +1769,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionEnvironmentalExposureControlsAppropriateEnvionmentalExposureControl
     {
@@ -1823,6 +1839,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ExposureControlPersonalProtectionConsumerExposureControl
     {

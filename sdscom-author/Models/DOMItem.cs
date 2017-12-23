@@ -42,16 +42,22 @@ namespace SDSComApps.Models
 		public DOMChoiceItem Choice { get; set; }
 	}
 
+    /// <remarks/>
 	public class DOMChoiceItem
 	{
+        /// <remarks/>
 		public DOMChoiceItem() { }
 
+        /// <remarks/>
 		public string First { get; set; }
 
+        /// <remarks/>
 		public List<DOMItem> FirstSubItems { get; set; }
 
+        /// <remarks/>
 		public string Second { get; set; }
 
+        /// <remarks/>
 		public List<DOMItem> SecondSubItems { get; set; }
 
 	}

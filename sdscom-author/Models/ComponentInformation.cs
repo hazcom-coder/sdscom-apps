@@ -342,6 +342,7 @@ namespace SDSComApps.Models
 
         private bool printAsAttachmentField;
 
+        /// <remarks/>
         public ComponentInformationIdentifiedUse()
         {
             this.identifiedUseIdField = "0";

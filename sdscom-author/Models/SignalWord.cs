@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
+    /// <remarks/>
     public class SpecialSupplementalLabelInfo
     {
-
         private SpecialSupplementalLabelInfoEnum phraseCodeField;
 
         private bool phraseCodeFieldSpecified;
@@ -20,6 +20,7 @@ namespace SDSComApps.Models
 
         private string phraseCatalogueIdField;
 
+        /// <remarks/>
         public SpecialSupplementalLabelInfo()
         {
             this.phraseCatalogueIdField = "0";
@@ -111,6 +112,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     public class SupplementalHazardInformation
     {
 
@@ -126,6 +128,7 @@ namespace SDSComApps.Models
 
         private string phraseCatalogueIdField;
 
+        /// <remarks/>
         public SupplementalHazardInformation()
         {
             this.phraseCatalogueIdField = "0";
@@ -217,6 +220,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     public class PrecautionaryStatement
     {
 
@@ -230,6 +234,7 @@ namespace SDSComApps.Models
 
         private string phraseCatalogueIdField;
 
+        /// <remarks/>
         public PrecautionaryStatement()
         {
             this.phraseCatalogueIdField = "0";
@@ -307,6 +312,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     public class SignalWord
     {
 
@@ -320,6 +326,7 @@ namespace SDSComApps.Models
 
         private string phraseCatalogueIdField;
 
+        /// <remarks/>
         public SignalWord()
         {
             this.phraseCatalogueIdField = "0";
@@ -397,6 +404,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     public class HazardPictogram
     {
 
@@ -410,6 +418,7 @@ namespace SDSComApps.Models
 
         private string phraseCatalogueIdField;
 
+        /// <remarks/>
         public HazardPictogram()
         {
             this.phraseCatalogueIdField = "0";
@@ -487,9 +496,9 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     public class ProductGtin
     {
-
         private string noField;
 
         private string nameField;

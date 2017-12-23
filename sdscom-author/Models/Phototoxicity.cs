@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class Phototoxicity
     {
@@ -12,6 +13,7 @@ namespace SDSComApps.Models
 
         private Phrase[] phototoxicityOtherInfoField;
 
+        /// <remarks/>
         [System.Xml.Serialization.XmlElement("PhototoxicityTestResults", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public PhototoxicityTestResults[] PhototoxicityTestResults
         {
@@ -25,6 +27,7 @@ namespace SDSComApps.Models
             }
         }
 
+        /// <remarks/>
         [System.Xml.Serialization.XmlElement("PhototoxicityOtherInfo", Form = System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public Phrase[] PhototoxicityOtherInfo
         {
@@ -39,6 +42,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhototoxicityTestResults
     {
@@ -187,6 +191,7 @@ namespace SDSComApps.Models
         }
     }
 
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class PhototoxicityTestResultsResults    {
 

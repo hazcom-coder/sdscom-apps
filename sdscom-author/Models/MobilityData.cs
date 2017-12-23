@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
-    public  class MobilityData
+    /// <remarks/>
+    public class MobilityData
     {
         private UnitValue valueField;
 

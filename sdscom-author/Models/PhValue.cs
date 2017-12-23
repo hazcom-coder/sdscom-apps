@@ -4,7 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace SDSComApps.Models
-{
+{ 
+    /// <remarks/>
     public class PhValue
     {
         private PhValueStateEnum stateField;

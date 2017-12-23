@@ -116,7 +116,7 @@ namespace SDSComApps.Models
     }
 
 
-
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ComponentCompRestrictionsNationalRestrictions
     {
@@ -170,7 +170,7 @@ namespace SDSComApps.Models
         }
     }
 
-
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class ComponentTransportInformation
     {

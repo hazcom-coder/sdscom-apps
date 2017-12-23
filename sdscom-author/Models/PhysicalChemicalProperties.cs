@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
-
+    /// <remarks/>
     public class PhysicalChemicalProperties
     {
 
@@ -2323,6 +2323,4 @@ namespace SDSComApps.Models
             }
         }
     }
-
-    /// <remarks/>
 }

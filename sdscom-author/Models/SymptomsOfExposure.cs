@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
-
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class SymptomsOfExposure
     {

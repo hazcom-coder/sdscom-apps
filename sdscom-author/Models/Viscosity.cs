@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
-    public  class Viscosity    {
+    /// <remarks/>
+    public class Viscosity    {
 
         private PhysChemUnitValueWithTemperature valueField;
 

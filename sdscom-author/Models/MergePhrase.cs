@@ -21,6 +21,7 @@ namespace SDSComApps.Models
 
         private string listItemNoField;
 
+        /// <remarks/>
         public MergePhrase()
         {
             this.phraseCatalogueIdField = "0";

@@ -11,7 +11,7 @@ namespace SDSComApps.Models
     {
     }
 
-
+    /// <remarks/>
     public class PhysChemUnitValueWithTemperature : PhysChemUnitValue
     {
     }

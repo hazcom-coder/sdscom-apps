@@ -67,6 +67,10 @@ namespace SDSComApps.Managers
 			return theDoc;
 		}
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
 		public DOMItem LoadSchemas()
 		{
 			DOMItem doc = new DOMItem();

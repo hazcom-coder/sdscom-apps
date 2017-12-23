@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
+    /// <remarks/>
     public class RiskPhrase
     {
         private RiskPhraseEnum phraseCodeField;
@@ -17,6 +18,7 @@ namespace SDSComApps.Models
 
         private string phraseCatalogueIdField;
 
+        /// <remarks/>
         public RiskPhrase()
         {
             this.phraseCatalogueIdField = "0";

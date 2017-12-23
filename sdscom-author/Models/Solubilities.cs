@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
+    /// <remarks/>
     [System.Xml.Serialization.XmlType(AnonymousType = true)]
     public class SolubilitiesSolubility
     {
@@ -59,7 +60,7 @@ namespace SDSComApps.Models
     }
 
 
-
+    /// <remarks/>
     public class Solubilities
     {
         private Phrase[] solubilityDescriptionField;

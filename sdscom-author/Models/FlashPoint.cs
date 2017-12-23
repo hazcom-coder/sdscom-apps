@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
+    /// <remarks/>
     public class FlashPoint
     {
         private PhysChemUnitValue valueField;

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SDSComApps.Models
 {
-
+    /// <remarks/>
     public class PNEC
     {
 

@@ -838,6 +838,7 @@
 
             private bool printAsAttachmentField;
 
+            /// <remarks/>
             public IdentificationSubstPrepRelevantIdentifiedUseIdentifiedUse()
             {
                 this.identifiedUseIdField = "0";
@@ -987,6 +988,7 @@
             }
         }
 
+        /// <remarks/>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EnvironmentalReleaseCategory
         {
@@ -1119,6 +1121,7 @@
             }
         }
 
+        /// <remarks/>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrepUseAdvisedAgainst
         {
@@ -1156,6 +1159,7 @@
             }
         }
 
+        /// <remarks/>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class UseAdvisedAgainstNotToBeUsedIn
         {
@@ -1283,6 +1287,7 @@
         }
 
 
+        /// <remarks/>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ChemicalUsedByTheGeneralPublic
         {
@@ -1352,6 +1357,7 @@
             }
         }
 
+        /// <remarks/>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class IdentificationSubstPrepSupplierInformation
         {
@@ -1549,6 +1555,7 @@
             }
         }
 
+        /// <remarks/>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SupplierInformationRole
         {
@@ -1634,6 +1641,7 @@
             }
         }
 
+        /// <remarks/>
         [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SupplierInformationAddress
         {
@@ -1949,7 +1957,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EmergencyPhone
         {
 
@@ -1986,7 +1995,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardIdentification
         {
 
@@ -2341,7 +2351,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class DpdDsdHazardLabelling
         {
 
@@ -2458,7 +2469,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class LabellingAccordingToOtherEuLegislation
         {
 
@@ -2527,7 +2539,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class LabellingAccordingToOtherEuLegislationVocLabelling
         {
 
@@ -2580,7 +2593,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class OtherHazardsInfo
         {
 
@@ -2681,7 +2695,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class Composition
         {
 
@@ -2718,8 +2733,8 @@
                 }
             }
         }
-
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class CompositionMixture
         {
 
@@ -2804,7 +2819,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class FirstAidMeasures
         {
 
@@ -2889,7 +2905,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class DescriptionOfFirstAidMeasures
         {
 
@@ -2990,7 +3007,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class InformationToHealthProfessionals
         {
 
@@ -3129,7 +3147,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class FireFightingMeasures
         {
 
@@ -3246,7 +3265,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ExtinguishingMedia
         {
 
@@ -3401,7 +3421,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ForNonEmergencyPersonnel
         {
 
@@ -3454,7 +3475,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ContainmentAndCleaningUp
         {
 
@@ -3507,7 +3529,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HandlingAndStorage
         {
 
@@ -3592,7 +3615,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SafeHandling
         {
 
@@ -3693,7 +3717,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class PrecautionaryMeasures
         {
 
@@ -3761,8 +3786,8 @@
                 }
             }
         }
-
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ConditionsForSafeStorage
         {
 
@@ -3911,7 +3936,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SpecificEndUses
         {
 
@@ -3948,7 +3974,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class StabilityReactivity
         {
 
@@ -4065,7 +4092,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class DisposalConsiderations
         {
 
@@ -4119,7 +4147,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class WasteTreatment
         {
 
@@ -4155,8 +4184,8 @@
                 }
             }
         }
-
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EuRequirements
         {
 
@@ -4193,7 +4222,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EuropeanWasteList
         {
 
@@ -4230,7 +4260,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class TransportInformation
         {
 
@@ -4411,7 +4442,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class UnNo
         {
 
@@ -4480,7 +4512,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ProperShippingName
         {
 
@@ -4549,7 +4582,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class AdrRidAdn
         {
 
@@ -4618,7 +4652,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class Imdg
         {
 
@@ -4655,7 +4690,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class Icao
         {
 
@@ -4692,7 +4728,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardClassification
         {
 
@@ -4761,7 +4798,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardClassificationAdrRidAdn
         {
 
@@ -4814,7 +4852,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardClassificationImdg
         {
 
@@ -4867,7 +4906,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class HazardClassificationIcaoIata
         {
 
@@ -4920,7 +4960,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class PackingGroup
         {
 
@@ -5037,7 +5078,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EnvironmentalHazards
         {
 
@@ -5138,7 +5180,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EnvironmentalHazardsImdg
         {
 
@@ -5207,7 +5250,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class TransportInBulk
         {
 
@@ -5276,7 +5320,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class OtherTransportInformation
         {
 
@@ -5393,7 +5438,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class TransportHazardLabels
         {
 
@@ -5445,8 +5491,8 @@
                 }
             }
         }
-
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class AdrOtherInformation
         {
 
@@ -5531,7 +5577,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class AdnOtherInformation
         {
 
@@ -5567,8 +5614,9 @@
                 }
             }
         }
+    /// <remarks/>
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ImdgOtherInformation
         {
 
@@ -5621,7 +5669,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class RegulatoryInfo
         {
 
@@ -5738,7 +5787,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SpecificProvisionsRelatedToProduct
         {
 
@@ -5759,7 +5809,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SpecificProvisionsRelatedToProductEuLegislation
         {
 
@@ -5940,7 +5991,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class SpecificProvisionsRelatedToProductEuLegislationVoc
         {
 
@@ -5993,7 +6045,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EuLegislationIndustrialEmissions
         {
 
@@ -6046,7 +6099,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class EuLegislationCertainFluorinatedGreenhouseGases
         {
 
@@ -6083,7 +6137,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class NationalLegislation
         {
 
@@ -6872,7 +6927,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class DatasheetFeedDatasheetRegulatoryInfoChemicalSafetyAssessmentInfo
         {
 
@@ -6925,7 +6981,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ChemicalSafetyReport
         {
 
@@ -6978,7 +7035,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ExposureScenario
         {
 
@@ -7031,7 +7089,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class OtherInformation
         {
 
@@ -7308,7 +7367,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ClassificationAccordingClp
         {
 
@@ -7361,7 +7421,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ClassificationAccordingClpClpHazardClassification
         {
 
@@ -7430,7 +7491,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class ClpHazardClassificationMultiplyingFactor
         {
 
@@ -7467,7 +7529,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class RevisionInformation
         {
 
@@ -7552,7 +7615,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class PreparedBy
         {
 
@@ -7605,7 +7669,8 @@
             }
         }
 
-        [System.Xml.Serialization.XmlType(AnonymousType = true)]
+    /// <remarks/>
+    [System.Xml.Serialization.XmlType(AnonymousType = true)]
         public class PositiveEcolabelling
         {
 

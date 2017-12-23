@@ -18,6 +18,7 @@ namespace SDSComApps.Models
 
         private string phraseCatalogueIdField;
 
+        /// <remarks/>
         public Phrase()
         {
             this.phraseCatalogueIdField = "0";
