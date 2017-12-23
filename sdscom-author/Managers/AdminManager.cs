@@ -119,6 +119,47 @@ namespace SDSComApps.Managers
 
                 //===========================================================================================
 
+                db.DropTable<User>();
+                db.CreateTable<User>();
+
+                db.Save(new User
+                {
+                    Active = true,
+                    CreateDate = DateTime.Now,
+                    FirstName = "First 1",
+                    LastName = "Last 1",
+                    Password = "abc",
+                    UpdateDate = DateTime.Now,
+                    UserName = "First1",
+                    Email = "First1@gmail.com"
+                });
+
+                db.Save(new User
+                {
+                    Active = true,
+                    CreateDate = DateTime.Now,
+                    FirstName = "First 2",
+                    LastName = "Last 2",
+                    Password = "abc",
+                    UpdateDate = DateTime.Now,
+                    UserName = "First2",
+                    Email = "First2@gmail.com"
+                });
+
+                db.Save(new User
+                {
+                    Active = true,
+                    CreateDate = DateTime.Now,
+                    FirstName = "First 3",
+                    LastName = "Last 3",
+                    Password = "abc",
+                    UpdateDate = DateTime.Now,
+                    UserName = "First3",
+                    Email = "First3@gmail.com"
+                });
+
+                //===========================================================================================
+
             }
         }
 

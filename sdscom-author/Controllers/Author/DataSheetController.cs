@@ -13,14 +13,12 @@ namespace SDSComApps.Controllers
     /// <summary>
     /// 
     /// </summary>
-    [Area("Author")]
     public class DataSheetController : BaseController
     {
         private readonly IHttpContextAccessor httpContextAccessor;
         private ISession Session => httpContextAccessor.HttpContext.Session;
         private readonly IConfiguration config;
         private IMemoryCache cache;
-
      
         /// <summary>
         /// 
@@ -55,7 +53,7 @@ namespace SDSComApps.Controllers
             ViewData["productid"] = this.SessionEntityID;
             ViewData["username"] = this.SessionUserName;
 
-            return View("~/Areas/Author/Views/Chapters/InformationFromExportingSystem.cshtml");
+            return View("~/Views/Author/Chapters/InformationFromExportingSystem.cshtml");
         }
 
         /// <summary>
@@ -64,9 +62,6 @@ namespace SDSComApps.Controllers
         /// <returns></returns>
         public IActionResult SaveInformationFromExportingSystem([FromBody] InformationFromExportingSystem ifes)
         {
-            
-
-
             return Ok(new { Success = true });
         }
 
@@ -76,7 +71,7 @@ namespace SDSComApps.Controllers
         /// <returns></returns>
         public IActionResult IdentificationSubstPrep()
         {
-            return View("~/Areas/Author/Views/Chapters/IdentificationSubstPrep.cshtml");
+            return View("~/Views/Author/Chapters/IdentificationSubstPrep.cshtml");
         }
     }
 }

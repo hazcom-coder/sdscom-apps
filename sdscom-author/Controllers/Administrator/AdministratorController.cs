@@ -14,7 +14,6 @@ namespace SDSComApps.Controllers
     /// <summary>
     /// 
     /// </summary>
-    [Area("Administrator")]
     public class AdministratorController : BaseController
     {
         private readonly IHttpContextAccessor httpContextAccessor;
@@ -42,7 +41,7 @@ namespace SDSComApps.Controllers
         /// <returns></returns>
         public IActionResult Index()
         {
-            return View("~/Areas/Administrator/Views/AdminIndex.cshtml");
+            return View("AdminIndex");
         }
 
         /// <summary>
@@ -51,7 +50,16 @@ namespace SDSComApps.Controllers
         /// <returns></returns>
         public IActionResult ApplicationSettings()
         {
-            return View("~/Areas/Administrator/Views/ApplicationSettings.cshtml");
+            return View("ApplicationSettings");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult UserList()
+        {
+            return View("UserList");
         }
 
         /// <summary>

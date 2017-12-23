@@ -21,16 +21,19 @@ namespace SDSComApps.Models
         /// <summary>
         /// 
         /// </summary>
+        [StringLength(50)]
         public string Area { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
+        [StringLength(100)]
         public string Setting { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
+        [StringLength(2000)]
         public string DataValue { get; set; }
 
 

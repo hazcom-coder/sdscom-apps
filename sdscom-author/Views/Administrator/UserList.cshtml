@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "User List";
+
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>User List</h2>
+
+<table id="userTable" class="display" cellspacing="0" style="width:100%">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>UserName</th>
+            <th>Password</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Active</th>
+            <th>CreateDate</th>
+            <th>UpdateDate</th>
+            <th>EMail</th>
+        </tr>
+    </thead>
+</table>
+
+@section scripts
+    {
+    <script>
+            $(document).ready(function () {
+                $('#userTable').DataTable({
+                    "processing": true,
+                    "pagingType": "full_numbers",
+                    "serverSide": true,
+                    "ajax": {
+                        "url": "/user/getlist",
+                        "type": "GET",
+                        "datatype": "json",
+                        "dataSrc": ""
+                    },
+                    "columns":
+                    [
+                        { "data": "id", "name": "ID"},
+                        { "data": "userName", "name": "UserName"},
+                        { "data": "password", "name": "Password"},
+                        { "data": "firstName", "name": "FirstName"},
+                        { "data": "lastName", "name": "LastName"},
+                        { "data": "active", "name": "Active"},
+                        { "data": "createDate", "name": "CreateDate"},                       
+                        { "data": "updateDate", "name": "UpdateDate"},
+                        { "data": "email", "name": "EMail"}
+                    ]});             
+            });
+    </script>
+}

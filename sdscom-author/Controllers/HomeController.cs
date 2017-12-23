@@ -69,6 +69,24 @@ namespace SDSComApps.Controllers
         /// 
         /// </summary>
         /// <returns></returns>
+        public IActionResult AdminIndex()
+        {
+            return View("~/Views/Administrator/AdminIndex.cshtml");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult AuthorIndex()
+        {
+            return View("~/Views/Author/AuthorIndex.cshtml");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";

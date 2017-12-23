@@ -15,7 +15,6 @@ namespace SDSComApps.Controllers
     /// <summary>
     /// 
     /// </summary>
-    [Area("Author")]
     public class EntityController : BaseController
     {
         private readonly IHttpContextAccessor httpContextAccessor;
@@ -66,7 +65,7 @@ namespace SDSComApps.Controllers
                 entity = eMgr.Get(entityid);
             }                      
             
-            return View("~/Areas/Author/Views/EditEntity.cshtml", entityid);
+            return View("EditEntity", entityid);
         }
 
         /// <summary>
@@ -75,7 +74,7 @@ namespace SDSComApps.Controllers
         /// <returns></returns>
         public IActionResult CreateDataSheet()
         {
-            return View("~/Areas/Author/Views/DataSheet.cshtml");
+            return View("DataSheet");
         }
 
         /// <summary>
@@ -84,7 +83,7 @@ namespace SDSComApps.Controllers
         /// <returns></returns>
         public IActionResult Phrase()
         {  
-            return View("Author/Phrase");
+            return View("Phrase");
         }
 
         /// <summary>

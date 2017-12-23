@@ -34,10 +34,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Administrator\Data\" />
-    <Folder Include="Areas\Administrator\Models\" />
-    <Folder Include="Areas\Author\Data\" />
-    <Folder Include="Areas\Author\Models\" />
     <Folder Include="Logs\" />
     <Folder Include="wwwroot\css\datatables\" />
     <Folder Include="wwwroot\images\" />

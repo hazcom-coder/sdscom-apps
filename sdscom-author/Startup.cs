@@ -60,6 +60,7 @@ namespace SDSComApps
             {
                 options.IdleTimeout = TimeSpan.FromSeconds(3600);
                 options.Cookie.HttpOnly = true;
+                
             });
 
             services.AddMvc();
@@ -111,18 +112,11 @@ namespace SDSComApps
             app.UseSession();
 
             app.UseMvc(routes =>
-            {
+            {  
                 routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                  name: "default",
+                  template: "{controller=Home}/{action=Index}/{id?}");
 
-                routes.MapRoute(
-                    name: "Author",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
-                routes.MapRoute(
-                    name: "Administrator",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
             });  
         }
     }

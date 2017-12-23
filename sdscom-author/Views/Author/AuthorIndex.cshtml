@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewData["Title"] = "Authoring Start Page";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 
 }
 
@@ -14,7 +14,7 @@
         <div class="card-body">
             <h4 class="card-title" transkey="0">Create a new Product </h4>
             <p class="card-text" transkey="0">This is the module you have always wanted for adding products.</p>
-            <a class="btn-link" asp-action="Index" asp-controller="Author/Product" id="hlPhrase" transkey="0">Create Product</a>
+            <a class="btn-link" asp-action="EditEntity" asp-controller="Author" id="hlPhrase" transkey="0">Create Product</a>
         </div>
     </div>
 
@@ -22,7 +22,7 @@
         <div class="card-body">
             <h4 class="card-title" transkey="0">Create a DataSheet for an existing Product </h4>
             <p class="card-text" transkey="0">Creating datasheets for products.</p>
-            <a class="btn-link" asp-action="CreateDataSheet" asp-controller="Author/Product" id="hlPhrase">Create DataSheet</a>
+            <a class="btn-link" asp-action="CreateDataSheet" asp-controller="Author" id="hlPhrase">Create DataSheet</a>
         </div>
     </div>
 
@@ -42,7 +42,7 @@
         </div>
         <div class="card-body">
             <p class="card-text">This is the module you have always wanted for phrases.</p>
-            <a class="btn-link" asp-action="Phrase" asp-controller="Product" id="hlPhrase">View Phrases</a>
+            <a class="btn-link" asp-action="PhraseList" asp-controller="Author" id="hlPhrase">View Phrases</a>
         </div>
     </div>
 

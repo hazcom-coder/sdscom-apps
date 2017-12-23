@@ -6,13 +6,14 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
+using SDSComApps.Managers;
+using SDSComApps.Models;
 
 namespace SDSComApps.Controllers
 {
     /// <summary>
     /// 
     /// </summary>
-    [Area("Author")]
     public class AuthorController : BaseController
     {
         private readonly IHttpContextAccessor httpContextAccessor;
@@ -41,7 +42,46 @@ namespace SDSComApps.Controllers
         /// <returns></returns>
         public IActionResult Index()
         {
-            return View("~/Areas/Author/Views/AuthorIndex.cshtml");
+            return View("AuthorIndex");
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult EditEntity()
+        {
+            Entity entity = new Entity();
+            EntityManager eMgr = new EntityManager(config, cache);
+
+            long entityid = 0;
+            long.TryParse(SessionEntityID, out entityid);
+
+            if (entityid > 0)
+            {
+                entity = eMgr.Get(entityid);
+            }
+            return View("EditEntity");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult CreateDataSheet()
+        {
+            return View("DataSheet");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public IActionResult PhraseList()
+        {
+            return View("PhraseList");
+        }
+
     }
+
 }

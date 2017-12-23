@@ -15,10 +15,17 @@
     <input id="btnAPI" type="button" value="View API Documentation" class="btn-link" onclick="showSwagger()" />
     <br />
     <br />
-    <a class="btn-link" asp-action="ApplicationSettings" asp-controller="Administrator/Administrator" id="hlAdmin">Application Settings </a>
+    <a class="btn-link" asp-action="ApplicationSettings" asp-controller="Administrator" id="hlAppSettings">Application Settings </a>
     <br />
     <br />
-    <a class="btn-link" asp-action="CreateDBObjects" asp-controller="Administrator/Administrator" id="hlCreateDBObjects">Recreate DB objects</a>
+    <a class="btn-link" asp-action="UserList" asp-controller="Administrator" id="hlUserList">User List</a>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <a class="btn-link" asp-action="CreateDBObjects" asp-controller="Administrator" id="hlCreateDBObjects">Recreate DB objects</a>
 
 </form>
 
@@ -50,7 +57,7 @@
 
         function clearCache() {
             $.ajax({
-                url: "Administrator/Administrator/ClearCache",
+                url: "/Administrator/ClearCache",
                 success: function (data) {
                     if (data.success === true) {
                         alert("Success");
