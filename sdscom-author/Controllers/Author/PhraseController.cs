@@ -16,7 +16,6 @@ namespace SDSComApps.Controllers
     /// <summary>
     /// 
     /// </summary>
-    [Area("Author")]
     public class PhraseController : BaseController
     {
         private readonly IHttpContextAccessor httpContextAccessor;
@@ -47,25 +46,25 @@ namespace SDSComApps.Controllers
             return View();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="start"></param>
-        /// <param name="length"></param>
-        /// <returns></returns>
-        [HttpGet]
-        public IActionResult Get(string start, string length)
-        {
-            PhraseManager pMgr = new PhraseManager(config, cache);
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="start"></param>
+        ///// <param name="length"></param>
+        ///// <returns></returns>
+        //[HttpGet]
+        //public JsonResult Get(string start, string length)
+        //{
+        //    PhraseManager pMgr = new PhraseManager(config, cache);
 
-            List<EuphracPhrase> phrases = pMgr.Get();
+        //    List<EuphracPhrase> phrases = pMgr.Get();
             
-            int pageSize = length != null ? Convert.ToInt32(length) : 0;
-            int skip = start != null ? Convert.ToInt32(start) : 0;
-            var data = phrases.Skip(skip).Take(pageSize).ToList();
+        //    int pageSize = length != null ? Convert.ToInt32(length) : 0;
+        //    int skip = start != null ? Convert.ToInt32(start) : 0;
+        //    var data = phrases.Skip(skip).Take(pageSize).ToList();
 
-            return Ok(data);
-        }
+        //    return Json(data);
+        //}
     }
 
    

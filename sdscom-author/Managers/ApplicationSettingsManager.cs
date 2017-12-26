@@ -23,7 +23,7 @@ namespace SDSComApps.Managers
         private IMemoryCache cache;
 
 
-        private const string APP_SETTINGS = "APPLICATION_SETTINGS";
+       // private const string APP_SETTINGS = "APPLICATION_SETTINGS";
 
         /// <summary>
         /// 
@@ -38,15 +38,15 @@ namespace SDSComApps.Managers
         /// <summary>
         /// 
         /// </summary>
-        public void LoadAllToCache()
+        public List<ApplicationSetting> GetAll()
         {
             List<ApplicationSetting> settings = new List<ApplicationSetting>();
-
             using (IDbConnection db = DbFactory.Open())
             {
                 settings = db.Select<ApplicationSetting>();
             }
-            cache.Set(APP_SETTINGS, settings);
+            return settings;
+            
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace SDSComApps.Managers
         {
             ApplicationSetting appSetting = new ApplicationSetting();
 
-            List<ApplicationSetting> settings = cache.Get<List<ApplicationSetting>>(APP_SETTINGS);
+            List<ApplicationSetting> settings = GetAll();
 
             using (IDbConnection db = DbFactory.Open())
             {
@@ -85,9 +85,7 @@ namespace SDSComApps.Managers
             using (IDbConnection db = DbFactory.Open())
             {
                 db.Save(new ApplicationSetting() { Area = area, Setting = setting, DataValue = datavalue });
-            }
-
-            if (ok) LoadAllToCache();
+            }           
 
             return ok;
         }

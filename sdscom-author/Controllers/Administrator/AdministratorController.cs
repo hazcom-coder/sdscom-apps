@@ -20,6 +20,8 @@ namespace SDSComApps.Controllers
         private ISession Session => httpContextAccessor.HttpContext.Session;
         private readonly IConfiguration config;
         private IMemoryCache cache;
+        private UserManager uMgr;
+        private ApplicationSettingsManager asMgr;
 
         /// <summary>
         /// 
@@ -33,6 +35,8 @@ namespace SDSComApps.Controllers
             this.config = _config;
             this.cache = _cache;
             this.httpContextAccessor = _httpContextAccessor;
+            uMgr = new UserManager(config, cache);
+            asMgr = new ApplicationSettingsManager(config, cache);
         }
 
         /// <summary>
@@ -94,11 +98,22 @@ namespace SDSComApps.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IActionResult GetAllApplicationSettings()
+        public JsonResult GetAllApplicationSettings()
         {
-            List<ApplicationSetting> allSettings = cache.Get<List<ApplicationSetting>>("APPLICATION_SETTINGS");
+            List<ApplicationSetting> allSettings = asMgr.GetAll();
 
-            return Ok(allSettings);
+            return Json(allSettings);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public JsonResult GetUserList()
+        {
+            List<User> userList = uMgr.GetList();
+            return Json(userList);
         }
     }
 }

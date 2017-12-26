@@ -22,18 +22,24 @@
             <td align="center"><input class="global_filter" id="global_smart" type="checkbox" checked="checked"></td>
         </tr>
         <tr id="filter_col1" data-column="0">
+            <td>Column - ID</td>
+            <td align="center"><input class="column_filter" id="col0_filter" type="text"></td>
+            <td align="center"><input class="column_filter" id="col0_regex" type="checkbox"></td>
+            <td align="center"><input class="column_filter" id="col0_smart" type="checkbox" checked="checked"></td>
+        </tr>
+        <tr id="filter_col1" data-column="1">
             <td>Column - Area</td>
             <td align="center"><input class="column_filter" id="col0_filter" type="text"></td>
             <td align="center"><input class="column_filter" id="col0_regex" type="checkbox"></td>
             <td align="center"><input class="column_filter" id="col0_smart" type="checkbox" checked="checked"></td>
         </tr>
-        <tr id="filter_col2" data-column="1">
+        <tr id="filter_col2" data-column="2">
             <td>Column - Setting</td>
             <td align="center"><input class="column_filter" id="col1_filter" type="text"></td>
             <td align="center"><input class="column_filter" id="col1_regex" type="checkbox"></td>
             <td align="center"><input class="column_filter" id="col1_smart" type="checkbox" checked="checked"></td>
         </tr>
-        <tr id="filter_col3" data-column="2">
+        <tr id="filter_col3" data-column="3">
             <td>Column - DataValue</td>
             <td align="center"><input class="column_filter" id="col2_filter" type="text"></td>
             <td align="center"><input class="column_filter" id="col2_regex" type="checkbox"></td>
@@ -44,6 +50,7 @@
 <table id="settingTable" class="display" cellspacing="0" style="width:100%">
     <thead>
         <tr>
+            <th>ID</th>
             <th>Area</th>
             <th>Setting</th>
             <th>DataValue</th>
@@ -60,13 +67,14 @@
                     "pagingType": "full_numbers",
                     "serverSide": true,
                     "ajax": {
-                        "url": "/administrator/getallapplicationsettings",
+                        "url": "getallapplicationsettings",
                         "type": "GET",
                         "datatype": "json",
                         "dataSrc": ""
                     },
                     "columns":
                     [
+                        { "data": "id", "name": "ID", "autoWidth": true },
                         { "data": "area", "name": "Area", "autoWidth": true },
                         { "data": "setting", "name": "Setting", "autoWidth": true},
                         { "data": "dataValue", "name": "DataValue"}
@@ -103,8 +111,5 @@
                 }
 
             });
-
-
-
     </script>
 }

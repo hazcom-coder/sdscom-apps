@@ -2,7 +2,6 @@
 
 @{
     ViewData["Title"] = "Information From Exporting System";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Information From Exporting System</h2>
@@ -12,7 +11,7 @@ Product ID: @ViewData["productid"].ToString()
 User Name: @ViewData["username"].ToString()
 
 
-<form asp-action="SaveInformationFromExportingSystem" asp-controller="DataSheet" id="frmInformationFromExportingSystem">
+<form asp-action="SaveInformationFromExportingSystem" asp-controller="DataSheet" id="frmInformationFromExportingSystem" method="post">
 
     <label id="lblName" for="txtID">Xml Standard Version No</label>
     <input type="text" class="form-control" id="txtID" size="100" asp-for="XmlStandardVersionNo" required />

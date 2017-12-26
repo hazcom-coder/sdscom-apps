@@ -13,6 +13,7 @@ namespace SDSComApps.Controllers
     /// <summary>
     /// 
     /// </summary>
+    [Route("Datasheet")]
     public class DataSheetController : BaseController
     {
         private readonly IHttpContextAccessor httpContextAccessor;
@@ -56,14 +57,7 @@ namespace SDSComApps.Controllers
             return View("~/Views/Author/Chapters/InformationFromExportingSystem.cshtml");
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        public IActionResult SaveInformationFromExportingSystem([FromBody] InformationFromExportingSystem ifes)
-        {
-            return Ok(new { Success = true });
-        }
+     
 
         /// <summary>
         /// 
@@ -72,6 +66,17 @@ namespace SDSComApps.Controllers
         public IActionResult IdentificationSubstPrep()
         {
             return View("~/Views/Author/Chapters/IdentificationSubstPrep.cshtml");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        [HttpPost]
+       // [Route("Datasheet/SaveInformationFromExportingSystem")]
+        public IActionResult SaveInformationFromExportingSystem()
+        {
+            return Ok(new { Success = true });
         }
     }
 }

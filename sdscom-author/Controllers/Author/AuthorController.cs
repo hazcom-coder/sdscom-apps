@@ -76,11 +76,33 @@ namespace SDSComApps.Controllers
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="start"></param>
+        /// <param name="length"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public JsonResult GetPhrases(string start, string length)
+        {
+            PhraseManager pMgr = new PhraseManager(config, cache);
+
+            List<EuphracPhrase> phrases = pMgr.Get();
+
+            int pageSize = length != null ? Convert.ToInt32(length) : 0;
+            int skip = start != null ? Convert.ToInt32(start) : 0;
+            var data = phrases.Skip(skip).Take(pageSize).ToList();
+
+            return Json(data);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         /// <returns></returns>
         public IActionResult PhraseList()
         {
             return View("PhraseList");
         }
+
+       
 
     }
 

@@ -21,7 +21,7 @@ namespace SDSComApps.Controllers
         private ISession Session => httpContextAccessor.HttpContext.Session;
         private readonly IConfiguration config;
         private IMemoryCache cache;
-
+        private EntityManager eMgr;
 
         /// <summary>
         /// 
@@ -35,6 +35,8 @@ namespace SDSComApps.Controllers
             this.config = _config;
             this.cache = _cache;
             this.httpContextAccessor = _httpContextAccessor;
+
+            eMgr = new EntityManager(config,cache);
         }
 
         /// <summary>
@@ -92,9 +94,9 @@ namespace SDSComApps.Controllers
         /// <returns></returns>
         /// 
         [HttpPost]
-        public IActionResult Save()
+        public IActionResult Save( Entity entity)
         {
-                 
+            entity = eMgr.Save(entity);    
 
             return Ok();
         }

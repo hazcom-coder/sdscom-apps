@@ -48,4 +48,8 @@
     <None Include="wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\sdscom-schemaloader\SchemaLoader\SchemaLoader.csproj" />
+  </ItemGroup>
+
 </Project>

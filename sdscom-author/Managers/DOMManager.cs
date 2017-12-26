@@ -1,17 +1,9 @@
-﻿using System;
+﻿using SDSComApps.SchemaLoader.Models;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using SDSComApps.Models;
 using System.Xml.Schema;
-using System.Xml;
-using System.IO;
-using System.Text;
-using System.Collections;
-using System.Data;
 
-
-namespace SDSComApps.Managers
+namespace SDSComApps.SchemaLoader.Managers
 {
     /// <summary>
     /// 

@@ -5,27 +5,31 @@
 
 <h2>Product</h2>
 
-<form asp-action="Save" asp-controller="Entity" id="frmEntity">
+<form asp-action="Save" asp-controller="Entity" id="frmEntity" methog="post">
 
     <label id="lblName" for="txtID">System ID</label>
-    <input type="text" class="form-control" id="txtID" size="100" asp-for="ID" />
+    <input type="text" readonly class="form-control" id="txtID" size="20" asp-for="ID" />
 
     <label id="lblName" for="txtName">Name</label>
-    <input type="text" class="form-control" id="txtName" size="2000" asp-for="EntityName" />
+    <input type="text" class="form-control" id="txtName" asp-for="EntityName" />
+    <span asp-validation-for="EntityName" class="text-danger"></span>
 
     <label id="lblET" for="txtEType">Entity Type</label>
     <input type="text" class="form-control" id="txtEType" asp-for="EntityType" />
+    <span asp-validation-for="EntityType" class="text-danger"></span>
+
 
     <label id="lblOtherID" for="txtOtherID">Other Id</label>
-    <input type="text" class="form-control" id="txtOtherID" size="2000" asp-for="OtherId" />
+    <input type="text" class="form-control" id="txtOtherID" asp-for="OtherId" />
+    <span asp-validation-for="OtherId" class="text-danger"></span>
 
     <label id="lblActive" for="txtActive">Active</label>
     <input type="text" class="form-control" id="txtActive" asp-for="Active" />
-
+    <span asp-validation-for="Active" class="text-danger"></span>
+    
     <label id="lblUserID" asp-for="UserId">Updated By</label>
 
     <label id="lblDateStmp" asp-for="DateStamp">Date Stamp</label>
-
 
     <input type="submit" id="btnSubmit" value="Save" />
 

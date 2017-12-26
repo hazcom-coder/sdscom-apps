@@ -48,8 +48,6 @@ namespace SDSComApps
         {
             services.AddSingleton(_ => Configuration);
 
-            services.AddSingleton<IAppInitializeController, AppInitializeController>();
-
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddMemoryCache();

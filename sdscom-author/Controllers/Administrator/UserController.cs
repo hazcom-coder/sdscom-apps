@@ -65,16 +65,16 @@ namespace SDSComApps.Controllers
             return Ok(user);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        public JsonResult GetList()
-        {
-            List<User> userList = uMgr.GetList();
-            return Json(userList);
-        }
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <returns></returns>
+        //[HttpGet]
+        //public JsonResult GetUserList()
+        //{
+        //    List<User> userList = uMgr.GetList();
+        //    return Json(userList);
+        //}
 
     }
 }
