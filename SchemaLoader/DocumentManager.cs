@@ -9,6 +9,7 @@ using System.IO;
 using System.Text;
 using System.Collections;
 using System.Data;
+using ServiceStack.OrmLite.PostgreSQL;
 using ServiceStack.OrmLite;
 
 
@@ -299,7 +300,7 @@ namespace SchemaLoader.Managers
 										Port=5432;Database=sdscom;
 										User Id=sdscom;Password=Gollum17;";
 
-		public void CreateDatabaseObjects(List<Facet> facetList)
+		public void CreateDatabaseObjects()
 		{			
 			var dbFactory = new OrmLiteConnectionFactory(connstring, PostgreSqlDialect.Provider);
 

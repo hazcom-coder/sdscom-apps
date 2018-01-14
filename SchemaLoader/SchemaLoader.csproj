@@ -4,7 +4,11 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Npgsql" Version="3.2.6"/>
-    <PackageReference Include="ServiceStack.OrmLite.PostgreSQL" Version="5.0.0" />
+    <PackageReference Include="Npgsql" Version="3.2.6" />
+    <PackageReference Include="ServiceStack.Common.Core" Version="5.0.2" />
+    <PackageReference Include="ServiceStack.Interfaces.Core" Version="5.0.2" />
+    <PackageReference Include="ServiceStack.OrmLite.Core" Version="5.0.2" />
+    <PackageReference Include="ServiceStack.OrmLite.PostgreSQL.Core" Version="5.0.2" />
+    <PackageReference Include="ServiceStack.Text.Core" Version="5.0.2" />
   </ItemGroup>
 </Project>

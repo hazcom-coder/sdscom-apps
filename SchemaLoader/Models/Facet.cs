@@ -24,7 +24,6 @@ namespace SchemaLoader.Models
         public string Name {get; set;}
 
         [PrimaryKey]
-        [AutoIncrement]
         public int ID {get; set;}
 
         [StringLength(10)]

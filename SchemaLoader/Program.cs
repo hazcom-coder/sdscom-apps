@@ -26,7 +26,7 @@ namespace SchemaLoader
 
 			Console.WriteLine("Finished GetSchemas & DataTypes");
 
-			//=========================================================================================================
+			// //=========================================================================================================
 
 			Console.WriteLine("Start GetExtensions & DataTypes");
 
@@ -38,7 +38,31 @@ namespace SchemaLoader
 
 			//=========================================================================================================
 
-			
+			Console.WriteLine("Start Database Actions");
+
+			Console.WriteLine("Start CreateDatabaseObjects");
+
+			dMgr.CreateDatabaseObjects();
+
+			Console.WriteLine("Finsih CreateDatabaseObjects");
+
+			Console.WriteLine("Start CreateFacets");
+
+			dMgr.CreateFacets(facets);			
+
+			dMgr.CreateFacets(facetsDE);
+
+			Console.WriteLine("Finish CreateFacets");
+
+			Console.WriteLine("Start CreateFacetRestrictionss");
+
+			dMgr.CreateFacetRestrictionss(facetsRest);
+
+			dMgr.CreateFacetRestrictionss(facetsRestDE);
+
+			Console.WriteLine("Finish CreateFacetRestrictionss");
+
+			Console.WriteLine("Finished");
 
 
 		}
