@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using SchemaLoader.Models;
+using SchemaLoader.Managers;
 
 namespace SchemaLoader
 {
@@ -7,20 +9,38 @@ namespace SchemaLoader
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Calling GetSchemas");
+			List<Facet> facets = new List<Facet>();
+			List<Facet> facetsDE = new List<Facet>();
+			List<FacetRestriction> facetsRest = new List<FacetRestriction>();
+			List<FacetRestriction> facetsRestDE = new List<FacetRestriction>();
 
-            SchemaLoader.Managers.DocumentManager dMgr = new SchemaLoader.Managers.DocumentManager();
+			DocumentManager dMgr = new DocumentManager();
 
-           List<Models.Facet> facets = dMgr.GetSchemas();
+			//=========================================================================================================
 
-            Console.WriteLine("Finished GetSchemas");
+			Console.WriteLine("Calling GetSchemas & DataTypes");
 
-			Console.WriteLine("Calling GetDataTypes");
+			facets = dMgr.GetSchemas();
 
-			dMgr.GetDataTypes(facets);
+			facetsRest = dMgr.GetDataTypes(facets, "SDSComXMLDT.xsd");
 
-			Console.WriteLine("Finished GetDataTypes function");
+			Console.WriteLine("Finished GetSchemas & DataTypes");
+
+			//=========================================================================================================
+
+			Console.WriteLine("Start GetExtensions & DataTypes");
+
+			facetsDE = dMgr.GetExtensions();
+
+			facetsRestDE = dMgr.GetDataTypes(facetsDE, "SDSComXMLNE_DE.xsd");
+
+			Console.WriteLine("Finished GetExtensions & DataTypes");
+
+			//=========================================================================================================
+
+
+
 
 		}
-    }
+	}
 }

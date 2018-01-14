@@ -20,8 +20,8 @@ namespace SchemaLoader.Managers
 	{
         private string appdatafolder = @"schemas";
         private int facetid = 1;
-        private List<Facet> facetLists = new List<Facet>();
-
+        
+		private string versionNumer = "4.2.3";
 
         /// <summary>
         /// 
@@ -37,7 +37,10 @@ namespace SchemaLoader.Managers
         /// <returns></returns>
         public List<Facet>  GetSchemas()
         {
-            XmlTextReader textReader = new XmlTextReader(appdatafolder +"/SDSComXML.xsd");
+			List<Facet> facetList = new List<Facet>();
+			string schemaFileName = "SDSComXML.xsd";
+
+			XmlTextReader textReader = new XmlTextReader(appdatafolder +"/" + schemaFileName);
 
 			XmlDocument xdcc = new XmlDocument();
 
@@ -57,33 +60,34 @@ namespace SchemaLoader.Managers
                 {
                     datasheetNode = node.ChildNodes[1].ChildNodes[0].ChildNodes[1];
 
-					AddFacet(0, "", "DataSheet", "1", "1", "SDSComXML.xsd", "4.2.0","root",-1);
+					Facet facet = BuildFacet(0, "", "DataSheet", "1", "1", schemaFileName, "root",-1);
+					facetList.Add(facet);
 
 					for ( int x = 1; x <= datasheetNode.ChildNodes[1].ChildNodes[0].ChildNodes.Count - 1; x++ )
 					{
 						chapterNode = datasheetNode.ChildNodes[1].ChildNodes[0].ChildNodes[x];
 
-						AddElementAsFacet(chapterNode, "datasheet");
+						AddElementAsFacet(chapterNode, "datasheet", schemaFileName, facetList);
 
-						BuildChapter(chapterNode, "datasheet");
+						BuildChapter(chapterNode, "datasheet", schemaFileName, facetList);
 					}
 					break;
                 }
             }
 
 			//update parent ids
-			foreach (Facet facet in facetLists)
+			foreach (Facet facet in facetList)
 			{
-				facetLists.Where(w => w.ParentPath == facet.Name).ToList()
+				facetList.Where(w => w.ParentPath == facet.Name).ToList()
 					.ForEach(f => f.ParentID = facet.ID);
 			}
 
-			facetLists.Where(w => w.ParentID == 0).ToList().ForEach(f => f.ParentID = 1);
+			facetList.Where(w => w.ParentID == 0).ToList().ForEach(f => f.ParentID = 1);
 
-			return facetLists;
+			return facetList;
 		}
 
-		private string AddElementAsFacet(XmlNode theNode, string parentName)
+		private string AddElementAsFacet(XmlNode theNode, string parentName, string schemafileName, List<Facet> facetList)
 		{
 			string minOccurs = "0";
 			string maxOccurs = "0";
@@ -134,19 +138,20 @@ namespace SchemaLoader.Managers
 					}
 				}
 
-				AddFacet(0, parentName, facetName, minOccurs, maxOccurs, "SDSComXML.xsd", "4.2.0", dataType, maxSize);
+				Facet facet = BuildFacet(0, parentName, facetName, minOccurs, maxOccurs, schemafileName, dataType, maxSize);
+				facetList.Add(facet);
 				retValue = facetName;
 			}
 
 			return retValue;
 		}
 		
-		private void BuildChapter(XmlNode chapterNode,string facetName)
+		private void BuildChapter(XmlNode chapterNode,string facetName, string schemafileName, List<Facet> facetList)
         {
-			XmlNode nextNode = RecurseChildNodes(chapterNode, facetName);			
+			XmlNode nextNode = RecurseChildNodes(chapterNode, facetName, schemafileName, facetList);
 		}
 
-		private XmlNode RecurseChildNodes(XmlNode theNode, string parentName)
+		private XmlNode RecurseChildNodes(XmlNode theNode, string parentName, string schemafileName, List<Facet> facetList)
 		{
 			XmlNode node = null;
 
@@ -162,18 +167,18 @@ namespace SchemaLoader.Managers
 			{
 				if (childNode.Name == "xs:element")
 				{
-					AddElementAsFacet(childNode, parentName);					
+					AddElementAsFacet(childNode, parentName, schemafileName,facetList);					
 				}
 
-				RecurseChildNodes(childNode, parentName);
+				RecurseChildNodes(childNode, parentName, schemafileName, facetList);
 			}
 
 			return node;
 		}
 
-        private void AddFacet(int parentid, string parentPath,
+        private Facet BuildFacet(int parentid, string parentPath,
                             string facetName, string minOccurs, string maxOccurs, 
-                            string fileName, string sdsversion, string dataType, int maxSize)
+                            string fileName,  string dataType, int maxSize)
         {
             Facet facet = new Facet
             {
@@ -185,20 +190,21 @@ namespace SchemaLoader.Managers
                 ParentID = parentid,
                 ParentPath = parentPath,
                 SchemaFileName = fileName,
-                SDSComVersion = sdsversion,
+                SDSComVersion = versionNumer,
 				DataType = dataType,
 				MaxSize = maxSize
-            };
-			facetLists.Add(facet);
+            };			
 			facetid++;
+
+			return facet;
         }
 
 
-		public List<FacetRestriction> GetDataTypes(List<Facet> facetList)
+		public List<FacetRestriction> GetDataTypes(List<Facet> facetList,string fileName)
 		{
 			List<FacetRestriction> restrictions = new List<FacetRestriction>();
 
-			XmlTextReader textReader = new XmlTextReader(appdatafolder + "/SDSComXMLDT.xsd");
+			XmlTextReader textReader = new XmlTextReader(appdatafolder + "/" + fileName);
 
 			XmlDocument xdcc = new XmlDocument();
 
@@ -265,6 +271,26 @@ namespace SchemaLoader.Managers
 				}			
 			}
 			return restrictions;
-		}		
+		}	
+		
+		public List<Facet> GetExtensions()
+		{
+			List<Facet> facetList = new List<Facet>();
+			string schemafileName = "SDSComXMLNE_DE.xsd";
+			XmlTextReader textReader = new XmlTextReader(url: appdatafolder + "/" + schemafileName);
+
+			XmlDocument xdcc = new XmlDocument();
+
+			xdcc.Load(textReader);
+
+			XmlNode root = xdcc.DocumentElement;
+			List<string> nodeNames = new List<string>();
+
+			foreach (XmlNode node in root.ChildNodes)
+			{
+				RecurseChildNodes(node, node.Name, schemafileName, facetList);
+			}
+			return facetList;
+		}
 	}
 }
