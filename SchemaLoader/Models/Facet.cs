@@ -1,4 +1,7 @@
 using System;
+using Npgsql;
+using NpgsqlTypes;
+using ServiceStack.DataAnnotations;
 
 namespace SchemaLoader.Models
 {
@@ -9,31 +12,45 @@ namespace SchemaLoader.Models
 
         }
 
+        [StringLength(100)]
+        [Required]
         public string ParentPath {get; set;}
 
+        [Required]
         public int ParentID{get; set;}
 
+        [StringLength(100)]
+        [Required]
         public string Name {get; set;}
 
+        [PrimaryKey]
+        [AutoIncrement]
         public int ID {get; set;}
 
+        [StringLength(10)]
+        [Required]
         public string MinOccurs {get; set;}
 
+        [StringLength(10)]
+        [Required]
         public string MaxOccurs {get; set;}
 
+        [StringLength(50)]
+        [Required]
         public string DataType {get; set;}
 
+        [Required]
         public DateTime DateStamp {get; set;}
 
+        [Required]
         public string SDSComVersion {get; set;}
 
+        [Required]
         public string SchemaFileName {get; set;}
 
 		public string Comments { get; set; }
 
 		public int MaxSize { get; set; }
-
-		public string OtherInfo { get; set; }
 
 	}
 }

@@ -9,6 +9,7 @@ using System.IO;
 using System.Text;
 using System.Collections;
 using System.Data;
+using ServiceStack.OrmLite;
 
 
 namespace SchemaLoader.Managers
@@ -291,6 +292,50 @@ namespace SchemaLoader.Managers
 				RecurseChildNodes(node, node.Name, schemafileName, facetList);
 			}
 			return facetList;
+		}
+
+
+		private string connstring = @"Server=sdscom.c5o9b1nqgmsb.us-east-1.rds.amazonaws.com;
+										Port=5432;Database=sdscom;
+										User Id=sdscom;Password=Gollum17;";
+
+		public void CreateDatabaseObjects(List<Facet> facetList)
+		{			
+			var dbFactory = new OrmLiteConnectionFactory(connstring, PostgreSqlDialect.Provider);
+
+			using (IDbConnection db = dbFactory.Open())
+			{
+				db.CreateTable(true,typeof(Facet));
+
+				db.CreateTable(true,typeof(FacetRestriction));
+
+				db.CreateTable(true,typeof(FacetRestrictionLink));
+
+				db.CreateTable(true,typeof(FacetValue));
+
+				db.CreateTable(true,typeof(ValidationMessage));
+			}			
+		}
+
+
+		public void CreateFacets(List<Facet> facetList)
+		{
+			var dbFactory = new OrmLiteConnectionFactory(connstring, PostgreSqlDialect.Provider);
+
+			using (IDbConnection db = dbFactory.Open())
+			{
+				db.InsertAll(facetList);
+			}
+		}
+		
+		public void CreateFacetRestrictionss(List<FacetRestriction> facetRestList)
+		{			
+			var dbFactory = new OrmLiteConnectionFactory(connstring, PostgreSqlDialect.Provider);
+
+			using (IDbConnection db = dbFactory.Open())
+			{
+				db.InsertAll(facetRestList);
+			}			
 		}
 	}
 }
